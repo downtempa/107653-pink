@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Леонид Мистюков](https://up.htmlacademy.ru/adaptive/6/user/107653).
-* Наставник: `Неизвестно`.
+* Наставник: Андрей Серёдкин.
 
 ---
 
