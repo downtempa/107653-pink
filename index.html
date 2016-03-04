@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <div class="main-header__logo">Pink</div>
+    <div class="main-nav">
+      <a href="#" class="main-nav__toggle"></a>
+      <ul class="main-nav__list main-nav__list--hidden">
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Возможности</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Стоимость</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="intro">
+    <h2 class="intro__slogan">Взгляните на жизнь иначе!</h2>
+    <img src="http://placehold.it/150x100" alt="">
+    <div class="download">
+      <a href="#" class="download__btn">Скачать приложение</a>
+      <div class="download__icons">
+        <!-- иконки ссылки на соответствующий сайт загрузки или просто картинка? -->
+        <div class="download__icon"><img src="http://placehold.it/150x100" alt="Apple"></div>
+        <div class="download__icon"><img src="http://placehold.it/150x100" alt="Android"></div>
+        <div class="download__icon"><img src="http://placehold.it/150x100" alt="Windows"></div>
+      </div>
+      <div class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+    </div>
+  </div>
+  <div class="offer">
+    <h3 class="offer__title">Устали от серости мегаполиса?</h3>
+    <h3 class="offer__title">Нам есть, что вам предложить!</h3>
+  </div>
+  <div class="advantages">
+    <div class="advantages__item">
+      <h4 class="advantages__title">Поднимает настроение</h4>
+      <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+    </div>
+    <div class="advantages__item">
+      <h4 class="advantages__title">Меняет мир вокруг</h4>
+      <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+    </div>
+    <div class="advantages__item">
+      <h4 class="advantages__title">Заводит новых друзей</h4>
+      <p class="advantages__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+    </div>
+    <img src="http://placehold.it/150x100" alt="Всем привет!" />
+  </div>
+  <div class="reviews">
+    <div class="reviews__wrapper">
+      <input type="radio" class="slider__switcher" name="reviews" id="reviews-radio-1" checked>
+      <input type="radio" class="slider__switcher" name="reviews" id="reviews-radio-2">
+      <input type="radio" class="slider__switcher" name="reviews" id="reviews-radio-3">
+      <blockquote class="reviews__item reviews__item-1">
+        <div class="reviews__author">Николай Петров</div>
+        <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      </blockquote>
+      <blockquote class="reviews__item reviews__item-2">
+        <div class="reviews__author">Петр Николаев</div>
+        <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      </blockquote>
+      <blockquote class="reviews__item reviews__item-3">
+        <div class="reviews__author">Иван Иванов</div>
+        <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      </blockquote>
+      <div class="slider reviews__nav">
+        <label class="slider__btn" for="reviews-radio-1">1</label>
+        <label class="slider__btn" for="reviews-radio-2">2</label>
+        <label class="slider__btn" for="reviews-radio-3">3</label>
+      </div>
+    </div>
+  </div>
+  <div class="price">
+    <div class="price__items">
+      <input type="radio" class="slider__switcher" name="price" id="price-radio-1">
+      <input type="radio" class="slider__switcher" name="price" id="price-radio-2" checked>
+      <input type="radio" class="slider__switcher" name="price" id="price-radio-3">
+      <div class="price__item price__item-1">
+        <span class="price__title">База</span>
+        <span class="price__cost">1,99 USD</span>
+        <table class=price__feature-kits>
+          <tr>
+            <td class="price__feature">Розовый фильтр</td>
+            <td class="price__feature-access">+</td>
+          </tr>
+          <tr>
+            <td class="price__feature">Смайлики</td>
+            <td class="price__feature-access price__feature-access--unavailable">-</td>
+          </tr>
+          <tr>
+            <td class="price__feature">Комментарии</td>
+            <td class="price__feature-access price__feature-access--unavailable">-</td>
+          </tr>
+        </table>
+      </div>
+      <div class="price__item price__item-2">
+        <span class="price__title">Стандарт</span>
+        <span class="price__cost">3,99 USD</span>
+        <table class=price__feature-kits>
+          <tr>
+            <td class="price__feature">Розовый фильтр</td>
+            <td class="price__feature-access">+</td>
+          </tr>
+          <tr>
+            <td class="price__feature">Смайлики</td>
+            <td class="price__feature-access">+</td>
+          </tr>
+          <tr>
+            <td class="price__feature">Комментарии</td>
+            <td class="price__feature-access price__feature-access--unavailable">-</td>
+          </tr>
+        </table>
+      </div>
+      <div class="price__item price__item-3">
+        <span class="price__title">Анлим</span>
+        <span class="price__cost">9,99 USD</span>
+        <table class=price__feature-kits>
+          <tr>
+            <td class="price__feature">Розовый фильтр</td>
+            <td class="price__feature-access">+</td>
+          </tr>
+          <tr>
+            <td class="price__feature">Смайлики</td>
+            <td class="price__feature-access">+</td>
+          </tr>
+          <tr>
+            <td class="price__feature">Комментарии</td>
+            <td class="price__feature-access">+</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="slider price__nav">
+      <label class="slider__btn" for="price-radio-1">1</label>
+      <label class="slider__btn" for="price-radio-2">2</label>
+      <label class="slider__btn" for="price-radio-3">3</label>
+    </div>
+  </div>
+  <div class="main-footer">
+    <div class="contacts">
+      <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
+      <div class="contacts__item">Звоните:<span>+7 (812) 555-66-66</span></div>
+      <div class="contacts__item">Пишите:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
+      <div class="contacts__item">Приезжайте в гости:<span>ул. Большая Конюшенная, 19/8</span></div>
+    </div>
+    <div class="map">
+      <img src="http://placehold.it/150x100" alt="карта">
+    </div>
+  </div>
+</body>
+
 </html>
