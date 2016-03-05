@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
 </head>
+<!-- чет не пойму, где тут будет переход на photo.html -->
 
 <body>
   <header class="main-header">
@@ -23,7 +24,7 @@
     <h2 class="intro__slogan">Взгляните на жизнь иначе!</h2>
     <img src="http://placehold.it/150x100" alt="">
     <div class="download">
-      <a href="#" class="download__btn">Скачать приложение</a>
+      <a href="#" class="download__btn btn">Скачать приложение</a>
       <div class="download__icons">
         <!-- иконки ссылки на соответствующий сайт загрузки или просто картинка? -->
         <div class="download__icon"><img src="http://placehold.it/150x100" alt="Apple"></div>
@@ -53,23 +54,24 @@
     <img src="http://placehold.it/150x100" alt="Всем привет!" />
   </div>
   <div class="reviews">
-    <div class="reviews__wrapper">
+    <div class="reviews__slider slider">
       <input type="radio" class="slider__switcher" name="reviews" id="reviews-radio-1" checked>
       <input type="radio" class="slider__switcher" name="reviews" id="reviews-radio-2">
       <input type="radio" class="slider__switcher" name="reviews" id="reviews-radio-3">
-      <blockquote class="reviews__item reviews__item-1">
-        <div class="reviews__author">Николай Петров</div>
-        <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      <!-- слайды -->
+      <blockquote class="slider__slide slider__slide-1 post">
+        <div class="post__author">Николай Петров</div>
+        <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
       </blockquote>
-      <blockquote class="reviews__item reviews__item-2">
-        <div class="reviews__author">Петр Николаев</div>
-        <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      <blockquote class="slider__slide slider__slide-2 post">
+        <div class="post__author">Петр Николаев</div>
+        <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
       </blockquote>
-      <blockquote class="reviews__item reviews__item-3">
-        <div class="reviews__author">Иван Иванов</div>
-        <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      <blockquote class="slider__slide slider__slide-3 post">
+        <div class="post__author">Иван Иванов</div>
+        <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
       </blockquote>
-      <div class="slider reviews__nav">
+      <div class="slider__nav">
         <label class="slider__btn" for="reviews-radio-1">1</label>
         <label class="slider__btn" for="reviews-radio-2">2</label>
         <label class="slider__btn" for="reviews-radio-3">3</label>
@@ -77,80 +79,80 @@
     </div>
   </div>
   <div class="price">
-    <div class="price__items">
+    <div class="price__slider slider">
       <input type="radio" class="slider__switcher" name="price" id="price-radio-1">
       <input type="radio" class="slider__switcher" name="price" id="price-radio-2" checked>
       <input type="radio" class="slider__switcher" name="price" id="price-radio-3">
-      <div class="price__item price__item-1">
-        <span class="price__title">База</span>
-        <span class="price__cost">1,99 USD</span>
-        <table class=price__feature-kits>
+      <div class="slider__slide slider__slide-1 purchase">
+        <span class="purchase__title">База</span>
+        <span class="purchase__cost">1,99 USD</span>
+        <table class="purchase__feature-kits">
           <tr>
-            <td class="price__feature">Розовый фильтр</td>
-            <td class="price__feature-access">+</td>
+            <td class="purchase__feature">Розовый фильтр</td>
+            <td class="purchase__feature-access">+</td>
           </tr>
           <tr>
-            <td class="price__feature">Смайлики</td>
-            <td class="price__feature-access price__feature-access--unavailable">-</td>
+            <td class="purchase__feature">Смайлики</td>
+            <td class="purchase__feature-access purchase__feature-access--unavailable">-</td>
           </tr>
           <tr>
-            <td class="price__feature">Комментарии</td>
-            <td class="price__feature-access price__feature-access--unavailable">-</td>
-          </tr>
-        </table>
-      </div>
-      <div class="price__item price__item-2">
-        <span class="price__title">Стандарт</span>
-        <span class="price__cost">3,99 USD</span>
-        <table class=price__feature-kits>
-          <tr>
-            <td class="price__feature">Розовый фильтр</td>
-            <td class="price__feature-access">+</td>
-          </tr>
-          <tr>
-            <td class="price__feature">Смайлики</td>
-            <td class="price__feature-access">+</td>
-          </tr>
-          <tr>
-            <td class="price__feature">Комментарии</td>
-            <td class="price__feature-access price__feature-access--unavailable">-</td>
+            <td class="purchase__feature">Комментарии</td>
+            <td class="purchase__feature-access purchase__feature-access--unavailable">-</td>
           </tr>
         </table>
       </div>
-      <div class="price__item price__item-3">
-        <span class="price__title">Анлим</span>
-        <span class="price__cost">9,99 USD</span>
-        <table class=price__feature-kits>
+      <div class="slider__slide slider__slide-2 purchase">
+        <span class="purchase__title">Стандарт</span>
+        <span class="purchase__cost">3,99 USD</span>
+        <table class="purchase__feature-kits">
           <tr>
-            <td class="price__feature">Розовый фильтр</td>
-            <td class="price__feature-access">+</td>
+            <td class="purchase__feature">Розовый фильтр</td>
+            <td class="purchase__feature-access">+</td>
           </tr>
           <tr>
-            <td class="price__feature">Смайлики</td>
-            <td class="price__feature-access">+</td>
+            <td class="purchase__feature">Смайлики</td>
+            <td class="purchase__feature-access">+</td>
           </tr>
           <tr>
-            <td class="price__feature">Комментарии</td>
-            <td class="price__feature-access">+</td>
+            <td class="purchase__feature">Комментарии</td>
+            <td class="purchase__feature-access purchase__feature-access--unavailable">-</td>
+          </tr>
+        </table>
+      </div>
+      <div class="slider__slide slider__slide-3 purchase">
+        <span class="purchase__title">Анлим</span>
+        <span class="purchase__cost">9,99 USD</span>
+        <table class="purchase__feature-kits">
+          <tr>
+            <td class="purchase__feature">Розовый фильтр</td>
+            <td class="purchase__feature-access">+</td>
+          </tr>
+          <tr>
+            <td class="purchase__feature">Смайлики</td>
+            <td class="purchase__feature-access">+</td>
+          </tr>
+          <tr>
+            <td class="purchase__feature">Комментарии</td>
+            <td class="purchase__feature-access">+</td>
           </tr>
         </table>
       </div>
     </div>
-    <div class="slider price__nav">
+    <div class="slider__nav">
       <label class="slider__btn" for="price-radio-1">1</label>
       <label class="slider__btn" for="price-radio-2">2</label>
       <label class="slider__btn" for="price-radio-3">3</label>
     </div>
   </div>
   <div class="main-footer">
-    <div class="contacts">
-      <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
-      <div class="contacts__item">Звоните:<span>+7 (812) 555-66-66</span></div>
-      <div class="contacts__item">Пишите:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
-      <div class="contacts__item">Приезжайте в гости:<span>ул. Большая Конюшенная, 19/8</span></div>
+    <div class="main-footer__logo">Pink</div>
+    <div class="main-footer__social social">
+      <a href="#" class="social__item social__item--tw">Twitter</a>
+      <a href="#" class="social__item social__item--fb">Facebook</a>
+      <a href="#" class="social__item social__item--ytb">Youtube</a>
     </div>
-    <div class="map">
-      <img src="http://placehold.it/150x100" alt="карта">
+    <div class="main-footer__copyright">Разработано
+      <a class="main-footer__link" href="https://htmlacademy.ru/">HTML Academy</a>
     </div>
   </div>
 </body>
