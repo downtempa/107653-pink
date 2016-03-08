@@ -11,7 +11,7 @@
   <header class="main-header">
     <div class="logo">Pink</div>
     <nav class="main-nav">
-        <!-- порядок атрибутов в таких тегах как a и input, класс должен идти первым? или есть атрибуты поважннее? (для лучшего восприятия чтоли) -->
+      <!-- порядок атрибутов в таких тегах как a и input, класс должен идти первым? или есть атрибуты поважннее? (для лучшего восприятия чтоли) -->
       <a href="#" class="main-nav__toggle">Меню</a>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
@@ -84,55 +84,45 @@
       <input type="radio" class="slider__switcher" name="price" id="price-radio-1">
       <input type="radio" class="slider__switcher" name="price" id="price-radio-2" checked>
       <input type="radio" class="slider__switcher" name="price" id="price-radio-3">
-      <div class="slider__slide slider__slide--1 purchase">
-        <span class="purchase__title">База</span>
-        <span class="purchase__cost">1,99 USD</span>
-        <table class="purchase__feature-kits">
+      <!-- интересно что будет с классами (блоками)которые не пригодятся на десктоп версии, например slider
+        то есть не понятно надо сразу описывать блоки,  а они потом вдруг изменятся в др. версиях -->
+      <div class="slider__wrapper">
+        <table class="purchases">
+          <tr>
+            <td colspan="2" class="purchases__kit">
+              <span class="purchase__title">Анлим</span>
+              <span class="purchase__cost">9,99 USD</span>
+            </td>
+            <td colspan="2" class="purchases__kit">
+              <span class="purchase__title">Стандарт</span>
+              <span class="purchase__cost">3,99 USD</span>
+            </td>
+            <td colspan="2" class="purchases__kit">
+              <span class="purchase__title">Анлим</span>
+              <span class="purchase__cost">9,99 USD</span>
+            </td>
+          </tr>
           <tr>
             <td class="purchase__feature">Розовый фильтр</td>
             <td class="purchase__feature-access">+</td>
+            <td class="purchase__feature">Розовый фильтр</td>
+            <td class="purchase__feature-access">-</td>
+            <td class="purchase__feature">Розовый фильтр</td>
+            <td class="purchase__feature-access">-</td>
           </tr>
           <tr>
             <td class="purchase__feature">Смайлики</td>
-            <td class="purchase__feature-access purchase__feature-access--unavailable">-</td>
+            <td class="purchase__feature-access">+</td>
+            <td class="purchase__feature">Смайлики</td>
+            <td class="purchase__feature-access">+</td>
+            <td class="purchase__feature">Смайлики</td>
+            <td class="purchase__feature-access">-</td>
           </tr>
           <tr>
             <td class="purchase__feature">Комментарии</td>
-            <td class="purchase__feature-access purchase__feature-access--unavailable">-</td>
-          </tr>
-        </table>
-      </div>
-      <div class="slider__slide slider__slide--2 purchase">
-        <span class="purchase__title">Стандарт</span>
-        <span class="purchase__cost">3,99 USD</span>
-        <table class="purchase__feature-kits">
-          <tr>
-            <td class="purchase__feature">Розовый фильтр</td>
             <td class="purchase__feature-access">+</td>
-          </tr>
-          <tr>
-            <td class="purchase__feature">Смайлики</td>
-            <td class="purchase__feature-access">+</td>
-          </tr>
-          <tr>
             <td class="purchase__feature">Комментарии</td>
-            <td class="purchase__feature-access purchase__feature-access--unavailable">-</td>
-          </tr>
-        </table>
-      </div>
-      <div class="slider__slide slider__slide--3 purchase">
-        <span class="purchase__title">Анлим</span>
-        <span class="purchase__cost">9,99 USD</span>
-        <table class="purchase__feature-kits">
-          <tr>
-            <td class="purchase__feature">Розовый фильтр</td>
             <td class="purchase__feature-access">+</td>
-          </tr>
-          <tr>
-            <td class="purchase__feature">Смайлики</td>
-            <td class="purchase__feature-access">+</td>
-          </tr>
-          <tr>
             <td class="purchase__feature">Комментарии</td>
             <td class="purchase__feature-access">+</td>
           </tr>
