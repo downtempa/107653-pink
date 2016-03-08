@@ -24,12 +24,11 @@
   </div>
   <div class="photo">
     <div class="photo__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
-    <!-- всё-таки кажется что подобные посты могут встретиться где-то ещё без потери смысла, блоком возможно сделать? -->
     <div class="photo__items">
       <div class="photo__item post-photo post-photo--panorama">
         <img class="post-photo__img" src="http://placehold.it/150x100" alt="">
         <div class="post-photo__author">Анна
-          <time class="post-photo__time">(5 минут назад)</time>
+          <time class="post-photo__time" datetime="2016-03-22">(5 минут назад)</time>
         </div>
         <p class="post-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
         <a href="#" class="post-photo__like-btn btn">Нравится:</a>
@@ -37,7 +36,7 @@
       <div class="photo__item post-photo">
         <img class="post-photo__img" src="http://placehold.it/150x100" alt="">
         <div class="post-photo__author">Левон
-          <time class="post-photo__time">(5 часов назад)</time>
+          <time class="post-photo__time" datetime="2016-03-22">(5 часов назад)</time>
         </div>
         <p class="post-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
         <a href="#" class="post-photo__like-btn btn">Нравится:</a>
@@ -45,7 +44,7 @@
       <div class="photo__item post-photo">
         <img class="post-photo__img" src="http://placehold.it/150x100" alt="">
         <div class="post-photo__author">Антон
-          <time class="post-photo__time">(12 часов назад)</time>
+          <time class="post-photo__time" datetime="2016-03-22">(12 часов назад)</time>
         </div>
         <p class="post-photo__description">Соседи будут рады!</p>
         <a href="#" class="post-photo__like-btn btn">Нравится:</a>
@@ -53,7 +52,7 @@
       <div class="photo__item post-photo">
         <img class="post-photo__img" src="http://placehold.it/150x100" alt="">
         <div class="post-photo__author">Борис
-          <time class="post-photo__time">(20 часов назад)</time>
+          <time class="post-photo__time" datetime="2016-03-22">(20 часов назад)</time>
         </div>
         <p class="post-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
         <a href="#" class="post-photo__like-btn btn">Нравится:</a>
@@ -61,7 +60,7 @@
       <div class="photo__item post-photo">
         <img class="post-photo__img" src="http://placehold.it/150x100" alt="">
         <div class="post-photo__author">Сергей
-          <time class="post-photo__time">(25 часов назад)</time>
+          <time class="post-photo__time" datetime="2016-03-22">(25 часов назад)</time>
         </div>
         <p class="post-photo__description">Самая кубанская в мире!</p>
         <a href="#" class="post-photo__like-btn btn">Нравится:</a>
@@ -69,7 +68,7 @@
       <div class="photo__item post-photo">
         <img class="post-photo__img" src="http://placehold.it/150x100" alt="">
         <div class="post-photo__author">Максим
-          <time class="post-photo__time">(40 часов назад)</time>
+          <time class="post-photo__time" datetime="2016-03-22">(40 часов назад)</time>
         </div>
         <p class="post-photo__description">Где снег-то?</p>
         <a href="#" class="post-photo__like-btn btn">Нравится:</a>
@@ -77,7 +76,7 @@
       <div class="photo__item post-photo">
         <img class="post-photo__img" src="http://placehold.it/150x100" alt="">
         <div class="post-photo__author">Надежда
-          <time class="post-photo__time">(45 часов назад)</time>
+          <time class="post-photo__time" datetime="2016-03-22">(45 часов назад)</time>
         </div>
         <p class="post-photo__description"></p>
         <a href="#" class="post-photo__like-btn btn">Нравится:</a>
@@ -91,12 +90,12 @@
     <div class="filter">
       <form class="filter__form" action="post">
         <div class="filter__photo">
-            <!-- есть ли смысл в глобальном теге img? чтоб вот такую штуку для всех img забабахать
+          <!-- есть ли смысл в глобальном теге img? чтоб вот такую штуку для всех img забабахать
             img {max-width: 100%;  height: auto;}  -->
           <img class="filter__photo-img" src="http://placehold.it/150x100" alt="photo">
         </div>
         <fieldset class="filter__features">
-            <!-- в таких стилизованных инпутах глобальные блоки (radio, label)я думаю не уместны, ну и в слайдерах на css -->
+          <!-- в таких стилизованных инпутах глобальные блоки (radio, label)я думаю не уместны, ну и в слайдерах на css -->
           <label class="filter__crop">
             <input class="filter__radio" type="radio" name="filter__features" id="filter__crop">
           </label>
@@ -123,8 +122,8 @@
       <a href="#" class="social__item social__item--fb">Facebook</a>
       <a href="#" class="social__item social__item--ytb">Youtube</a>
     </div>
-    <div class="main-footer__copyright">Разработано
-      <a class="main-footer__link" href="https://htmlacademy.ru/">HTML Academy</a>
+    <div class="main-footer_copyright copyright">Разработано
+      <a class="copyright__link link" href="https://htmlacademy.ru/">HTML Academy</a>
     </div>
   </div>
 </body>

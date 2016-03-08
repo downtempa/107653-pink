@@ -25,52 +25,53 @@
   <div class="promo">
     <div class="promo__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</div>
     <form class="promo__form user-form" action="post">
-      <!-- legend, label думаю с помощью каскада через fieldset стилизовать -->
-      <fieldset class="user-form__full-name">
-        <label for="user-name">Имя</label>
-        <input class="user-form__user-name" type="text" id="user-name" placeholder="Введите ваше имя">
-        <label for="user-surname">Фамилия</label>
-        <input class="user-form__user-surname" type="text" id="user-surname" placeholder="Укажите фамилию">
-        <label for="user-patronymic">Отчество</label>
-        <input class="user-form__user-patronymic" type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
+      <fieldset class="full-name">
+        <label class="full-name__label label" for="user-name">Имя</label>
+        <input class="full-name__name" type="text" id="user-name" placeholder="Введите ваше имя">
+        <label class="full-name__label label" for="user-surname">Фамилия</label>
+        <input class="full-name__surname" type="text" id="user-surname" placeholder="Укажите фамилию">
+        <label class="full-name__label label" for="user-patronymic">Отчество</label>
+        <input class="full-name__patronymic" type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
       </fieldset>
-      <fieldset class="user-form__events">
-        <legend>Ваши безбашенные достижения в путешествии</legend>
-        <input type="checkbox" class="user-form__events-check" name="event" id="shark" value="shark" checked>
-        <label for="shark">Сделал селфи с акулой</label>
-        <input type="checkbox" class="user-form__events-check" name="event" id="sunbathe" value="sunbathe" checked>
-        <label for="sunbathe">Обгорел на пляже</label>
-        <input type="checkbox" class="user-form__events-check" name="event" id="chuck-norris" value="chuck-norris">
-        <label for="chuck-norris">Видел Чака Норриса</label>
-        <input type="checkbox" class="user-form__events-check" name="event" id="souvenir" value="souvenir">
-        <label for="souvenir">Накупил сувениров</label>
-        <input type="checkbox" class="user-form__events-check" name="event" id="tower" value="tower" checked>
-        <label for="tower">Удержал башню</label>
-        <input type="checkbox" class="user-form__events-check" name="event" id="hotel" value="hotel">
-        <label for="hotel">Разгромил отель</label>
+      <fieldset class="events">
+        <legend class="events__title">Ваши безбашенные достижения в путешествии</legend>
+        <input type="checkbox" class="events__checkbox checkbox" name="event" id="shark" value="shark" checked>
+        <label class="events__label label" for="shark">Сделал селфи с акулой</label>
+        <input type="checkbox" class="events__checkbox checkbox" name="event" id="sunbathe" value="sunbathe" checked>
+        <label class="events__label label" for="sunbathe">Обгорел на пляже</label>
+        <input type="checkbox" class="events__checkbox checkbox" name="event" id="chuck-norris" value="chuck-norris">
+        <label class="events__label label" for="chuck-norris">Видел Чака Норриса</label>
+        <input type="checkbox" class="events__checkbox checkbox" name="event" id="souvenir" value="souvenir">
+        <label class="events__label label" for="souvenir">Накупил сувениров</label>
+        <input type="checkbox" class="events__checkbox checkbox" name="event" id="tower" value="tower" checked>
+        <label class="events__label label" for="tower">Удержал башню</label>
+        <input type="checkbox" class="events__checkbox checkbox" name="event" id="hotel" value="hotel">
+        <label class="events__label label" for="hotel">Разгромил отель</label>
       </fieldset>
-      <!-- форму телефона сделать с поммощью tel или text?-->
-      <fieldset class="user-form__contacts">
-        <label for="user-tel">Номерок телефончика</label>
-        <input class="user-form__user-tel" type="tel" name="user-tel" placeholder="Номер, пожалуйста" id="user-tel">
-        <label for="user-email">адресок почты</label>
-        <input class="user-form__user-email" type="email" name="user-email" placeholder="E-mail, пожалуйста" id="user-email">
+      <fieldset class="user-contacts">
+        <label class="user-contacts__label label" for="user-tel">Номерок телефончика</label>
+        <input class="user-contacts__tel" type="tel" name="user-tel" placeholder="Номер, пожалуйста" id="user-tel">
+        <label class="user-contacts__label label" for="user-email">адресок почты</label>
+        <input class="user-contacts__email" type="email" name="user-email" placeholder="E-mail, пожалуйста" id="user-email">
       </fieldset>
-      <fieldset class="user-form__app-edition">
-        <legend>С каким приложением путешествовали?</legend>
-        <input type="radio" name="app-edition" value="ios" id="ios" checked>
+      <fieldset class="app-edition">
+        <legend class="app-edition__title">С каким приложением путешествовали?</legend>
+        <input class="app-edition__radio radio" type="radio" name="app-edition" value="ios" id="ios" checked>
         <label for="ios">Pink для iOS</label>
-        <input type="radio" name="app-edition" value="android" id="android">
+        <input class="app-edition__radio radio" type="radio" name="app-edition" value="android" id="android">
         <label for="android">Pink на Android</label>
-        <input type="radio" name="app-edition" value="windows" id="windows">
+        <input class="app-edition__radio radio" type="radio" name="app-edition" value="windows" id="windows">
         <label for="windows">Windows Phone</label>
       </fieldset>
-      <fieldset class="user-form__user-emotions">
-        <legend>Опишите свои эмоции</legend>
-        <textarea class="user-form__user-comment" name="user-comment" id="user-comment" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <!-- я так подозреваю глобальные блоки (инпуты) оч полезны на средних и крупных проектах с обилием мест где от пользователя обратная связь идет,
+    тут же почти каждый инпут уникален - всю мощь не почувствовать =) -->
+      <fieldset class="user-emotions">
+        <legend class="user-emotions__title">Опишите свои эмоции</legend>
+        <textarea class="user-emotions__textarea textarea" name="user-comment" id="user-comment" cols="50" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
-      <input class="user-form__submit-btn btn" type="submit" name="name" value="Отправить Форму">
-      <small class="user-form__footnote"><span>* </span>&mdash; Обязательные поля</small>
+      <input class="user-form__btn--submit btn" type="submit" name="name" value="Отправить Форму">
+      <!-- чет кстати звездчек у полей нигде нет о_О -->
+      <p class="user-form__footnote"><span>* </span>&mdash; Обязательные поля</p>
     </form>
   </div>
   <div class="main-footer">
@@ -80,8 +81,8 @@
       <a href="#" class="social__item social__item--fb">Facebook</a>
       <a href="#" class="social__item social__item--ytb">Youtube</a>
     </div>
-    <div class="main-footer__copyright">Разработано
-      <a class="main-footer__link" href="https://htmlacademy.ru/">HTML Academy</a>
+    <div class="main-footer_copyright copyright">Разработано
+      <a class="copyright__link link" href="https://htmlacademy.ru/">HTML Academy</a>
     </div>
   </div>
   <!-- поп-апы -->
