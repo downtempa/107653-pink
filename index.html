@@ -6,29 +6,31 @@
   <title>HTML Academy: Пинк</title>
 </head>
 <!-- для каждой страницы будет свой уникальный класс на body? а-ля photo-page form-page -->
+
 <body class="page">
   <header class="main-header">
     <div class="logo">Pink</div>
-    <div class="main-nav">
-      <a href="#" class="main-nav__toggle"></a>
-      <ul class="main-nav__list main-nav__list--hidden">
+    <nav class="main-nav">
+        <!-- порядок атрибутов в таких тегах как a и input, класс должен идти первым? или есть атрибуты поважннее? (для лучшего восприятия чтоли) -->
+      <a href="#" class="main-nav__toggle">Меню</a>
+      <ul class="main-nav__list">
         <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Возможности</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Стоимость</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
   <div class="intro">
     <h2 class="intro__slogan">Взгляните на жизнь иначе!</h2>
-    <img src="http://placehold.it/150x100" alt="">
+    <!-- "Картинку под слоганом потом уберём" - картинка будет bg img? я думал она контентная  -->
+    <img class="intro__img" src="http://placehold.it/150x100" alt="">
     <div class="download">
       <a href="#" class="download__btn btn">Скачать приложение</a>
-      <div class="download__icons">
-        <!-- иконки ссылки на соответствующий сайт загрузки или просто картинка? -->
-        <div class="download__icon"><img src="http://placehold.it/150x100" alt="Apple"></div>
-        <div class="download__icon"><img src="http://placehold.it/150x100" alt="Android"></div>
-        <div class="download__icon"><img src="http://placehold.it/150x100" alt="Windows"></div>
+      <div class="os-icons">
+        <a href="#" class="os-icons__icon"><img class="os-icons__img" src="http://placehold.it/150x100" alt="Apple"></a>
+        <a href="#" class="os-icons__icon"><img class="os-icons__img" src="http://placehold.it/150x100" alt="Android"></a>
+        <a href="#" class="os-icons__icon"><img class="os-icons__img" src="http://placehold.it/150x100" alt="Windows"></a>
       </div>
       <div class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
     </div>
