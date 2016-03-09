@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<!-- для каждой страницы будет свой уникальный класс на body? а-ля photo-page form-page -->
 
-  </body>
+<body class="page">
+  <header class="main-header">
+    <div class="logo">Pink</div>
+    <nav class="main-nav">
+      <!-- порядок атрибутов в таких тегах как a и input, класс должен идти первым? или есть атрибуты поважннее? (для лучшего восприятия чтоли) -->
+      <a href="#" class="main-nav__toggle">Меню</a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Возможности</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Стоимость</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="intro">
+    <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+    <!-- "Картинку под слоганом потом уберём" - картинка будет bg img? я думал она контентная  -->
+    <img class="intro__img" src="http://placehold.it/150x100" alt="">
+    <div class="download">
+      <a href="#" class="download__btn btn">Скачать приложение</a>
+      <div class="os-icons">
+        <a href="#" class="os-icons__icon"><img class="os-icons__img" src="http://placehold.it/150x100" alt="Apple"></a>
+        <a href="#" class="os-icons__icon"><img class="os-icons__img" src="http://placehold.it/150x100" alt="Android"></a>
+        <a href="#" class="os-icons__icon"><img class="os-icons__img" src="http://placehold.it/150x100" alt="Windows"></a>
+      </div>
+      <div class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+    </div>
+  </div>
+  <div class="offer">
+    <h3 class="offer__title">Устали от серости мегаполиса?</h3>
+    <h3 class="offer__title">Нам есть, что вам предложить!</h3>
+  </div>
+  <div class="advantages">
+    <div class="advantages__item">
+      <h4 class="advantages__title">Поднимает настроение</h4>
+      <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+    </div>
+    <div class="advantages__item">
+      <h4 class="advantages__title">Меняет мир вокруг</h4>
+      <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+    </div>
+    <div class="advantages__item">
+      <h4 class="advantages__title">Заводит новых друзей</h4>
+      <p class="advantages__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+    </div>
+    <img src="http://placehold.it/150x100" alt="Всем привет!" />
+  </div>
+  <div class="reviews">
+    <div class="reviews__slider slider">
+      <input type="radio" class="slider__switcher" name="reviews" id="reviews-radio-1" checked>
+      <input type="radio" class="slider__switcher" name="reviews" id="reviews-radio-2">
+      <input type="radio" class="slider__switcher" name="reviews" id="reviews-radio-3">
+      <!-- слайды -->
+      <blockquote class="slider__slide slider__slide--1 post">
+        <cite class="post__author">Николай Петров</cite>
+        <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      </blockquote>
+      <blockquote class="slider__slide slider__slide--2 post">
+        <cite class="post__author">Петр Николаев</cite>
+        <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      </blockquote>
+      <blockquote class="slider__slide slider__slide--3 post">
+        <cite class="post__author">Иван Иванов</cite>
+        <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      </blockquote>
+      <div class="slider__nav">
+        <label class="slider__btn" for="reviews-radio-1">1</label>
+        <label class="slider__btn" for="reviews-radio-2">2</label>
+        <label class="slider__btn" for="reviews-radio-3">3</label>
+      </div>
+    </div>
+  </div>
+  <div class="price">
+    <div class="price__slider slider">
+      <input type="radio" class="slider__switcher" name="price" id="price-radio-1">
+      <input type="radio" class="slider__switcher" name="price" id="price-radio-2" checked>
+      <input type="radio" class="slider__switcher" name="price" id="price-radio-3">
+      <!-- интересно что будет с классами (блоками)которые не пригодятся на десктоп версии, например slider
+        то есть не понятно надо сразу описывать блоки,  а они потом вдруг изменятся в др. версиях -->
+      <div class="slider__wrapper">
+        <table class="purchases">
+          <tr>
+            <td colspan="2" class="purchases__kit">
+              <span class="purchase__title">Анлим</span>
+              <span class="purchase__cost">9,99 USD</span>
+            </td>
+            <td colspan="2" class="purchases__kit">
+              <span class="purchase__title">Стандарт</span>
+              <span class="purchase__cost">3,99 USD</span>
+            </td>
+            <td colspan="2" class="purchases__kit">
+              <span class="purchase__title">Анлим</span>
+              <span class="purchase__cost">9,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="purchase__feature">Розовый фильтр</td>
+            <td class="purchase__feature-access">+</td>
+            <td class="purchase__feature">Розовый фильтр</td>
+            <td class="purchase__feature-access">-</td>
+            <td class="purchase__feature">Розовый фильтр</td>
+            <td class="purchase__feature-access">-</td>
+          </tr>
+          <tr>
+            <td class="purchase__feature">Смайлики</td>
+            <td class="purchase__feature-access">+</td>
+            <td class="purchase__feature">Смайлики</td>
+            <td class="purchase__feature-access">+</td>
+            <td class="purchase__feature">Смайлики</td>
+            <td class="purchase__feature-access">-</td>
+          </tr>
+          <tr>
+            <td class="purchase__feature">Комментарии</td>
+            <td class="purchase__feature-access">+</td>
+            <td class="purchase__feature">Комментарии</td>
+            <td class="purchase__feature-access">+</td>
+            <td class="purchase__feature">Комментарии</td>
+            <td class="purchase__feature-access">+</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="slider__nav">
+      <label class="slider__btn" for="price-radio-1">1</label>
+      <label class="slider__btn" for="price-radio-2">2</label>
+      <label class="slider__btn" for="price-radio-3">3</label>
+    </div>
+  </div>
+  <div class="main-footer">
+    <div class="logo">Pink</div>
+    <div class="main-footer__social social">
+      <a href="#" class="social__item social__item--tw">Twitter</a>
+      <a href="#" class="social__item social__item--fb">Facebook</a>
+      <a href="#" class="social__item social__item--ytb">Youtube</a>
+    </div>
+    <div class="main-footer_copyright copyright">Разработано
+      <a class="copyright__link link" href="https://htmlacademy.ru/">HTML Academy</a>
+    </div>
+  </div>
+</body>
+
 </html>
