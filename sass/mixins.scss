@@ -1,0 +1,3 @@
+@mixin block-outline ($outline-color) {
+    outline: 2px solid $outline-color;
+}
