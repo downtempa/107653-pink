@@ -1,3 +1,17 @@
 .download {
     @include block-outline (purple);
+    margin-top: 392px;
+    min-height: 271px;
+    text-align: center;
+    @media ($tablet-widths) {
+    margin-top: 50px;
+    padding-right: 350px;
+    }
+    @media ($desktop-widths) {
+      padding-right: 700px;
+    }
 }
+
+// .download__wrapper {
+//     @include container;
+// }

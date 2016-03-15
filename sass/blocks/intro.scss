@@ -1,3 +1,19 @@
 .intro {
-    @include block-outline (pink);
+  @include block-outline (pink);
+  @media ($tablet-widths) {
+    min-height: 619px;
+    padding-top: 50px;
+  }
+}
+
+.intro__wrapper {
+     @include container;
+}
+.intro__title {
+  @media ($mobile-widths-only) {
+    display: none;
+  }
+  @media ($tablet-widths) {
+    display: block;
+  }
 }
