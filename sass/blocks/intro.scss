@@ -1,8 +1,10 @@
 .intro {
   @include block-outline (pink);
+  padding-top: 392px;
   @media ($tablet-widths) {
-    min-height: 619px;
-    padding-top: 50px;
+
+    padding-top: 160px;
+    padding-bottom: 215px;
   }
 }
 

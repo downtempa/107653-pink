@@ -1,3 +1,38 @@
-.adventages {
-    @include block-outline (red);
+.advantages {
+  @include block-outline (red);
+  text-align: center;
+  @media ($tablet-widths) {
+    padding: 28px 0;
+  }
+}
+.advantages__wrapper {
+  @include container;
+}
+.advantages__items {
+    padding-bottom: 344px;
+  @media ($tablet-widths) {
+      padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  @media ($desktop-widths) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+.advantages__item {
+@include block-outline (red);
+  padding: 10px;
+  width: 280px;
+  @media ($tablet-widths) {
+    text-align: left;
+    width: 310px;
+  }
+  @media ($desktop-widths) {
+      padding-top: 370px;
+    width: 222px;
+    text-align: center;
+  }
 }

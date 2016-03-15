@@ -1,3 +1,15 @@
 .offer {
     @include block-outline (grey);
+    padding: 30px 0;
+    min-height: 154px;
+    text-align: center;
+    @media ($tablet-widths) {
+      min-height: 216px;
+    }
+    @media ($desktop-widths) {
+      min-height: 266px;
+    }
+}
+.offer__wrapper {
+    @include container;
 }

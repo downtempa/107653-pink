@@ -1,0 +1,16 @@
+.effect {
+    @media ($mobile-widths-only) {
+      display: none;
+    }
+    @media ($tablet-widths) {
+      display: block;
+      padding-left: 300px;
+      padding-top: 65px;
+      padding-bottom: 65px;
+      text-align: left;
+    }
+    @media ($desktop-widths) {
+      min-height: 250px;
+      padding-left: 350px;
+    }
+}
