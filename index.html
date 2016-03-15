@@ -6,19 +6,21 @@
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
-
+<!-- для "удобства" классы для js спецом неправильно написаны - чтоб потестить можно было -->
 <body class="page">
-  <header class="main-header">
+  <header class="main-header main-header-mobile-menu_visible">
+      <div class="main-header__wrapper">
     <div class="main-header__logo logo">Pink</div>
     <nav class="main-nav">
       <a class="main-nav__toggle" href="#">Меню</a>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list-visible">
         <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Возможности</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Стоимость</a></li>
       </ul>
     </nav>
+    </div>
   </header>
   <div class="intro">
     <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
@@ -142,6 +144,7 @@
       <a class="copyright__link link" href="https://htmlacademy.ru/">HTML Academy</a>
     </div>
   </div>
+
 </body>
 
 </html>

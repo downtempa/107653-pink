@@ -1,3 +1,10 @@
 .logo {
     @include block-outline (green);
+    width: 75px;
+    height: 23px;
+    background: red;
+    @media ($tablet-widths) {
+      width: 147px;
+      height: 40px;
+    }
 }

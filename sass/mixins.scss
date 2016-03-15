@@ -1,3 +1,21 @@
 @mixin block-outline ($outline-color) {
-    outline: 2px solid $outline-color;
+  outline: 2px solid $outline-color;
+}
+@mixin container {
+  width: 280px;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    width: 620px;
+  }
+  @media ($desktop-widths) {
+    width: 940px;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

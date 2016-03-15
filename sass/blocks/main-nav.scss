@@ -1,3 +1,50 @@
 .main-nav {
-    @include block-outline (pink);
+  @include block-outline (pink);
+  @media ($desktop-widths) {
+    float: right;
+    width: 80%;
+  }
+}
+.main-nav__toggle {
+  float: right;
+  @media ($desktop-widths) {
+    display: none;
+  }
+}
+.main-nav__list {
+  @include block-outline (pink);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 66px;
+  left: 50%;
+  margin-left: -160px;
+  width: 320px;
+  min-height: 325px;
+  background: #283645;
+  @media ($tablet-widths) {
+    width: 700px;
+    margin-left: -350px;
+  }
+  @media ($desktop-widths) {
+    display: block;
+    position: static;
+    width: 100%;
+    min-height: auto;
+    margin: 0;
+    background: none;
+  }
+}
+
+.main-nav__list--visible {
+    display: block;
+}
+.main-nav__item {
+  text-align: center;
+  @media ($desktop-widths) {
+    display: inline-block;
+    margin-right: 10%;
+  }
 }
