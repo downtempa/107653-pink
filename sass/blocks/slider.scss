@@ -1,3 +1,29 @@
 .slider {
     @include block-outline (blue);
 }
+
+.slider__switcher {
+    display: none;
+}
+
+.slider__slide {
+    display: none;
+}
+
+.slider__slide--1 {
+    display: block;
+}
+
+.slider__nav {
+    display: none;
+}
+
+.slider__wrapper {
+    overflow: hidden;
+    @media ($tablet-widths) {
+      overflow: auto;
+    }
+    // @media ($desktop-widths) {
+    //   @include container;
+    // }
+}
