@@ -1,3 +1,16 @@
 .main-footer {
     @include block-outline (blue);
+    @include container;
+    min-height: 128px;
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+
+    @media ($mobile-widths-only) {
+        display: none;
+    }
+    @media ($desktop-widths) {
+        min-height: 200px;
+    }
+
 }

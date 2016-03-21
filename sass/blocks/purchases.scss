@@ -4,11 +4,11 @@
   transform: translateX(-243px);
   @media ($tablet-widths) {
       width: 620px;
-      transform: translateX(40px);
+      transform: translateX(0px);
   }
   @media ($desktop-widths){
       width: 940px;
-      transform: translateX(0px);
+      
   }
 }
 

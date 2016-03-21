@@ -1,7 +1,10 @@
 .price {
     @include block-outline (red);
+    @media ($tablet-widths) {
+        @include container;
+    }
     @media ($desktop-widths) {
-      @include container;
+
       padding: 120px 0;
     }
 }

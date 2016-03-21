@@ -29,7 +29,9 @@
     margin-left: -350px;
   }
   @media ($desktop-widths) {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: static;
     width: 100%;
     min-height: auto;
@@ -39,7 +41,9 @@
 }
 
 .main-nav__list--visible {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .main-nav__item {
   text-align: center;
