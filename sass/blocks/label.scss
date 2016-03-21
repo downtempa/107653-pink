@@ -1,3 +1,19 @@
 .label {
     @include block-outline (grey);
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.label--filter {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    @media ($tablet-widths) {
+        margin-right: 30px;
+    }
+    @media ($desktop-widths) {
+        margin-right: 75px;
+    }
+
 }

@@ -1,16 +1,23 @@
 .main-footer {
-    @include block-outline (blue);
-    @include container;
+  @include block-outline (blue);
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  min-height: 230px;
+  @media ($tablet-widths) {
     min-height: 128px;
-    display: flex;
-    justify-content: space-between;;
-    align-items: center;
-
-    @media ($mobile-widths-only) {
-        display: none;
-    }
-    @media ($desktop-widths) {
-        min-height: 200px;
-    }
-
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media ($desktop-widths) {
+    min-height: 200px;
+  }
+}
+.main-footer--hidden {
+  @media ($mobile-widths-only) {
+    display: none;
+  }
 }

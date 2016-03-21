@@ -19,3 +19,18 @@
     display: block;
   }
 }
+
+.intro--inner-page {
+    padding: 50px 0;
+    text-align: center;
+    @media ($tablet-widths) {
+        padding: 146px 0;
+    }
+    @media ($desktop-widths) {
+        padding: 119px 0;
+    }
+}
+
+.intro__title--inner-page {
+    display: block;
+}
