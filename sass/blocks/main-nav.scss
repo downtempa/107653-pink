@@ -39,11 +39,10 @@
     background: none;
   }
 }
-
 .main-nav__list--visible {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main-nav__item {
   text-align: center;

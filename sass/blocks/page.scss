@@ -1,17 +1,20 @@
 .page {
-    @include block-outline (orange);
-    background: #ccc;
-    font-family: "Open Sans";
-    font-size: 14px;
-    color: #283645;
-    font-weight: 400;
-    position: relative;
-    max-width: 320px;
-    margin: 0 auto;
-    @media ($tablet-widths) {
-      max-width: 700px;
-    }
-    @media ($desktop-widths) {
-      max-width: 1200px;
-    }
+  @include block-outline (orange);
+  background: #ccc;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #283645;
+  font-weight: 400;
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    max-width: 700px;
+  }
+  @media ($desktop-widths) {
+    max-width: 1200px;
+  }
+}
+.page--form {
+  position: relative;
 }

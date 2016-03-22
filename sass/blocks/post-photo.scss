@@ -1,16 +1,14 @@
 .post-photo {
-    @include block-outline (pink);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+  @include block-outline (pink);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-
 .post-photo--panorama {
-    margin: 0;
-    width: 100%;
+  margin: 0;
+  width: 100%;
 }
-
 .post-photo__wrapper {
-    @include container;
+  @include container;
 }

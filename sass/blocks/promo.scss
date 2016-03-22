@@ -1,3 +1,11 @@
 .promo {
-    @include block-outline (orange);
+  @include block-outline (orange);
+  @media ($tablet-widths) {
+    @include container;
+  }
+}
+.promo__description {
+  @include container;
+  text-align: center;
+  padding: 20px 0;
 }

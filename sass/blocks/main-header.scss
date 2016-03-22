@@ -1,6 +1,5 @@
 .main-header {
   @include block-outline (purple);
-
   background: rgba(0, 0, 0, 0.3);
   min-height: 66px;
   @media ($tablet-widths) {
@@ -10,12 +9,11 @@
 // зачем-то сделали увеличение хэдэра на мобилке при открытии меню, а на планшете не скачет, может вообще не трогать высоту?
 // стили для открытого меню
 .main-header--mobile-menu_visible {
-    background: #283645;
-    min-height: 70px;
+  background: #283645;
+  min-height: 70px;
 }
-
 .main-header--tablet-menu_visible {
-    background: #283645;
+  background: #283645;
 }
 .main-header__wrapper {
   @include container;

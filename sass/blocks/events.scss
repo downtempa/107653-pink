@@ -1,3 +1,15 @@
 .events {
-    @include block-outline (pink);
+  @include block-outline (pink);
+}
+.events__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media ($mobile-widths-only) {
+    @include container;
+  }
+  @media ($tablet-widths) {
+    padding: 60px 0;
+  }
 }

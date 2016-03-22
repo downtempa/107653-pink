@@ -1,3 +1,16 @@
 .checkbox {
-    @include block-outline (green);
+  @include block-outline (green);
+}
+.checkbox--events {
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media ($desktop-widths) {
+    margin-right: 30px;
+  }
+}
+.checkbox--app-edition {
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
