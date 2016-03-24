@@ -1,33 +1,32 @@
 .intro {
-  @include block-outline (pink);
   padding-top: 392px;
   @media ($tablet-widths) {
     padding-top: 160px;
     padding-bottom: 215px;
   }
-}
-.intro__wrapper {
-  @include container;
-}
-.intro__title {
-  @media ($mobile-widths-only) {
-    display: none;
+  &--inner-page {
+    @include container;
+    padding: 50px 0;
+    text-align: center;
+    @media ($tablet-widths) {
+      padding: 146px 0;
+    }
+    @media ($desktop-widths) {
+      padding: 119px 0;
+    }
   }
-  @media ($tablet-widths) {
-    display: block;
+  &__wrapper {
+    @include container;
   }
-}
-.intro--inner-page {
-  @include container;
-  padding: 50px 0;
-  text-align: center;
-  @media ($tablet-widths) {
-    padding: 146px 0;
+  &__title {
+    @media ($mobile-widths-only) {
+      display: none;
+    }
+    @media ($tablet-widths) {
+      display: block;
+    }
+    &--inner-page {
+      display: block;
+    }
   }
-  @media ($desktop-widths) {
-    padding: 119px 0;
-  }
-}
-.intro__title--inner-page {
-  display: block;
 }
