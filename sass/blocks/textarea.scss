@@ -1,3 +1,8 @@
 .textarea {
-    @include block-outline (pink);
+  @include block-outline (pink);
+  margin: 0;
+  padding: 0;
+}
+.text-area--user-emotions {
+  width: 100%;
 }

@@ -1,3 +1,17 @@
 .input {
-    @include block-outline (purple);
+  @include block-outline (purple);
+  margin: 0;
+  padding: 0;
+}
+.input--full-name {
+  flex-grow: 1;
+}
+.input--user-contacts {
+  @media ($tablet-widths) {
+    width: 555px;
+    margin: 20px auto;
+  }
+  @media ($desktop-widths) {
+    width: 370px;
+  }
 }

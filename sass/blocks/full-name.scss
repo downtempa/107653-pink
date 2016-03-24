@@ -1,3 +1,29 @@
 .full-name {
-    @include block-outline (green);
+  @include block-outline (green);
+  @media ($mobile-widths-only) {
+    @include container;
+  }
+  @media ($tablet-widths) {
+    order: -2;
+  }
+  @media ($desktop-widths) {
+    width: 435px;
+  }
+}
+.full-name__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  @media ($tablet-widths) {
+    display: block;
+  }
+}
+.full-name__input-container {
+  display: flex;
+  flex-direction: column;
+  @media ($tablet-widths) {
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+  }
 }

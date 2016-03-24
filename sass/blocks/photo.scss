@@ -1,3 +1,29 @@
 .photo {
-    @include block-outline (blue);
+  @include block-outline (blue);
+}
+.photo__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media ($tablet-widths) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.photo__item {
+  margin-bottom: 20px;
+  @media ($tablet-widths) {
+    width: 300px;
+  }
+  @media ($desktop-widths) {
+    margin-bottom: 55px;
+  }
+}
+.photo__wrapper {
+  @include container;
+}
+.photo__slogan {
+  @include container;
+  text-align: center;
 }

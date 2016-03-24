@@ -1,12 +1,17 @@
 @import "variables";
 @import "mixins";
 
+@import "global/normalize";
+@import "global/fonts";
+
+@import "blocks/range";
 @import "blocks/advantages";
 @import "blocks/app-edition";
 @import "blocks/btn";
 @import "blocks/checkbox";
 @import "blocks/copyright";
 @import "blocks/download";
+@import "blocks/effect";
 @import "blocks/events";
 @import "blocks/popup";
 @import "blocks/filter";
@@ -40,4 +45,6 @@
 @import "blocks/upload";
 @import "blocks/user-contacts";
 @import "blocks/user-emotions";
+@import "blocks/map";
 @import "blocks/user-form";
+@import "blocks/contacts";

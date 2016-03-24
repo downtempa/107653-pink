@@ -1,3 +1,6 @@
 .reviews {
-    @include block-outline (green);
+  @include block-outline (green);
+}
+.reviews__wrapper {
+  @include container;
 }

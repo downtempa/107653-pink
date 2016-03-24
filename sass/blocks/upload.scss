@@ -1,3 +1,4 @@
 .upload {
-    @include block-outline (grey);
+  @include block-outline (grey);
+  padding: 50px 0;
 }

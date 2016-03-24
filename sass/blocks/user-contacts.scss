@@ -1,3 +1,35 @@
 .user-contacts {
-    @include block-outline (red);
+  @include block-outline (red);
+  padding: 50px 0;
+  @media ($mobile-widths-only) {
+    @include container;
+  }
+  @media ($tablet-widths) {
+    order: -1;
+  }
+  @media ($desktop-widths) {
+    width: 100%;
+    padding: 0;
+  }
+}
+.user-contacts__wrapper {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  @media ($desktop-widths) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.user-contacts__input-container {
+  display: flex;
+  flex-direction: column;
+  @media ($tablet-widths) {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
 }

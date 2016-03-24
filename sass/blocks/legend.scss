@@ -1,3 +1,4 @@
 .legend {
-    @include block-outline (red);
+  @include block-outline (red);
+  text-align: center;
 }

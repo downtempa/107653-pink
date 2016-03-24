@@ -6,74 +6,101 @@
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
+<!-- для "удобства" классы для js спецом неправильно написаны - чтоб потестить можно было (--модификатор) -->
 
 <body class="page">
-  <header class="main-header">
-    <div class="main-header__logo logo">Pink</div>
-    <nav class="main-nav">
-      <a class="main-nav__toggle" href="#">Меню</a>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Возможности</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Стоимость</a></li>
-      </ul>
-    </nav>
+  <header class="main-header main-header-mobile-menu_visible">
+    <div class="main-header__wrapper">
+      <div class="main-header__logo logo">Pink</div>
+      <nav class="main-nav">
+        <a class="main-nav__toggle" href="#">Меню</a>
+        <ul class="main-nav__list main-nav__list-visible">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Возможности</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Стоимость</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <div class="intro">
-    <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
-    <img class="intro__img img" src="http://placehold.it/150x100" alt="">
-    <div class="download">
-      <a class="download__btn btn" href="#">Скачать приложение</a>
-      <div class="os-icons">
-        <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="http://placehold.it/150x100" alt="Apple"></a>
-        <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="http://placehold.it/150x100" alt="Android"></a>
-        <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="http://placehold.it/150x100" alt="Windows"></a>
+    <div class="intro__wrapper">
+      <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+      <div class="download">
+        <a class="download__btn btn" href="#">Скачать приложение</a>
+        <div class="os-icons">
+          <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="http://placehold.it/70x70" alt="Apple"></a>
+          <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="http://placehold.it/70x70" alt="Android"></a>
+          <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="http://placehold.it/70x70" alt="Windows"></a>
+        </div>
+        <div class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
       </div>
-      <div class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
     </div>
   </div>
   <div class="offer">
-    <h3 class="offer__title">Устали от серости мегаполиса?</h3>
-    <h3 class="offer__title">Нам есть, что вам предложить!</h3>
+    <div class="offer__wrapper">
+      <h3 class="offer__title">Устали от серости мегаполиса?</h3>
+      <h3 class="offer__title">Нам есть, что вам предложить!</h3>
+    </div>
   </div>
   <div class="advantages">
-    <div class="advantages__item">
-      <h4 class="advantages__title">Поднимает настроение</h4>
-      <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+    <div class="advantages__wrapper">
+      <div class="advantages__items">
+        <div class="advantages__item">
+          <h4 class="advantages__title">Поднимает настроение</h4>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        </div>
+        <div class="advantages__item">
+          <h4 class="advantages__title">Меняет мир вокруг</h4>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="advantages__item">
+          <h4 class="advantages__title">Заводит новых друзей</h4>
+          <p class="advantages__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </div>
+      <div class="effect">
+        <h4 class="effect__title">Эффект на 24 часа!</h4>
+        <p class="effect__content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="effect__link link" href="#">Узнать больше об исследовании</a>
+      </div>
     </div>
-    <div class="advantages__item">
-      <h4 class="advantages__title">Меняет мир вокруг</h4>
-      <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-    </div>
-    <div class="advantages__item">
-      <h4 class="advantages__title">Заводит новых друзей</h4>
-      <p class="advantages__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-    </div>
-    <img class="offer_img img" src="http://placehold.it/150x100" alt="Всем привет!" />
   </div>
   <div class="reviews">
-    <div class="reviews__posts slider">
-      <input class="slider__switcher radio radio--ctrl" name="reviews" id="reviews-radio-1" type="radio" checked>
-      <input class="slider__switcher radio radio--ctrl" name="reviews" id="reviews-radio-2" type="radio">
-      <input class="slider__switcher radio radio--ctrl" name="reviews" id="reviews-radio-3" type="radio">
-      <!-- слайды -->
-      <blockquote class="post slider__slide slider__slide--1">
-        <cite class="post__author">Николай Петров</cite>
-        <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-      </blockquote>
-      <blockquote class="post slider__slide slider__slide--2">
-        <cite class="post__author">Петр Николаев</cite>
-        <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-      </blockquote>
-      <blockquote class="post slider__slide slider__slide--3">
-        <cite class="post__author">Иван Иванов</cite>
-        <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-      </blockquote>
-      <div class="slider__nav">
-        <label class="slider__btn label label--pseudo" for="reviews-radio-1">1</label>
-        <label class="slider__btn label label--pseudo" for="reviews-radio-2">2</label>
-        <label class="slider__btn label label--pseudo" for="reviews-radio-3">3</label>
+    <div class="reviews__wrapper">
+      <div class="reviews__posts slider">
+        <input class="slider__switcher radio radio--ctrl" name="reviews" id="reviews-radio-1" type="radio" checked>
+        <input class="slider__switcher radio radio--ctrl" name="reviews" id="reviews-radio-2" type="radio">
+        <input class="slider__switcher radio radio--ctrl" name="reviews" id="reviews-radio-3" type="radio">
+        <!-- слайды -->
+        <blockquote class="post slider__slide slider__slide--1">
+          <div class="post__wrapper">
+            <cite class="post__author">Николай Петров
+                <br><span>25 лет, водитель трамвая</span></cite>
+            <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+          </div>
+        </blockquote>
+        <blockquote class="post slider__slide slider__slide--2">
+          <div class="post__wrapper">
+            <cite class="post__author">Петр Николаев
+                <br><span>30 лет, пикап-мастер</span></cite>
+            <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+          </div>
+        </blockquote>
+        <blockquote class="post slider__slide slider__slide--3">
+          <div class="post__wrapper">
+            <cite class="post__author">Иван Иванов
+                <br><span>19 лет, дворник</span></cite>
+            <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+          </div>
+        </blockquote>
+        <div class="slider__nav">
+          <label class="slider__btn label label--pseudo" for="reviews-radio-1">1</label>
+          <label class="slider__btn label label--pseudo" for="reviews-radio-2">2</label>
+          <label class="slider__btn label label--pseudo" for="reviews-radio-3">3</label>
+          <button class="slider__arrow slider__arrow--left"></button>
+          <button class="slider__arrow slider__arrow--right"></button>
+        </div>
       </div>
     </div>
   </div>
@@ -85,42 +112,46 @@
       <div class="slider__wrapper">
         <table class="purchases">
           <tr>
-            <td colspan="2" class="purchases__kit">
+            <td class="purchases__empty-cell"></td>
+            <td class="purchases__kit">
               <span class="purchases__title">Анлим</span>
               <span class="purchases__cost">9,99 USD</span>
             </td>
-            <td colspan="2" class="purchases__kit">
+            <td class="purchases__kit">
               <span class="purchases__title">Стандарт</span>
               <span class="purchases__cost">3,99 USD</span>
             </td>
-            <td colspan="2" class="purchases__kit">
+            <td class="purchases__kit">
               <span class="purchases__title">Анлим</span>
               <span class="purchases__cost">9,99 USD</span>
             </td>
           </tr>
           <tr>
-            <td class="purchases__feature">Розовый фильтр</td>
-            <td class="purchases__feature-access">+</td>
-            <td class="purchases__feature">Розовый фильтр</td>
-            <td class="purchases__feature-access">-</td>
-            <td class="purchases__feature">Розовый фильтр</td>
-            <td class="purchases__feature-access">-</td>
+            <td class="purchases__feature purchases__feature--mobile_hidden">Розовый фильтр</td>
+            <td class="purchases__feature"><span>Розовый фильтр</span></td>
+            <!-- <td class="purchases__feature-access">+</td> -->
+            <td class="purchases__feature"><span>Розовый фильтр</span></td>
+            <!-- <td class="purchases__feature-access">-</td> -->
+            <td class="purchases__feature"><span>Розовый фильтр</span></td>
+            <!-- <td class="purchases__feature-access">-</td> -->
           </tr>
           <tr>
-            <td class="purchases__feature">Смайлики</td>
-            <td class="purchases__feature-access">+</td>
-            <td class="purchases__feature">Смайлики</td>
-            <td class="purchases__feature-access">+</td>
-            <td class="purchases__feature">Смайлики</td>
-            <td class="purchases__feature-access">-</td>
+            <td class="purchases__feature purchases__feature--mobile_hidden">Смайлики</td>
+            <td class="purchases__feature"><span>Смайлики</span></td>
+            <!-- <td class="purchases__feature-access">+</td> -->
+            <td class="purchases__feature"><span>Смайлики</span></td>
+            <!-- <td class="purchases__feature-access">+</td> -->
+            <td class="purchases__feature"><span>Смайлики</span></td>
+            <!-- <td class="purchases__feature-access">-</td> -->
           </tr>
           <tr>
-            <td class="purchases__feature">Комментарии</td>
-            <td class="purchases__feature-access">+</td>
-            <td class="purchases__feature">Комментарии</td>
-            <td class="purchases__feature-access">+</td>
-            <td class="purchases__feature">Комментарии</td>
-            <td class="purchases__feature-access">+</td>
+            <td class="purchases__feature purchases__feature--mobile_hidden">Комментарии</td>
+            <td class="purchases__feature"><span>Комментарии</span></td>
+            <!-- <td class="purchases__feature-access">+</td> -->
+            <td class="purchases__feature"><span>Комментарии</span></td>
+            <!-- <td class="purchases__feature-access">+</td> -->
+            <td class="purchases__feature"><span>Комментарии</span></td>
+            <!-- <td class="purchases__feature-access">+</td> -->
           </tr>
         </table>
       </div>
@@ -131,7 +162,16 @@
       <label class="slider__btn label label--pseudo" for="price-radio-3">3</label>
     </div>
   </div>
-  <div class="main-footer">
+  <div class="contacts">
+    <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
+    <div class="contacts__item">Звоните:<span>+7 (812) 555-66-66</span></div>
+    <div class="contacts__item">Пишите:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
+    <div class="contacts__item">Приезжайте в гости:<span>ул. Большая Конюшенная, 19/8</span></div>
+  </div>
+  <div class="map">
+    <img class="img" src="http://placehold.it/1200x500" alt="карта">
+  </div>
+  <footer class="main-footer main-footer--hidden">
     <div class="main-footer__logo logo">Pink</div>
     <div class="main-footer__social social">
       <a class="social__item social__item--tw" href="#">Twitter</a>
@@ -141,7 +181,8 @@
     <div class="main-footer__copyright copyright">Разработано
       <a class="copyright__link link" href="https://htmlacademy.ru/">HTML Academy</a>
     </div>
-  </div>
+  </footer>
+
 </body>
 
 </html>

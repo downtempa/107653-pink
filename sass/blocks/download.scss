@@ -1,3 +1,14 @@
 .download {
-    @include block-outline (purple);
+  @include block-outline (purple);
+  padding-top: 30px;
+  min-height: 240px;
+  text-align: center;
+  @media ($tablet-widths) {
+    margin-top: 50px;
+    padding-right: 350px;
+  }
+  @media ($desktop-widths) {
+    padding-right: 700px;
+  }
 }
+.download__description {}
