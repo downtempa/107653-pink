@@ -5,13 +5,13 @@
   color: #283645;
   font-weight: 400;
   position: relative;
-  max-width: 320px;
+  // max-width: 320px;
   margin: 0 auto;
-  @media ($tablet-widths) {
-    max-width: 700px;
-  }
+  // @media ($tablet-widths) {
+  //   max-width: 700px;
+  // }
   @media ($desktop-widths) {
-    max-width: 1200px;
+    background: url(../../img/bg-desktop.jpg) no-repeat center top;
   }
 }
 .page--form {

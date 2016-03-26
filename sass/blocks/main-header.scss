@@ -18,5 +18,8 @@
   &__logo {
     float: left;
     margin-top: 21px;
+    @media ($tablet-widths) {
+        margin-top: 27px;
+    }
   }
 }
