@@ -1,14 +1,21 @@
 .download {
-  @include block-outline (purple);
-  padding-top: 30px;
+  padding-top: 28px;
   min-height: 240px;
   text-align: center;
+
   @media ($tablet-widths) {
-    margin-top: 50px;
-    padding-right: 350px;
+    padding-top: 30px;
+    padding-right: 325px;
   }
   @media ($desktop-widths) {
-    padding-right: 700px;
+    padding-right: 640px;
+    padding-top: 58px;
+  }
+  &__description {
+      @include main-font(14px, 24px, 300);
+      color: #ffffff;
+      @media ($tablet-widths) {
+          font-size: 18px;
+      }
   }
 }
-.download__description {}

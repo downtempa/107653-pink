@@ -1,5 +1,5 @@
 .page {
-  background: url(../../img/bg-back-mobile.jpg) no-repeat center top;
+  background: url("../../img/bg-back-mobile.jpg") no-repeat center top;
   font-family: "Open Sans";
   font-size: 14px;
   color: #283645;
@@ -7,11 +7,11 @@
   position: relative;
   // max-width: 320px;
   margin: 0 auto;
-  // @media ($tablet-widths) {
-  //   max-width: 700px;
-  // }
+  @media ($tablet-widths) {
+    background: url("../../img/bg-back-tablet.jpg") no-repeat center top;
+  }
   @media ($desktop-widths) {
-    background: url(../../img/bg-desktop.jpg) no-repeat center top;
+    background: url("../../img/bg-back-desktop.jpg") no-repeat center top;
   }
 }
 .page--form {

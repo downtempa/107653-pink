@@ -3,6 +3,10 @@
   min-height: 70px;
   @media ($tablet-widths) {
     min-height: 110px;
+    margin-bottom: 72px;
+  }
+  @media ($desktop-widths) {
+      margin-bottom: 40px;
   }
   &--mobile-menu_visible {
     background: #283645;

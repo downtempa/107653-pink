@@ -1,3 +1,17 @@
 .btn {
-  @include block-outline (yellow);
+  display: block;
+  text-decoration: none;
+  &--download-app {
+    @include main-font(18px, 18px, 900);
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    padding: 15px;
+    border-radius: 30px;
+    @media ($tablet-widths) {
+      width: 260px;
+    }
+    @media ($desktop-widths) {
+        font-size: 21px;
+    }
+  }
 }
