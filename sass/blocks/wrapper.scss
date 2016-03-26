@@ -1,0 +1,7 @@
+.wrapper {
+    @include container;
+
+    &--clearfix {
+        @include clearfix;
+    }
+}

@@ -1,3 +1,10 @@
 .link {
-  @include block-outline (yellow);
+  &--effect {
+    @include main-font(14px, 24px, 400);
+    color: #d22856;
+    @media ($tablet-widths) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
 }
