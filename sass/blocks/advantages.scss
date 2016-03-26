@@ -1,39 +1,86 @@
 .advantages {
-  @include block-outline (red);
+  background-color: #f2f2f2;
   text-align: center;
   @media ($tablet-widths) {
-    padding: 28px 0;
   }
-}
-.advantages__wrapper {
-  @include container;
-}
-.advantages__items {
-  padding-bottom: 344px;
-  @media ($tablet-widths) {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+  &__wrapper {
+    @include container;
   }
-  @media ($desktop-widths) {
-    flex-direction: row;
-    align-items: flex-end;
+  &__items {
+    @media ($tablet-widths) {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 525px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: space-between;
+    }
+    @media ($desktop-widths) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
   }
-}
-.advantages__item {
-  @include block-outline (red);
-  padding: 10px;
-  width: 280px;
-  @media ($tablet-widths) {
-    text-align: left;
-    width: 310px;
+  &__item {
+    padding: 4px 0;
+    width: 280px;
+    @media ($tablet-widths) {
+      text-align: left;
+      width: 310px;
+    }
+    @media ($desktop-widths) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    //   padding-top: 370px;
+      width: 240px;
+    //   min-height: 150px;
+      text-align: center;
+    }
   }
-  @media ($desktop-widths) {
-    padding-top: 370px;
-    width: 222px;
-    min-height: 150px;
-    text-align: center;
+  &__item:first-child {
+      @media ($tablet-widths) {
+        margin-top: 59px;
+      }
+      @media ($desktop-widths) {
+          margin-top: 0;
+      }
+  }
+  &__img {
+      display: none;
+      @media ($desktop-widths) {
+          display: block;
+          margin-bottom: 19px;
+      }
+  }
+  &__title {
+    margin-bottom: 12px;
+    @include main-font(18px, 24px, 900) color: #000000;
+    @media ($desktop-widths) {
+        font-size: 30px;
+    }
+  }
+  &__description {
+    margin: 0;
+    @include main-font(14px, 24px, 400) color: #283645;
+    @media ($desktop-widths) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+  }
+  &__main-img {
+    margin-top: 36px;
+    @media ($tablet-widths) {
+      order: -1;
+      width: 267px;
+      background: blue;
+      height: 478px;
+      margin-top: 17px;
+    }
+    @media ($desktop-widths) {
+        display: none;
+    }
   }
 }
