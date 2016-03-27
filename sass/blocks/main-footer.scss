@@ -1,24 +1,25 @@
 .main-footer {
-  @include block-outline (blue);
   @include container;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 0;
   min-height: 230px;
   @media ($tablet-widths) {
-    padding: 20px 0;
-    min-height: 128px;
+    // padding: 20px 0;
+    min-height: 125px;
     flex-direction: row;
     justify-content: space-between;
   }
   @media ($desktop-widths) {
-    min-height: 200px;
+    min-height: 191px;
   }
-}
-.main-footer--hidden {
-  @media ($mobile-widths-only) {
-    display: none;
+  &--hidden {
+    @media ($mobile-widths-only) {
+      display: none;
+    }
+  }
+  &__logo {
+      margin-bottom: 17px;
   }
 }
