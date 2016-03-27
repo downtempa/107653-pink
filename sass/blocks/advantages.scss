@@ -3,7 +3,7 @@
   background-color: #f2f2f2;
   text-align: center;
   @media ($desktop-widths) {
-      min-height: 580px; 
+      min-height: 580px;
   }
   &__wrapper {
     @include container;
@@ -75,6 +75,7 @@
   }
   &__main-img {
     margin-top: 36px;
+    height: 284px;
     @media ($tablet-widths) {
       order: -1;
       width: 267px;

@@ -1,51 +1,65 @@
 .label {
-  @include block-outline (grey);
   display: block;
   // margin: 0;
   // padding: 0;
-}
-.label--filter {
-  width: 25px;
-  height: 25px;
-  margin-top: 20px;
-  @media ($tablet-widths) {
-    margin-right: 30px;
+  &--filter {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    @media ($tablet-widths) {
+      margin-right: 30px;
+    }
+    @media ($desktop-widths) {
+      margin-right: 75px;
+    }
   }
-  @media ($desktop-widths) {
-    margin-right: 75px;
+  &--full-name {
+    margin: 20px 0;
+    @media ($tablet-widths) {
+      margin-right: 20px;
+    }
   }
-}
-.label--full-name {
-  margin: 20px 0;
-  @media ($tablet-widths) {
-    margin-right: 20px;
+  &--events {
+    width: 210px;
+    margin: 20px 0;
+    @media ($tablet-widths) {
+      width: 525px;
+    }
+    @media ($desktop-widths) {
+      width: 260px;
+    }
   }
-}
-.label--events {
-  width: 210px;
-  margin: 20px 0;
-  @media ($tablet-widths) {
-    width: 525px;
+  &--app-edition {
+    width: 210px;
+    margin: 20px 0;
+    @media ($tablet-widths) {
+      width: 525px;
+    }
+    @media ($desktop-widths) {
+      width: 350px;
+    }
   }
-  @media ($desktop-widths) {
-    width: 260px;
+  &--user-contacts {
+    @media ($tablet-widths) {
+      margin-left: 32px;
+    }
+    @media ($desktop-widths) {
+      margin-left: 20px;
+    }
   }
-}
-.label--app-edition {
-  width: 210px;
-  margin: 20px 0;
-  @media ($tablet-widths) {
-    width: 525px;
+  &--pseudo {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
+    background-color: #bec2c7;
+    border: 3px solid #ffffff;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
   }
-  @media ($desktop-widths) {
-    width: 350px;
-  }
-}
-.label--user-contacts {
-  @media ($tablet-widths) {
-    margin-left: 32px;
-  }
-  @media ($desktop-widths) {
-    margin-left: 20px;
+  &--pseudo-active {
+      border: 3px solid #283645;
+      background: #ffffff;
   }
 }

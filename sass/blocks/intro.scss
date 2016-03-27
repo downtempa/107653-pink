@@ -2,7 +2,7 @@
   @media ($tablet-widths) {
     margin-top: 0;
     padding-top: 20px;
-    padding-bottom: 106px;
+    padding-bottom: 109px;
     background: none;
     background: url("../../img/bg-back-tablet-iphone-5.png") no-repeat center bottom;
   }
@@ -11,7 +11,7 @@
   }
   @media ($desktop-widths) {
     padding-top: 70px;
-    padding-bottom: 118px;
+    padding-bottom: 121px;
   }
   &--inner-page {
     @include container;
@@ -28,7 +28,7 @@
     @media ($mobile-widths-only) {
       width: 320px;
       margin: 0 auto;
-      height: 392px;
+      height: 391px;
       background: url("../../img/bg-back-mobile-iphone-5.png") no-repeat -7% 135%;
     }
   }
