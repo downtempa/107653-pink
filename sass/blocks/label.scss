@@ -58,8 +58,13 @@
     border-radius: 50%;
     cursor: pointer;
   }
+  &--table {
+      border: 3px solid #f2f2f2;
+  }
   &--pseudo-active {
       border: 3px solid #283645;
       background: #ffffff;
   }
+
+
 }

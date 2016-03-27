@@ -9,8 +9,9 @@
       display: block;
     }
   }
+  // блок управления слайдерами
   &__nav {
-    position: absolute;
+    position: relative;
 
     height: 10px;
     width: 80px;
@@ -18,24 +19,34 @@
     text-align: center;
 
     &--reviews{
-        bottom: 113px;
+        bottom: 13px;
         left: 50%;
         margin-left: -40px;
         z-index: 5;
     }
-    @media ($tablet-widths) {
-        bottom: 94px;
+    &--table {
+        top: 40px;
+        left: 50%;
+        margin-left: -40px;
+        z-index: 5;
+        @media ($tablet-widths) {
+            display: none;
+        }
     }
+    // @media ($tablet-widths) {
+    //     bottom: 94px;
+    // }
   }
   &__wrapper {
-    overflow: hidden;
+    // overflow: hidden;
     @media ($tablet-widths) {
-      overflow: auto;
+    //   overflow: auto;
     }
     // @media ($desktop-widths) {
     //   @include container;
     // }
   }
+  // стрелки управоения отзывами
   &__arrow {
       display: none;
       @media ($desktop-widths) {

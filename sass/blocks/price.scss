@@ -1,9 +1,21 @@
 .price {
-  @include block-outline (red);
+  background: #f2f2f2;
+  padding-top: 70px;
+  @media ($mobile-widths-only) {
+    min-height: 400px;
+  }
   @media ($tablet-widths) {
-    @include container;
+    padding-bottom: 100px;
   }
   @media ($desktop-widths) {
-    padding: 120px 0;
+    padding: 120px 120px;
+  }
+  &__slider {
+    position: relative;
+    @include container;
+    // @media ($mobile-widths_only) {
+    //   max-width: 320px;
+    //   margin: 0 auto;
+    
   }
 }
