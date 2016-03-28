@@ -1,14 +1,91 @@
 .post-photo {
-  @include block-outline (pink);
+    position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  background: #f2f2f2;
+  // блок с КАРТИНКОЙ панорама
+  &--panorama {
+    margin: 0;
+    width: 100%;
+    background: none;
+    // margin-bottom: 20px;
+  }
+  // блок с КОНТЕНТОМ панорамы (автор и т.д.)
+  &--panorama-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: -4px;
+      margin-bottom: 20px;
+      @media ($desktop-widths) {
+          margin-bottom: 40px;
+      }
+  }
+  // обертка img панорамы центрует (дектоп img если ширниа меньше)
+  &__picture {
+      margin: 0 auto;
+  }
+  // &--panorama::before {
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 141px;
+  //   height: 36px;
+  //   background: #d22856;
+  // }
+  // автор поста
+  &__author {
+    width: 242px;
+    margin: 18px auto 0;
+    @include main-font(14px, 24px, 900);
+    color: #283645;
+    @media ($tablet-widths) {
+        margin-top: 24px;
+    }
+    &--panorama {
+        @media ($tablet-widths) {
+            width: 152px;
+            margin-left: 30px;
+            order: -2;
+            margin-top: 25px;
+        }
+    }
+
+  }
+  // время поста
+  &__time {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+  // описание поста
+  &__description {
+    width: 242px;
+    margin: 0 auto;
+    @include main-font(14px, 24px, 400);
+    color: #283645;
+    &--panorama {
+        @media ($tablet-widths) {
+            width: 560px;
+            margin-bottom: 25px;
+        }
+        @media ($desktop-widths) {
+            width:880px;
+        }
+  }
+  }
 }
-.post-photo--panorama {
-  margin: 0;
-  width: 100%;
-}
-.post-photo__wrapper {
-  @include container;
+// баннер ПАНОРАМА ДНЯ
+.post-photo--panorama::before {
+  display: block;
+  position: absolute;
+  content: "Панорама дня";
+  top: 0;
+  right: 10%;
+  width: 141px;
+  height: 36px;
+  background: #d22856;
 }

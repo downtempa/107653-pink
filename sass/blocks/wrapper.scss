@@ -4,4 +4,7 @@
     &--clearfix {
         @include clearfix;
     }
+    &--post-photo {
+        width: 240px;
+    }
 }

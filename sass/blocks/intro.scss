@@ -2,7 +2,7 @@
   @media ($tablet-widths) {
     margin-top: 0;
     padding-top: 20px;
-    padding-bottom: 109px;
+    padding-bottom: 106px;
     background: none;
     background: url("../../img/bg-back-tablet-iphone-5.png") no-repeat center bottom;
   }
@@ -11,17 +11,18 @@
   }
   @media ($desktop-widths) {
     padding-top: 70px;
-    padding-bottom: 121px;
+    padding-bottom: 118px;
   }
   &--inner-page {
     @include container;
-    padding: 50px 0;
+    padding: 18px 0 69px;
     text-align: center;
     @media ($tablet-widths) {
-      padding: 146px 0;
+      padding: 72px 0 138px;
+      background: none;
     }
     @media ($desktop-widths) {
-      padding: 119px 0;
+      padding: 64px 0 101px;
     }
   }
   &__img-container {
@@ -37,9 +38,9 @@
       background: #1d2631;
     }
   }
-  &__wrapper {
-    @include container;
-  }
+  // &__wrapper {
+  //   @include container;
+  // }
   &__title {
     @media ($mobile-widths-only) {
       display: none;
@@ -59,6 +60,17 @@
     }
     &--inner-page {
       display: block;
+      @include main-font(24px, 24px, 300);
+      color: #ffffff;
+      @media ($tablet-widths) {
+          width: auto;
+          margin: 0 auto;
+          font-size: 50px;
+          line-height: 60px;
+      }
+      @media ($desktop-widths) {
+          width: 500px;
+      }
     }
   }
 }

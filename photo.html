@@ -8,9 +8,9 @@
 </head>
 
 <body class="page">
-  <header class="main-header main-header-mobile-menu_visible">
+  <header class="main-header main-header--inner-page main-header-mobile-menu_visible">
     <div class="main-header__wrapper">
-      <div class="main-header__logo logo">Pink</div>
+      <a class="main-header__logo logo" href="index.html">Pink</a>
       <nav class="main-nav">
         <a class="main-nav__toggle" href="#">Меню</a>
         <ul class="main-nav__list main-nav__list-visible">
@@ -23,23 +23,34 @@
     </div>
   </header>
   <div class="intro intro--inner-page">
-    <div class="intro__wrapper">
+    <div class="wrapper">
       <h1 class="intro__title intro__title--inner-page">Фотографии пользователей</h1>
     </div>
   </div>
   <div class="photo">
-    <div class="photo__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
-    <div class="post-photo post-photo--panorama">
-      <img class="post-photo__img img" src="http://placehold.it/1200x506" alt="">
-      <div class="post-photo__wrapper">
-        <div class="post-photo__author">Анна
-          <time class="post-photo__time" datetime="2016-03-22">(5 минут назад)</time>
-        </div>
-        <p class="post-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-        <a class="post-photo__like-btn btn" href="#">Нравится:</a>
+    <div class="photo__intro">
+      <div class="wrapper">
+        <p class="photo__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
     </div>
-    <div class="photo__wrapper">
+    <!-- запутался с классами  -->
+    <div class="post-photo post-photo--panorama">
+        <div class="post-photo__picture">
+      <img class="post-photo__img img" src="http://placehold.it/1200x506" alt="">
+  </div>
+      </div>
+      <div class="post-photo post-photo--panorama-container wrapper">
+        <div class="post-photo__author post-photo__author--panorama">Анна
+          <time class="post-photo__time post-photo__time--panorama" datetime="2016-03-22">(5 минут назад)</time>
+        </div>
+        <p class="post-photo__description post-photo__description--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+        <div class="like like--panorama">
+          <span class="like__output">Нравится:</span>
+          <a class="like__btn btn btn--like" href="#">like</a>
+        </div>
+
+      </div>
+    <div class="wrapper">
       <div class="photo__items">
         <div class="photo__item post-photo">
           <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
@@ -47,7 +58,10 @@
             <time class="post-photo__time" datetime="2016-03-22">(5 часов назад)</time>
           </div>
           <p class="post-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <a class="post-photo__like-btn btn" href="#">Нравится:</a>
+          <div class="like">
+            <span class="like__output">Нравится:</span>
+            <a class="like__btn btn btn--like" href="#">like</a>
+          </div>
         </div>
         <div class="photo__item post-photo">
           <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
@@ -55,7 +69,10 @@
             <time class="post-photo__time" datetime="2016-03-22">(12 часов назад)</time>
           </div>
           <p class="post-photo__description">Соседи будут рады!</p>
-          <a class="post-photo__like-btn btn" href="#">Нравится:</a>
+          <div class="like">
+            <span class="like__output">Нравится:</span>
+            <a class="like__btn btn btn--like" href="#">like</a>
+          </div>
         </div>
         <div class="photo__item post-photo">
           <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
@@ -63,7 +80,10 @@
             <time class="post-photo__time" datetime="2016-03-22">(20 часов назад)</time>
           </div>
           <p class="post-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <a class="post-photo__like-btn btn" href="#">Нравится:</a>
+          <div class="like">
+            <span class="like__output">Нравится:</span>
+            <a class="like__btn btn btn--like" href="#">like</a>
+          </div>
         </div>
         <div class="photo__item post-photo">
           <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
@@ -71,7 +91,10 @@
             <time class="post-photo__time" datetime="2016-03-22">(25 часов назад)</time>
           </div>
           <p class="post-photo__description">Самая кубанская в мире!</p>
-          <a class="post-photo__like-btn btn" href="#">Нравится:</a>
+          <div class="like">
+            <span class="like__output">Нравится:</span>
+            <a class="like__btn btn btn--like" href="#">like</a>
+          </div>
         </div>
         <div class="photo__item post-photo">
           <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
@@ -79,7 +102,10 @@
             <time class="post-photo__time" datetime="2016-03-22">(40 часов назад)</time>
           </div>
           <p class="post-photo__description">Где снег-то?</p>
-          <a class="post-photo__like-btn btn" href="#">Нравится:</a>
+          <div class="like">
+            <span class="like__output">Нравится:</span>
+            <a class="like__btn btn btn--like" href="#">like</a>
+          </div>
         </div>
         <div class="photo__item post-photo">
           <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
@@ -87,12 +113,18 @@
             <time class="post-photo__time" datetime="2016-03-22">(45 часов назад)</time>
           </div>
           <p class="post-photo__description">Всем GM и взаимные лайки</p>
-          <a class="post-photo__like-btn btn" href="#">Нравится:</a>
+          <div class="like">
+            <span class="like__output">Нравится:</span>
+            <a class="like__btn btn btn--like" href="#">like</a>
+          </div>
         </div>
       </div>
     </div>
+    <div class="photo__intro photo__intro--outro">
     <div class="photo__slogan">
-      <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p>Затмите их всех!
+          <br>Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
     </div>
   </div>
   <div class="upload">
