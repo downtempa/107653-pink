@@ -3,15 +3,30 @@
   // margin: 0;
   // padding: 0;
   &--filter {
-    width: 25px;
-    height: 25px;
-    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     @media ($tablet-widths) {
       margin-right: 30px;
     }
     @media ($desktop-widths) {
       margin-right: 75px;
     }
+    // &_crop {
+    //     background: url("../../img/icon-editor-crop.svg") no-repat 50% 50%;
+    // }
+  }
+  &--filter_crop {
+      background: url("../../img/icon-editor-crop.svg") no-repeat 50% 50%;
+  }
+  &--filter_color {
+      background: url("../../img/icon-editor-fill.svg") no-repeat 50% 50%;
+  }
+  &--filter_contrast {
+      background: url("../../img/icon-editor-contrast.svg") no-repeat 50% 50%;
   }
   &--full-name {
     margin: 20px 0;

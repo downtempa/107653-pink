@@ -19,6 +19,10 @@
       display: none;
     }
   }
+  &--inner-page {
+          padding: 31px 0 17px;
+          min-height: 240px;
+  }
   &__logo {
       margin-bottom: 17px;
   }

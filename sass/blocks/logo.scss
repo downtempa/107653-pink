@@ -11,5 +11,12 @@
     height: 40px;
     background: url("../../img/logo-pink-blue-mobile.svg") no-repeat;
   }
+  &--inner-page {
+      @media ($mobile-widths-only) {
+          width: 147px;
+          height: 40px;
+          background: url("../../img/logo-pink-blue-mobile.svg") no-repeat;
+      }
+  }
 }
 // десктоп версия - img нужен модификатор (блёстки какие-то)

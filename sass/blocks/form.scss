@@ -1,5 +1,5 @@
 .form {
-  @include block-outline (yellow);
+
   display: flex;
   flex-direction: column;
   @media ($desktop-widths) {
