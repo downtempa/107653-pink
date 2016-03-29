@@ -1,4 +1,5 @@
 .filter {
+    // padding-bottom: 10px;
   @include container;
   &__form {
     @include clearfix;
@@ -8,13 +9,22 @@
       /* align-content: space-between; */
       flex-wrap: wrap;
       flex-direction: column;
-      height: 508px;
+      height: 491px;
+    }
+    @media ($desktop-widths) {
+        align-items: flex-start;
+justify-content: space-between;
+height: 492px;
+flex-direction: column;
     }
   }
   &__photo {
     @media ($tablet-widths) {
         margin-top: 38px;
       width: 300px;
+    }
+    @media ($desktop-widths) {
+        margin-left: 80px;
     }
   }
   &__features {
@@ -23,17 +33,27 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    padding: 95px 0;
+    padding-bottom: 67px;
     @media ($tablet-widths) {
-      width: 300px;
-      padding: 50px 0;
+        min-height: 216px;
+      width: 306px;
+      padding-top: 21px;
+      padding-bottom: 0;
     }
     @media ($desktop-widths) {
-      width: 410px;
+        margin-right: 75px;
+      margin-left: 46px;
+      width: 415px;
+      align-self: flex-end;
+      margin-top: 22px;
+      padding-top: 0;
     }
   }
   &__crop {
       margin-left: 20px;
+      @media ($tablet-widths) {
+          margin-left: 0;
+      }
   }
   &__contrast {
       margin-right: 20px;
@@ -58,19 +78,34 @@
   &__buttons {
     @media ($mobile-widths-only) {
       width: 280px;
+      padding-bottom: 34px;
     }
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media ($tablet-widths) {
+        padding-left: 28px;
+        margin-bottom: 37px;
+    }
+
     @media ($desktop-widths) {
+
       width: 410px;
       flex-direction: row;
       justify-content: space-between;
+      align-self: flex-end;
+margin-right: 60px;
+margin-top: 84px;
+margin-bottom: 0;
     }
   }
   &__btn {
-    margin: 20px 0;
+      margin: 7px 0;
+      @media ($tablet-widths) {
+          margin: 12px 0;
+      }
+
     @media ($desktop-widths) {
     //   width: 183px;
     }
@@ -82,11 +117,12 @@
         display: block;
         content: "";
         position: absolute;
-        bottom: 222px;
+        bottom: 198px;
         left: 0;
         width: 100%;
         height: 1px;
         background: #dddfe0;
     }
+    
 
 }

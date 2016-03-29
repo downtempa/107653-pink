@@ -8,6 +8,9 @@
     }
     &--filter {
       padding-bottom: 50px;
+      @media ($tablet-widths) {
+          padding-top: 15px;
+      }
     }
   }
 }

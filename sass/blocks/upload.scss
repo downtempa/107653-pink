@@ -1,5 +1,8 @@
 .upload {
     position: relative;
-  padding: 20px 0;
+  padding-top: 20px;
      background: #f2f2f2;
+     @media ($desktop-widths) {
+         @include container;
+     }
 }

@@ -38,9 +38,9 @@
       background: #1d2631;
     }
   }
-  // &__wrapper {
-  //   @include container;
-  // }
+  &__wrapper {
+    @include container;
+  }
   &__title {
     @media ($mobile-widths-only) {
       display: none;

@@ -10,7 +10,7 @@
     }
   }
   &__item {
-      // все посты с фотками кроме панорамы
+    // все посты с фотками кроме панорамы
     margin-bottom: 20px;
     @media ($tablet-widths) {
       width: 300px;
@@ -19,25 +19,26 @@
       margin-bottom: 55px;
     }
   }
- // блок с текстом (&__slogan) над блоком с панорамой
+  // блок с текстом (&__slogan) над блоком с панорамой
   &__intro {
-      background: #ffffff;
-      padding: 47px 0;
+    background: #ffffff;
+    padding: 47px 0;
+    @media ($tablet-widths) {
+      padding: 93px 0 74px;
+    }
+    @media ($desktop-widths) {
+      padding-bottom: 88px;
+    }
+    &--outro {
+      padding: 6px 0 28px;
       @media ($tablet-widths) {
-          padding: 93px 0 74px;
+        padding: 27px 0 50px;
       }
+    //  почему не могу переопределить??
       @media ($desktop-widths) {
-          padding-bottom: 88px;
+        padding: 21px 0 50px;
       }
-      &--autro {
-          padding: 6px 0 28px;
-          @media ($tablet-widths) {
-                  padding: 26px 0 50px;
-          }
-          @media ($tablet-widths) {
-                  padding: 0 0 48px;
-          }
-      }
+    }
   }
   &__slogan {
     text-align: center;
@@ -46,13 +47,13 @@
     width: 250px;
     margin: 0 auto;
     @media ($tablet-widths) {
-        width: 450px;
-        font-size: 18px;
+      width: 450px;
+      font-size: 18px;
     }
     & p {
-        @media ($desktop-widths) {
-            margin-top: 3px;
-        }
+      @media ($desktop-widths) {
+        margin-top: 3px;
+      }
     }
   }
 }

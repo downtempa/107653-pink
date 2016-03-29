@@ -1,9 +1,16 @@
 .range {
+    position: relative;
   -webkit-appearance: none;
   // margin: 18px 0;
   width: 240px;
   @media ($tablet-widths) {
+    //   margin-top: 23px;
+    //   margin-right: -7px;
       width: 200px;
+  }
+  @media ($desktop-widths) {
+      width: 290px;
+
   }
 
 &:focus {
@@ -88,4 +95,22 @@
 // &:focus::-ms-fill-upper {
 //   background: #367ebd;
 // }
+}
+
+.range--filter::before {
+    @media ($tablet-widths) {
+        display: block;
+        position: absolute;
+        content: "";
+        bottom: -37px;
+        left: -56px;
+        width: 275px;
+        height: 1px;
+        background: #dddfe0;
+    }
+    @media ($desktop-widths) {
+        width: 411px;
+        left: -97px;
+    }
+
 }
