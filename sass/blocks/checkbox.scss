@@ -1,15 +1,13 @@
 .checkbox {
-}
-.checkbox--events {
-  margin-right: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  @media ($desktop-widths) {
-    margin-right: 30px;
+  &--events {
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @media ($desktop-widths) {
+      margin-right: 30px;
+    }
+    &:checked ~ .control__indicator {
+      background-image: url("../../img/icon-yes.svg");
+    }
   }
-}
-.checkbox--app-edition {
-  margin-right: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }

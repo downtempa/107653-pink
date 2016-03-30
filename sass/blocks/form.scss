@@ -1,5 +1,4 @@
 .form {
-
   display: flex;
   flex-direction: column;
   @media ($desktop-widths) {
@@ -7,16 +6,24 @@
     flex-direction: row;
     justify-content: space-between;
   }
-}
-.form__ctrl {
-  @media ($mobile-widths-only) {
-    @include container;
+  &__ctrl {
+    @media ($mobile-widths-only) {
+      @include container;
+    }
+    @media ($tablet-widths) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media ($desktop-widths) {
+      width: 100%;
+    }
   }
-  @media ($tablet-widths) {
-    display: flex;
-    justify-content: space-between;
-  }
-  @media ($desktop-widths) {
-    width: 100%;
+  &__footnote {
+      @include main-font(17px, 30px, 400);
+      color: #283645;
+      text-transform: uppercase;
+      & span {
+          color: #d22856;
+      }
   }
 }

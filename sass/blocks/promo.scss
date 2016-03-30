@@ -1,22 +1,25 @@
 .promo {
-    background: #ffffff;
+  background: #ffffff;
   @media ($tablet-widths) {
     // @include container;
   }
-}
-.promo__description {
-  @include container;
-  text-align: center;
-  padding: 45px 0;
-  @include main-font(14px, 30px, 400);
-  color: #283645;
-  @media ($tablet-widths) {
+  &__description {
+    @include container;
+    text-align: center;
+    padding: 45px 0 27px;
+    @include main-font(14px, 30px, 400);
+    color: #283645;
+    @media ($tablet-widths) {
       width: 560px;
       font-size: 18px;
       line-height: 30px;
       padding: 92px 0;
-  }
-  @media ($desktop-widths) {
+    }
+    @media ($desktop-widths) {
       width: 770px;
+    }
+  }
+  &__form {
+      margin-bottom: 15px;
   }
 }

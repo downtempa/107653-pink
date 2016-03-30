@@ -11,35 +11,45 @@
       width: 260px;
     }
     @media ($desktop-widths) {
-        font-size: 21px;
+      font-size: 21px;
     }
   }
   &--like {
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      width: 13px;
-      background: url("../../img/icon-heart.svg") no-repeat 50% 50%;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 13px;
+    background: url("../../img/icon-heart.svg") no-repeat 50% 50%;
   }
   &--filter {
-      width: 280px;
-      @include main-font(18px, 18px, 900);
-      color: #d22856;
-      border: 3px solid #d22856;
-      padding: 15px;
-      border-radius: 30px;
-      background: #f2f2f2;
-      @media ($tablet-widths) {
-        width: 260px;
-      }
-      @media ($desktop-widths) {
-          width: 183px;
-        //   font-size: 21px;
-        }
-}
-&--filter_disabled {
+    width: 280px;
+    @include main-font(18px, 18px, 900);
+    color: #d22856;
+    border: 3px solid #d22856;
+    padding: 15px;
+    border-radius: 30px;
+    background: #f2f2f2;
+    @media ($tablet-widths) {
+      width: 260px;
+    }
+    @media ($desktop-widths) {
+      width: 183px;
+      //   font-size: 21px;
+    }
+  }
+  &--filter_disabled {
     opacity: 0.1;
     border-color: #000000;
     color: #000000;
-}
+  }
+  &--submit {
+      width: 280px;
+      @include main-font(18px, 18px, 900);
+      color: #ffffff;
+      padding: 15px;
+      background: #2aab6d;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+  }
 }

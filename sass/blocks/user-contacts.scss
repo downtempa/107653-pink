@@ -1,5 +1,5 @@
 .user-contacts {
-  padding: 50px 0;
+  padding: 23px 0;
   @media ($mobile-widths-only) {
     @include container;
   }
@@ -10,8 +10,8 @@
     width: 100%;
     padding: 0;
   }
-}
-.user-contacts__wrapper {
+
+&__wrapper {
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,10 @@
     align-items: center;
   }
 }
-.user-contacts__input-container {
+&__input {
+    margin-bottom: 10px;
+}
+&__input-container {
   display: flex;
   flex-direction: column;
   @media ($tablet-widths) {
@@ -31,4 +34,5 @@
     margin-bottom: 20px;
     align-items: flex-start;
   }
+}
 }

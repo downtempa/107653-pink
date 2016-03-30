@@ -1,6 +1,15 @@
 .legend {
   text-align: center;
-  @include main-font(14px, 30px, 400);
+  width: 250px;
+  @include main-font(14px, 19px, 400);
   color: #d22856;
   text-transform: uppercase;
+  &--events {
+    position: relative;
+    top: 54px;
+  }
+  &--app-edition {
+    position: relative;
+    top: 54px;
+  }
 }
