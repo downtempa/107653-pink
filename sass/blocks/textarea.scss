@@ -1,8 +1,28 @@
 .textarea {
-  @include block-outline (pink);
   margin: 0;
-  padding: 0;
-}
-.text-area--user-emotions {
-  width: 100%;
+  padding: 13px 20px;
+  @include main-font(18px, 30px, 400);
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  outline: none;
+  width: 236px;
+  &::-webkit-input-placeholder {
+  	@include main-font(18px, 30px, 400);
+  	color: #283645;
+  }
+
+  &:-moz-placeholder {
+      @include main-font(18px, 30px, 400);
+
+  	color: #283645;
+  }
+
+  &:-ms-input-placeholder {
+      @include main-font(18px, 30px, 400);
+
+  	color: #283645;
+  }
+
+
 }

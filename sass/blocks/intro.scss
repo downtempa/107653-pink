@@ -25,6 +25,15 @@
       padding: 64px 0 101px;
     }
   }
+  &--form-page {
+      padding: 20px 0 39px;
+      @media ($tablet-widths) {
+        padding: 0 0 76px;
+      }
+      @media ($desktop-widths) {
+        padding: 24px 0 100px;
+      }
+  }
   &__img-container {
     @media ($mobile-widths-only) {
       width: 320px;
@@ -60,7 +69,7 @@
     }
     &--inner-page {
       display: block;
-      @include main-font(24px, 24px, 300);
+      @include main-font(24px, 27px, 300);
       color: #ffffff;
       @media ($tablet-widths) {
           width: auto;
@@ -71,6 +80,11 @@
       @media ($desktop-widths) {
           width: 500px;
       }
+    }
+    &--form-page {
+        @media ($desktop-widths) {
+        width: 780px
+    }
     }
   }
 }

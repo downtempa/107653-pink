@@ -1,4 +1,6 @@
 .legend {
-  @include block-outline (red);
   text-align: center;
+  @include main-font(14px, 30px, 400);
+  color: #d22856;
+  text-transform: uppercase;
 }

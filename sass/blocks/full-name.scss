@@ -1,5 +1,4 @@
 .full-name {
-  @include block-outline (green);
   @media ($mobile-widths-only) {
     @include container;
   }

@@ -1,5 +1,4 @@
 .app-edition {
-  @include block-outline (orange);
   @media ($tablet-widths) {
     order: -2;
   }

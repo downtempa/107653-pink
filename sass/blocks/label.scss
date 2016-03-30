@@ -83,19 +83,24 @@
       border: 3px solid #283645;
       background: #ffffff;
   }
+&--full-name {
+    @include main-font(14px, 30px, 400);
+    color: #d22856;
+    text-transform: uppercase;
+}
+&--user-contacts {
+    @include main-font(14px, 30px, 400);
+    color: #d22856;
+    text-transform: uppercase;
+}
+&--events {
+    @include main-font(18px, 30px, 400);
+    color: #283645;
+}
+&--app-edition {
+    @include main-font(18px, 30px, 400);
+    color: #283645;
+}
 
 
 }
-
-// .label--filter::before {
-//     @media ($tablet-widths) {
-//         display: block;
-//         position: absolute;
-//         content: "";
-//         bottom: 0;
-//         left: 0;    width: 275px;
-//         height: 1px;
-//         background: #dddfe0;
-//     }
-//
-// }

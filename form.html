@@ -22,12 +22,13 @@
       </nav>
     </div>
   </header>
-  <div class="intro intro--inner-page">
+  <div class="intro intro--form-page intro--inner-page">
     <div class="wrapper">
-      <h1 class="intro__title intro__title--inner-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="intro__title intro__title--inner-page intro__title--form-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
   </div>
   <div class="promo">
+      <div class="wrapper">
     <div class="promo__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</div>
     <form class="promo__form form" action="post">
       <fieldset class="form-box  form-box--full-name  full-name">
@@ -67,7 +68,8 @@
         <div class="user-contacts__wrapper">
           <div class="user-contacts__input-container">
             <label class="user-contacts__label  label  label--user-contacts" for="user-tel">Номерок телефончика</label>
-            <input class="user-contacts__input  input  input--user-contacts" type="tel" name="user-tel" placeholder="Номер, пожалуйста" id="user-tel">
+            <!-- чет паттерн тел хромает -->
+            <input class="user-contacts__input  input  input--user-contacts" type="tel" name="user-tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" pattern="+7\s[0-9]{3}\s[0-9]{3}-[0-9]{2}-[0-9]{2}" id="user-tel">
           </div>
           <div class="user-contacts__input-container">
             <label class="user-contacts__label  label  label--user-contacts" for="user-email">адресок почты</label>
@@ -88,13 +90,14 @@
       </fieldset>
       <fieldset class="form-box  form-box--user-emotions  user-emotions">
         <legend class="user-emotions__title legend">Опишите свои эмоции</legend>
-        <textarea class="user-emotions__textarea textarea text-area--user-emotions" name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="user-emotions__textarea textarea text-area--user-emotions" name="user-comment" id="user-comment" cols="20" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
       <div class="form__ctrl">
         <input class="form__btn form__btn--submit btn" type="submit" name="name" value="Отправить Форму">
         <p class="form__footnote"><small><span>* </span>&mdash; Обязательные поля</small></p>
       </div>
     </form>
+</div>
   </div>
   <footer class="main-footer">
     <div class="main-footer__logo logo">Pink</div>

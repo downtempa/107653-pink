@@ -1,5 +1,4 @@
 .user-emotions {
-  @include block-outline (orange);
   @media ($mobile-widths-only) {
     @include container;
   }
