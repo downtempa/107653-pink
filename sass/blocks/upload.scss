@@ -1,4 +1,8 @@
 .upload {
-  @include block-outline (grey);
-  padding: 50px 0;
+  position: relative;
+  padding-top: 20px;
+  background: #f2f2f2;
+  @media ($desktop-widths) {
+    @include container;
+  }
 }

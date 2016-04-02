@@ -1,8 +1,10 @@
 .radio {
-  @include block-outline (blue);
-}
-.radio--app-edition {
-  margin-right: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  &--app-edition {
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:checked ~ .control__indicator {
+      background-image: url("../img/icon-circle.svg");
+    }
+  }
 }

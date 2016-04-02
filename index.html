@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -11,58 +12,71 @@
 <body class="page">
   <header class="main-header main-header-mobile-menu_visible">
     <div class="main-header__wrapper">
-      <div class="main-header__logo logo">Pink</div>
+      <a class="main-header__logo logo">Pink</a>
       <nav class="main-nav">
-        <a class="main-nav__toggle" href="#">Меню</a>
+        <a class="main-nav__toggle main-nav__toggle-cross" href="#">Меню</a>
         <ul class="main-nav__list main-nav__list-visible">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Возможности</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Стоимость</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <div class="intro">
-    <div class="intro__wrapper">
-      <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
-      <div class="download">
-        <a class="download__btn btn" href="#">Скачать приложение</a>
-        <div class="os-icons">
-          <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="http://placehold.it/70x70" alt="Apple"></a>
-          <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="http://placehold.it/70x70" alt="Android"></a>
-          <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="http://placehold.it/70x70" alt="Windows"></a>
+    <div class="intro__img-container"></div>
+    <div class="intro__container">
+      <div class="wrapper">
+        <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+        <div class="download">
+          <a class="download__btn btn btn--download-app" href="#">Скачать приложение</a>
+          <div class="os-icons">
+            <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="img/logo-apple.svg" alt="Apple"></a>
+            <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="img/logo-android.svg" alt="Android"></a>
+            <a class="os-icons__icon" href="#"><img class="os-icons__img img" src="img/logo-microsoft.svg" alt="Windows"></a>
+          </div>
+          <div class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
         </div>
-        <div class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
       </div>
     </div>
   </div>
   <div class="offer">
     <div class="offer__wrapper">
       <h3 class="offer__title">Устали от серости мегаполиса?</h3>
-      <h3 class="offer__title">Нам есть, что вам предложить!</h3>
+      <h3 class="offer__title offer__title--tight">Нам есть, что вам предложить!</h3>
     </div>
   </div>
   <div class="advantages">
     <div class="advantages__wrapper">
       <div class="advantages__items">
         <div class="advantages__item">
+          <img class="advantages__img" src="http://placehold.it/186x304" alt=" ">
           <h4 class="advantages__title">Поднимает настроение</h4>
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
         </div>
         <div class="advantages__item">
+          <img class="advantages__img" src="http://placehold.it/186x304" alt=" ">
           <h4 class="advantages__title">Меняет мир вокруг</h4>
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
-        <div class="advantages__item">
+        <div class="advantages__item advantages__item--bottom">
+          <img class="advantages__img" src="http://placehold.it/186x304" alt=" ">
           <h4 class="advantages__title">Заводит новых друзей</h4>
           <p class="advantages__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
+        <div class="advantages__main-img">
+          <img src="http://placehold.it/157x284" alt="">
+        </div>
       </div>
-      <div class="effect">
+    </div>
+  </div>
+  <div class="effect">
+    <div class="wrapper wrapper--clearfix">
+      <div class="effect__container">
         <h4 class="effect__title">Эффект на 24 часа!</h4>
         <p class="effect__content">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="effect__link link" href="#">Узнать больше об исследовании</a>
+        <a class="effect__link link link--effect" href="#">Узнать больше об исследовании</a>
       </div>
     </div>
   </div>
@@ -94,13 +108,14 @@
             <p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </div>
         </blockquote>
-        <div class="slider__nav">
-          <label class="slider__btn label label--pseudo" for="reviews-radio-1">1</label>
-          <label class="slider__btn label label--pseudo" for="reviews-radio-2">2</label>
-          <label class="slider__btn label label--pseudo" for="reviews-radio-3">3</label>
-          <button class="slider__arrow slider__arrow--left"></button>
-          <button class="slider__arrow slider__arrow--right"></button>
+        <div class="slider__nav slider__nav--reviews">
+          <label class="slider__btn label label--pseudo label--pseudo-active" for="reviews-radio-1"></label>
+          <label class="slider__btn label label--pseudo" for="reviews-radio-2"></label>
+          <label class="slider__btn label label--pseudo" for="reviews-radio-3"></label>
+
         </div>
+        <button class="slider__arrow slider__arrow--left"></button>
+        <button class="slider__arrow slider__arrow--right"></button>
       </div>
     </div>
   </div>
@@ -112,64 +127,67 @@
       <div class="slider__wrapper">
         <table class="purchases">
           <tr>
-            <td class="purchases__empty-cell"></td>
-            <td class="purchases__kit">
-              <span class="purchases__title">Анлим</span>
-              <span class="purchases__cost">9,99 USD</span>
+            <td class="t-cell purchases__empty-cell"></td>
+            <td class="t-cell t-cell--border-top_hidden purchases__kit purchases__kit--first">
+              <span class="purchases__title">База</span>
+              <br><span class="purchases__cost">1,99 USD</span>
             </td>
-            <td class="purchases__kit">
+            <td class="t-cell t-cell--border-top_hidden purchases__kit purchases__kit--hit">
               <span class="purchases__title">Стандарт</span>
-              <span class="purchases__cost">3,99 USD</span>
+              <br><span class="purchases__cost">3,99 USD</span>
             </td>
-            <td class="purchases__kit">
+            <td class="t-cell t-cell--border-top_hidden purchases__kit purchases__kit--last">
               <span class="purchases__title">Анлим</span>
-              <span class="purchases__cost">9,99 USD</span>
+              <br><span class="purchases__cost">9,99 USD</span>
             </td>
           </tr>
           <tr>
-            <td class="purchases__feature purchases__feature--mobile_hidden">Розовый фильтр</td>
-            <td class="purchases__feature"><span>Розовый фильтр</span></td>
+            <td class="t-cell purchases__feature purchases__feature--mobile_hidden">Розовый фильтр</td>
+            <td class="t-cell t-cell--border-top_hidden purchases__feature purchases__feature--bg-yes"><span>Розовый фильтр</span></td>
             <!-- <td class="purchases__feature-access">+</td> -->
-            <td class="purchases__feature"><span>Розовый фильтр</span></td>
+            <td class="t-cell t-cell--border-top_hidden purchases__feature purchases__feature--bg-yes"><span>Розовый фильтр</span></td>
             <!-- <td class="purchases__feature-access">-</td> -->
-            <td class="purchases__feature"><span>Розовый фильтр</span></td>
-            <!-- <td class="purchases__feature-access">-</td> -->
-          </tr>
-          <tr>
-            <td class="purchases__feature purchases__feature--mobile_hidden">Смайлики</td>
-            <td class="purchases__feature"><span>Смайлики</span></td>
-            <!-- <td class="purchases__feature-access">+</td> -->
-            <td class="purchases__feature"><span>Смайлики</span></td>
-            <!-- <td class="purchases__feature-access">+</td> -->
-            <td class="purchases__feature"><span>Смайлики</span></td>
+            <td class="t-cell t-cell--border-top_hidden purchases__feature purchases__feature--bg-yes"><span>Розовый фильтр</span></td>
             <!-- <td class="purchases__feature-access">-</td> -->
           </tr>
           <tr>
-            <td class="purchases__feature purchases__feature--mobile_hidden">Комментарии</td>
-            <td class="purchases__feature"><span>Комментарии</span></td>
+            <td class="t-cell purchases__feature purchases__feature--mobile_hidden">Смайлики</td>
+            <td class="t-cell purchases__feature purchases__feature--bg-no"><span>Смайлики</span></td>
             <!-- <td class="purchases__feature-access">+</td> -->
-            <td class="purchases__feature"><span>Комментарии</span></td>
+            <td class="t-cell purchases__feature purchases__feature--bg-yes"><span>Смайлики</span></td>
             <!-- <td class="purchases__feature-access">+</td> -->
-            <td class="purchases__feature"><span>Комментарии</span></td>
+            <td class="t-cell purchases__feature purchases__feature--bg-yes"><span>Смайлики</span></td>
+            <!-- <td class="purchases__feature-access">-</td> -->
+          </tr>
+          <tr>
+            <td class="t-cell purchases__feature purchases__feature--mobile_hidden">Комментарии</td>
+            <td class="t-cell purchases__feature purchases__feature--bg-no"><span>Комментарии</span></td>
+            <!-- <td class="purchases__feature-access">+</td> -->
+            <td class="t-cell purchases__feature purchases__feature--bg-no"><span>Комментарии</span></td>
+            <!-- <td class="purchases__feature-access">+</td> -->
+            <td class="t-cell purchases__feature purchases__feature--bg-yes"><span>Комментарии</span></td>
             <!-- <td class="purchases__feature-access">+</td> -->
           </tr>
         </table>
       </div>
     </div>
-    <div class="slider__nav">
-      <label class="slider__btn label label--pseudo" for="price-radio-1">1</label>
-      <label class="slider__btn label label--pseudo" for="price-radio-2">2</label>
-      <label class="slider__btn label label--pseudo" for="price-radio-3">3</label>
+    <div class="slider__nav slider__nav--table">
+      <label class="slider__btn label label--pseudo label--table" for="price-radio-1"></label>
+      <label class="slider__btn label label--pseudo label--table label--pseudo-active" for="price-radio-2"></label>
+      <label class="slider__btn label label--pseudo label--table" for="price-radio-3"></label>
     </div>
   </div>
   <div class="contacts">
     <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
-    <div class="contacts__item">Звоните:<span>+7 (812) 555-66-66</span></div>
-    <div class="contacts__item">Пишите:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
-    <div class="contacts__item">Приезжайте в гости:<span>ул. Большая Конюшенная, 19/8</span></div>
+    <div class="contacts__item">Звоните:
+      <br><span>+7 (812) 555-66-66</span></div>
+    <div class="contacts__item contacts__item--link ">Пишите:
+      <br><a class="link link--contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
+    <div class="contacts__item contacts__item--address ">Приезжайте в гости:
+      <br><span>ул. Большая Конюшенная, 19/8</span></div>
   </div>
-  <div class="map">
-    <img class="img" src="http://placehold.it/1200x500" alt="карта">
+  <div class="map" id="map">
+    <!-- <img class="img" src="http://placehold.it/1200x500" alt="картзьы та"> -->
   </div>
   <footer class="main-footer main-footer--hidden">
     <div class="main-footer__logo logo">Pink</div>
@@ -179,10 +197,10 @@
       <a class="social__item social__item--ytb" href="#">Youtube</a>
     </div>
     <div class="main-footer__copyright copyright">Разработано
-      <a class="copyright__link link" href="https://htmlacademy.ru/">HTML Academy</a>
+      <a class="copyright__link link link--copyright" href="https://htmlacademy.ru/">HTML Academy</a>
     </div>
   </footer>
-
+  <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=euK2rw4aj_ZQVI4vAK6eoWmz4wApaaDR&id=map&lang=ru_RU&sourceType=constructor"></script>
 </body>
 
 </html>

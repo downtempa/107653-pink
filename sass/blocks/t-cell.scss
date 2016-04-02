@@ -1,0 +1,15 @@
+.t-cell {
+  border: 2px solid #e5e5e5;
+  padding: 12px 22px;
+  background: #ffffff;
+  @media ($tablet-widths) {
+    display: table-cell;
+    padding: 13px 10px;
+  }
+  @media ($desktop-widths) {
+    padding: 20px 10px;
+  }
+  &--border-top_hidden {
+    border-top: none;
+  }
+}

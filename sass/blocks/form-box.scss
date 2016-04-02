@@ -1,13 +1,50 @@
 .form-box {
-    @include block-outline (orange);
-    padding: 0;
-    margin: 0;
-}
-
-.form-box--app-edition {
-    padding: 50px 0;
+  //   padding: 0;
+  //   margin: 0;
+  border: none;
+  @media ($tablet-widths) {
+    border: 2px solid #e5e5e5;
+  }
+  &--full-name {
+    border: none;
     @media ($tablet-widths) {
-        padding: 60px 0;
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
     }
-
+  }
+  &--app-edition {
+    padding-top: 70px;
+    padding-bottom: 24px;
+    background: #f2f2f2;
+    @media ($tablet-widths) {
+      background: none;
+      padding: 30px 60px;
+    }
+    @media ($desktop-widths) {
+      background: none;
+      padding: 30px 57px;
+    }
+    // // узнать где косяк с модификатором
+    // &--filter {
+    //   padding-bottom: 50px;
+    //   @media ($tablet-widths) {
+    //       padding-top: 15px;
+    //   }
+    // }
+  }
+  &--events {
+    padding-top: 76px;
+    padding-bottom: 22px;
+    background: #f2f2f2;
+    @media ($tablet-widths) {
+      margin: 0;
+      padding-top: 27px;
+      margin-bottom: 56px;
+      background: none;
+    }
+  }
+  // @media ($tablet-widths) {
+  //   background: none;
+  // }
 }

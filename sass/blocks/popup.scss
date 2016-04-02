@@ -1,25 +1,87 @@
 .popup {
-  @include block-outline (grey);
   display: none;
   position: fixed;
-  top: 50%;
+  top: 25%;
   width: 320px;
-  height: 280px;
-  padding: 50px 0;
+  padding-top: 26px;
   text-align: center;
   background: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   @media ($tablet-widths) {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     width: 460px;
-    height: 262px;
+    padding-top: 37px;
+  }
+  @media ($desktop-widths) {
+    width: 780px;
+    padding-top: 42px;
+  }
+  &--visible {
+    display: block;
+  }
+  &--failure {
+    padding-bottom: 51px;
+    padding-top: 23px;
+    @media ($tablet-widths) {
+      padding-top: 37px;
+    }
     @media ($desktop-widths) {
-      width: 780px;
-      height: 275px;
+      padding-top: 35px;
+      width: 460px;
+    }
+    & .popup__title {
+      margin-bottom: 18px;
+      @media ($desktop-widths) {
+        width: 250px;
+      }
+    }
+    & .popup__text {
+      width: 275px;
+      margin-bottom: 38px;
+      @media ($tablet-widths) {
+        width: 310px;
+      }
+    }
+    & .popup__btn {
+      @media ($desktop-widths) {
+        width: 270px;
+      }
     }
   }
-}
-.popup--visible {
-  display: block;
+  &__title {
+    @include main-font(18px, 24px, 900);
+    color: #283645;
+    @media ($tablet-widths) {
+      width: 215px;
+      margin: 0 auto;
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 21px;
+    }
+    @media ($desktop-widths) {
+      width: 410px;
+    }
+  }
+  &__text {
+    width: 264px;
+    margin: 0 auto 30px;
+    @include main-font(14px, 24px, 400);
+    color: #283645;
+    @media ($tablet-widths) {
+      width: 310px;
+      font-size: 18px;
+      margin-bottom: 34px;
+    }
+    @media ($desktop-widths) {
+      width: 385px;
+      margin-bottom: 38px;
+    }
+  }
+  &__footer {
+    background: #f2f2f2;
+    padding-top: 48px;
+    padding-bottom: 51px;
+  }
 }

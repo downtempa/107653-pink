@@ -1,7 +1,7 @@
 .purchases {
-  // @include block-outline (yellow);
-  width: 808px;
-  transform: translateX(-243px);
+  // таблицу перемещаем по Х-оси
+  width: 834px;
+  transform: translateX(-278px);
   @media ($tablet-widths) {
     width: 620px;
     transform: translateX(0px);
@@ -9,41 +9,118 @@
   @media ($desktop-widths) {
     width: 940px;
   }
-}
-// .slider__wrapper overflow hidden - прячет края таблицы
-.purchases td {
-  border: 2px solid #e5e5e5;
-  padding: 12px 20px;
-  @media ($tablet-widths) {
-    display: table-cell;
-    padding: 12px 10px;
+  // ячейки шапки
+  &__kit {
+    position: relative;
+    background: #283645;
+    text-align: center;
+    padding: 19px 20px;
+    border-bottom: none;
+    @media ($tablet-widths) {
+      width: 114px;
+      padding: 10px 20px;
+      border-right-color: #f2f2f2;
+    }
+    @media ($desktop-widths) {
+      padding: 19px 20px;
+      width: 193px;
+    }
+    &--first {
+      border-left: none;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    &--last {
+      border-right: none;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
   }
-  @media ($desktop-widths) {
-    padding: 20px 10px;
+  // прячем текст в ячейках на таблетке
+  &__feature span {
+    @include main-font(14px, 30px, 400);
+    color: #283645;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      display: none;
+    }
   }
-}
-// при стилизации уберу селктор по тегу
-.purchases .purchases__kit {
-  text-align: center;
-  padding: 36px 20px;
-  @media ($desktop-widths) {
-    padding: 38px 20px;
+  &__feature {
+    //   столбец появляется - таблетка
+    &--mobile_hidden {
+      display: none;
+      @media ($tablet-widths) {
+        display: table-cell;
+        @include main-font(14px, 30px, 400);
+        color: #283645;
+        padding-left: 15px;
+      }
+      @media ($desktop-widths) {
+        font-size: 18px;
+        padding-left: 23px;
+      }
+    }
+    // фон ячеек галочки, крест
+    &--bg-yes {
+      background: #ffffff url("../img/icon-yes.svg") no-repeat 92% center;
+      @media ($tablet-widths) {
+        background-position: center center;
+      }
+    }
+    &--bg-no {
+      background: #ffffff url("../img/icon-no.svg") no-repeat 92% center;
+      @media ($tablet-widths) {
+        background-position: center center;
+      }
+    }
   }
-}
-.purchases__feature span {
-  @media ($tablet-widths) {
+  // исчезающая ячейка
+  &__empty-cell {
     display: none;
+    @media ($tablet-widths) {
+      display: table-cell;
+      background: transparent;
+      border: none;
+    }
+  }
+  // заголовок ячейки в шапке
+  &__title {
+    @include main-font(18px, 30px, 900);
+    color: #ffffff;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      font-size: 16px;
+    }
+    @media ($desktop-widths) {
+      font-size: 18px;
+    }
+  }
+  // цена в шапке
+  &__cost {
+    @include main-font(24px, 30px, 400);
+    color: #ffffff;
+    @media ($tablet-widths) {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    @media ($desktop-widths) {
+      font-size: 24px;
+      font-weight: 300;
+    }
   }
 }
-.purchases__feature--mobile_hidden {
-  display: none;
-  @media ($tablet-widths) {
-    display: table-cell;
-  }
-}
-.purchases__empty-cell {
-  display: none;
-  @media ($tablet-widths) {
-    display: table-cell;
-  }
+// псевдоэлемент флаг ХИТ
+.purchases__kit--hit::before {
+  position: absolute;
+  content: "хит";
+  top: 15px;
+  left: -22px;
+  display: block;
+  width: 105px;
+  height: 30px;
+  @include main-font(14px, 14px, 400);
+  color: #ffffff;
+  text-transform: uppercase;
+  background: url("../img/bg-hit.svg") no-repeat;
+  transform: rotate(-45deg);
 }

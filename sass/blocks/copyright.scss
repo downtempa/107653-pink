@@ -1,3 +1,12 @@
 .copyright {
-  @include block-outline (blue);
+  @media ($mobile-widths-only) {
+    margin-left: 22px;
+  }
+  @include main-font(14px, 18px, 400);
+  color: #283645;
+  display: flex;
+  align-items: center;
+  &__link {
+    margin-left: 5px;
+  }
 }

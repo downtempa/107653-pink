@@ -1,11 +1,22 @@
 .logo {
-  @include block-outline (green);
   width: 75px;
-  height: 23px;
-  background: red;
+  height: 24px;
+  display: block;
+  background: url("../img/logo-pink-white-mobile.svg") no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   @media ($tablet-widths) {
     width: 147px;
     height: 40px;
+    background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
+  }
+  &--inner-page {
+    @media ($mobile-widths-only) {
+      width: 147px;
+      height: 40px;
+      background: url("../img/logo-pink-blue-mobile.svg") no-repeat;
+    }
   }
 }
 // десктоп версия - img нужен модификатор (блёстки какие-то)

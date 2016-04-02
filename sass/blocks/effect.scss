@@ -4,13 +4,47 @@
   }
   @media ($tablet-widths) {
     display: block;
-    padding-left: 300px;
     padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 44px;
     text-align: left;
+    background: url("../img/");
   }
   @media ($desktop-widths) {
-    min-height: 250px;
-    padding-left: 350px;
+    background: #f2f2f2;
+    padding-top: 70px;
+  }
+  &__container {
+    width: 308px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    @media ($desktop-widths) {
+      width: 570px;
+    }
+  }
+  &__title {
+    width: 180px;
+    @include main-font(30px, 36px, 900);
+    color: #000000;
+    margin-bottom: 10px;
+    @media ($desktop-widths) {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+  &__content {
+    @include main-font(14px, 24px, 400);
+    color: #283645;
+    margin-top: 0;
+    @media ($desktop-widths) {
+      width: 500px;
+      font-size: 18px;
+      line-height: 35px;
+    }
+  }
+  &__link {
+    @media ($desktop-widths) {
+      margin-top: 14px;
+    }
   }
 }

@@ -1,0 +1,42 @@
+.control {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.5rem;
+  color: #555;
+  cursor: pointer;
+  @media ($desktop-widths) {
+    padding-left: 12px;
+  }
+  & input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    /* Put the input behind the label so it doesn't overlay text */
+  }
+  // общий
+  &__indicator {
+    position: absolute;
+    top: -3px;
+    left: -47px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 1rem;
+    font-size: 65%;
+    color: #eee;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &--radio {
+      border-radius: 50px;
+    }
+  }
+}

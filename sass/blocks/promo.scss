@@ -1,11 +1,32 @@
 .promo {
-  @include block-outline (orange);
+  background: #ffffff;
   @media ($tablet-widths) {
-    @include container;
+    margin-bottom: 51px;
   }
-}
-.promo__description {
-  @include container;
-  text-align: center;
-  padding: 20px 0;
+  @media ($desktop-widths) {
+    margin-bottom: 0;
+  }
+  &__description {
+    @include container;
+    text-align: center;
+    padding: 45px 0 27px;
+    @include main-font(14px, 30px, 400);
+    color: #283645;
+    @media ($tablet-widths) {
+      width: 560px;
+      font-size: 18px;
+      line-height: 30px;
+      padding-top: 92px;
+      padding-bottom: 70px;
+    }
+    @media ($desktop-widths) {
+      width: 770px;
+    }
+  }
+  &__form {
+    margin-bottom: 15px;
+    @media ($desktop-widths) {
+      margin-bottom: 0;
+    }
+  }
 }

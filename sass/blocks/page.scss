@@ -1,18 +1,17 @@
 .page {
-  @include block-outline (orange);
-  background: #ccc;
+  background: url("../img/bg-back-mobile.jpg") no-repeat center top;
   font-family: "Open Sans";
   font-size: 14px;
   color: #283645;
   font-weight: 400;
   position: relative;
-  max-width: 320px;
+  // max-width: 320px;
   margin: 0 auto;
   @media ($tablet-widths) {
-    max-width: 700px;
+    background: url("../img/bg-back-tablet.jpg") no-repeat center top;
   }
   @media ($desktop-widths) {
-    max-width: 1200px;
+    background: url("../img/bg-back-desktop.jpg") no-repeat center top;
   }
 }
 .page--form {

@@ -1,3 +1,77 @@
 .btn {
-  @include block-outline (yellow);
+  display: block;
+  text-decoration: none;
+  &--download-app {
+    @include main-font(18px, 18px, 900);
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    padding: 15px;
+    border-radius: 30px;
+    @media ($tablet-widths) {
+      width: 260px;
+    }
+    @media ($desktop-widths) {
+      font-size: 21px;
+    }
+  }
+  &--like {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 13px;
+    background: url("../img/icon-heart.svg") no-repeat 50% 50%;
+  }
+  &--filter {
+    width: 280px;
+    @include main-font(18px, 18px, 900);
+    color: #d22856;
+    border: 3px solid #d22856;
+    padding: 15px;
+    border-radius: 30px;
+    background: #f2f2f2;
+    @media ($tablet-widths) {
+      width: 260px;
+    }
+    @media ($desktop-widths) {
+      width: 183px;
+      //   font-size: 21px;
+    }
+  }
+  &--filter_disabled {
+    opacity: 0.1;
+    border-color: #000000;
+    color: #000000;
+  }
+  &--submit {
+    width: 280px;
+    @include main-font(18px, 33px, 900);
+    color: #ffffff;
+    padding: 15px;
+    background: #2aab6d;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      width: 300px;
+    }
+  }
+  &--popup {
+    width: 250px;
+    @include main-font(18px, 33px, 900);
+    color: #ffffff;
+    padding: 15px;
+    background: #2aab6d;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    margin: 0 auto;
+    @media ($tablet-widths) {
+      width: 270px;
+    }
+    @media ($desktop-widths) {
+      width: 430px;
+    }
+  }
 }

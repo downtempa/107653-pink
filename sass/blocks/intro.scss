@@ -1,33 +1,90 @@
 .intro {
-  @include block-outline (pink);
-  padding-top: 392px;
   @media ($tablet-widths) {
-    padding-top: 160px;
-    padding-bottom: 215px;
-  }
-}
-.intro__wrapper {
-  @include container;
-}
-.intro__title {
-  @media ($mobile-widths-only) {
-    display: none;
-  }
-  @media ($tablet-widths) {
-    display: block;
-  }
-}
-.intro--inner-page {
-  @include container;
-  padding: 50px 0;
-  text-align: center;
-  @media ($tablet-widths) {
-    padding: 146px 0;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 106px;
+    background: none;
+    background: url("../img/bg-back-tablet-iphone-5.png") no-repeat center bottom;
   }
   @media ($desktop-widths) {
-    padding: 119px 0;
+    background: url("../img/bg-back-desktop-iphone-5.png") no-repeat center bottom;
   }
-}
-.intro__title--inner-page {
-  display: block;
+  @media ($desktop-widths) {
+    padding-top: 70px;
+    padding-bottom: 118px;
+  }
+  &--inner-page {
+    @include container;
+    padding: 18px 0 69px;
+    text-align: center;
+    @media ($tablet-widths) {
+      padding: 72px 0 138px;
+      background: none;
+    }
+    @media ($desktop-widths) {
+      padding: 64px 0 101px;
+    }
+  }
+  &--form-page {
+    padding: 20px 0 39px;
+    @media ($tablet-widths) {
+      padding: 0 0 76px;
+    }
+    @media ($desktop-widths) {
+      padding: 24px 0 100px;
+    }
+  }
+  &__img-container {
+    @media ($mobile-widths-only) {
+      width: 320px;
+      margin: 0 auto;
+      height: 391px;
+      background: url("../img/bg-back-mobile-iphone-5.png") no-repeat -7% 135%;
+    }
+  }
+  &__container {
+    @media ($mobile-widths-only) {
+      background: #1d2631;
+    }
+  }
+  &__wrapper {
+    @include container;
+  }
+  &__title {
+    @media ($mobile-widths-only) {
+      display: none;
+    }
+    @media ($tablet-widths) {
+      @include main-font(40px, 49px, 300);
+      color: #ffffff;
+      display: block;
+      width: 240px;
+      text-align: center;
+      margin: 0 0 0 29px;
+    }
+    @media ($desktop-widths) {
+      font-size: 50px;
+      line-height: 58px;
+      margin-left: 32px;
+    }
+    &--inner-page {
+      display: block;
+      @include main-font(24px, 27px, 300);
+      color: #ffffff;
+      @media ($tablet-widths) {
+        width: auto;
+        margin: 0 auto;
+        font-size: 50px;
+        line-height: 60px;
+      }
+      @media ($desktop-widths) {
+        width: 500px;
+      }
+    }
+    &--form-page {
+      @media ($desktop-widths) {
+        width: 780px;
+      }
+    }
+  }
 }

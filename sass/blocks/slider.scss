@@ -1,24 +1,71 @@
 .slider {
-  @include block-outline (blue);
-}
-.slider__switcher {
-  display: none;
-}
-.slider__slide {
-  display: none;
-}
-.slider__slide--1 {
-  display: block;
-}
-.slider__nav {
-  display: none;
-}
-.slider__wrapper {
-  overflow: hidden;
-  @media ($tablet-widths) {
-    overflow: auto;
+  position: relative;
+  &__switcher {
+    display: none;
   }
-  // @media ($desktop-widths) {
-  //   @include container;
-  // }
+  &__slide {
+    display: none;
+    &--1 {
+      display: block;
+    }
+  }
+  // блок управления слайдерами
+  &__nav {
+    position: relative;
+    height: 10px;
+    width: 80px;
+    margin-left: -40px;
+    text-align: center;
+    &--reviews {
+      bottom: 13px;
+      left: 50%;
+      margin-left: -40px;
+      z-index: 5;
+    }
+    &--table {
+      top: 40px;
+      left: 50%;
+      margin-left: -40px;
+      z-index: 5;
+      @media ($tablet-widths) {
+        display: none;
+      }
+    }
+    // @media ($tablet-widths) {
+    //     bottom: 94px;
+    // }
+  }
+  &__wrapper {
+    // overflow: hidden;
+    @media ($tablet-widths) {
+      //   overflow: auto;
+    }
+    // @media ($desktop-widths) {
+    //   @include container;
+    // }
+  }
+  // стрелки управоения отзывами
+  &__arrow {
+    display: none;
+    @media ($desktop-widths) {
+      position: absolute;
+      top: 28%;
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: none;
+      outline: none;
+      background: #ffffff;
+      border-left: 2px solid #bec2c7;
+      border-top: 2px solid #bec2c7;
+    }
+    &--left {
+      transform: rotate(-45deg);
+      left: 6px;
+    }
+    &--right {
+      transform: rotate(135deg);
+      right: 6px;
+    }
+  }
 }
