@@ -10,7 +10,7 @@
     width: 49px;
     height: 24px;
     margin-top: 21px;
-    background: url("../../img/icon-menu-burger.svg") no-repeat;
+    background: url("../img/icon-menu-burger.svg") no-repeat;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -21,7 +21,7 @@
       display: none;
     }
     &--cross {
-      background: url("../../img/icon-menu-cross.svg") no-repeat 95%;
+      background: url("../img/icon-menu-cross.svg") no-repeat 95%;
     }
   }
   &__list {

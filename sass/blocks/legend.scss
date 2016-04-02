@@ -4,12 +4,34 @@
   @include main-font(14px, 19px, 400);
   color: #d22856;
   text-transform: uppercase;
+  @media ($tablet-widths) {
+    width: auto;
+    padding: 0 32px;
+  }
   &--events {
     position: relative;
     top: 54px;
+    @media ($tablet-widths) {
+      position: static;
+    }
+  }
+  &--user-contacts {
+    display: none;
+    @media ($tablet-widths) {
+      display: block;
+    }
   }
   &--app-edition {
     position: relative;
     top: 54px;
+    @media ($tablet-widths) {
+      width: auto;
+      position: static;
+    }
+    @media ($desktop-widths) {
+      width: 119%;
+      white-space: nowrap;
+      padding: 0;
+    }
   }
 }

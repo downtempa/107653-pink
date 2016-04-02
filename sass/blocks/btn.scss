@@ -19,7 +19,7 @@
     white-space: nowrap;
     overflow: hidden;
     width: 13px;
-    background: url("../../img/icon-heart.svg") no-repeat 50% 50%;
+    background: url("../img/icon-heart.svg") no-repeat 50% 50%;
   }
   &--filter {
     width: 280px;
@@ -43,13 +43,35 @@
     color: #000000;
   }
   &--submit {
-      width: 280px;
-      @include main-font(18px, 18px, 900);
-      color: #ffffff;
-      padding: 15px;
-      background: #2aab6d;
-      border: none;
-      border-radius: 2px;
-      outline: none;
+    width: 280px;
+    @include main-font(18px, 33px, 900);
+    color: #ffffff;
+    padding: 15px;
+    background: #2aab6d;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      width: 300px;
+    }
+  }
+  &--popup {
+    width: 250px;
+    @include main-font(18px, 33px, 900);
+    color: #ffffff;
+    padding: 15px;
+    background: #2aab6d;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    margin: 0 auto;
+    @media ($tablet-widths) {
+      width: 270px;
+    }
+    @media ($desktop-widths) {
+      width: 430px;
+    }
   }
 }

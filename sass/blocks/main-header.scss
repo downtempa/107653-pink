@@ -1,12 +1,16 @@
 .main-header {
   background: rgba(0, 0, 0, 0.3);
   min-height: 70px;
+  // меня раздражает тянущаяся серая полоска хедера на всю ширину моего 22" экрана(
+  // max-width: 1200px;
+  // margin-right: auto;
+  // margin-left: auto;
   @media ($tablet-widths) {
     min-height: 110px;
     margin-bottom: 72px;
   }
   @media ($desktop-widths) {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
   &--mobile-menu_visible {
     background: #283645;
@@ -23,12 +27,12 @@
     float: left;
     margin-top: 21px;
     @media ($tablet-widths) {
-        margin-top: 27px;
+      margin-top: 27px;
     }
   }
   &--inner-page {
-      @media ($tablet-widths) {
-          margin-bottom: 0;
-      }
+    @media ($tablet-widths) {
+      margin-bottom: 0;
+    }
   }
 }

@@ -2,7 +2,6 @@
   padding-top: 28px;
   min-height: 240px;
   text-align: center;
-
   @media ($tablet-widths) {
     padding-top: 30px;
     padding-right: 325px;
@@ -12,10 +11,10 @@
     padding-top: 58px;
   }
   &__description {
-      @include main-font(14px, 24px, 300);
-      color: #ffffff;
-      @media ($tablet-widths) {
-          font-size: 18px;
-      }
+    @include main-font(14px, 24px, 300);
+    color: #ffffff;
+    @media ($tablet-widths) {
+      font-size: 18px;
+    }
   }
 }

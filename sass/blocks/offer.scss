@@ -10,9 +10,9 @@
   @media ($tablet-widths) {
     min-height: 216px;
     padding: 8px 0;
-}
+  }
   @media ($desktop-widths) {
-      padding: 20px 0;
+    padding: 20px 0;
     min-height: 266px;
     margin-bottom: 10px;
   }
@@ -24,7 +24,7 @@
     color: #283645;
     margin-bottom: 28px;
     @media ($tablet-widths) {
-        margin-bottom: 0;
+      margin-bottom: 0;
       font-size: 40px;
       line-height: 49px;
     }
@@ -33,15 +33,13 @@
       line-height: 57px;
     }
     &--tight {
-        @media ($tablet-widths) {
-            width: 400px;
-            margin: 0 auto;
-            margin-top: 3px;
-        }
-        @media ($tablet-widths) {
-            width: 450px;
-        }
-
+      @media ($tablet-widths) {
+        width: 400px;
+        margin: 3px auto 0;
+      }
+      @media ($tablet-widths) {
+        width: 450px;
+      }
     }
   }
 }

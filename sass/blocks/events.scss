@@ -1,19 +1,31 @@
 .events {
-
-&__wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @media ($mobile-widths-only) {
-    @include container;
-  }
   @media ($tablet-widths) {
-    padding: 60px 0;
+    padding: 60px;
   }
-}
-&__label {
+  @media ($desktop-widths) {
+    padding: 60px 2px 60px 57px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // @include container;
+    @media ($mobile-widths-only) {
+      @include container;
+    }
+  }
+  &__label {
     margin-top: 20px;
     margin-bottom: 32px;
-}
+    &--tower {
+      order: -4;
+    }
+    &--chuck-norris {
+      order: -5;
+    }
+    &--shark {
+      order: -6;
+    }
+  }
 }

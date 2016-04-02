@@ -7,13 +7,13 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-     @media ($tablet-widths) {
-         margin-top: 47px;
-         margin-bottom: 34px;
-     }
-     @media ($desktop-widths) {
-         margin-left: 47px;
-         margin-top: 67px;
-         margin-bottom: 53px;
-     }
+  @media ($tablet-widths) {
+    margin-top: 47px;
+    margin-bottom: 34px;
+  }
+  @media ($desktop-widths) {
+    margin-left: 47px;
+    margin-top: 67px;
+    margin-bottom: 53px;
+  }
 }

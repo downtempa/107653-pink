@@ -6,32 +6,31 @@
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   outline: none;
+  @media ($tablet-widths) {
+    padding: 15px 20px;
+  }
   &::-webkit-input-placeholder {
-  	@include main-font(18px, 30px, 400);
-  	color: #283645;
+    @include main-font(18px, 30px, 400);
+    color: #283645;
   }
-
   &:-moz-placeholder {
-      @include main-font(18px, 30px, 400);
-
-  	color: #283645;
+    @include main-font(18px, 30px, 400);
+    color: #283645;
   }
-
   &:-ms-input-placeholder {
-      @include main-font(18px, 30px, 400);
-
-  	color: #283645;
+    @include main-font(18px, 30px, 400);
+    color: #283645;
   }
   &--full-name {
     flex-grow: 1;
   }
   &--user-contacts {
     @media ($tablet-widths) {
-      width: 555px;
+      width: 447px;
       margin: 20px auto;
     }
     @media ($desktop-widths) {
-      width: 370px;
+      width: 331px;
     }
   }
 }

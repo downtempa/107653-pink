@@ -1,16 +1,15 @@
 .wrapper {
-    @include container;
-
-    &--clearfix {
-        @include clearfix;
-    }
-    &--post-photo {
-        width: 240px;
-    }
-    &--intro {
-        position: relative;
-    }
-    &--panorama-banner {
-        position: relative;
-    }
+  @include container;
+  &--clearfix {
+    @include clearfix;
+  }
+  &--post-photo {
+    width: 240px;
+  }
+  &--intro {
+    position: relative;
+  }
+  &--panorama-banner {
+    position: relative;
+  }
 }

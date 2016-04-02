@@ -1,7 +1,10 @@
 .promo {
   background: #ffffff;
   @media ($tablet-widths) {
-    // @include container;
+    margin-bottom: 51px;
+  }
+  @media ($desktop-widths) {
+    margin-bottom: 0;
   }
   &__description {
     @include container;
@@ -13,13 +16,17 @@
       width: 560px;
       font-size: 18px;
       line-height: 30px;
-      padding: 92px 0;
+      padding-top: 92px;
+      padding-bottom: 70px;
     }
     @media ($desktop-widths) {
       width: 770px;
     }
   }
   &__form {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
+    @media ($desktop-widths) {
+      margin-bottom: 0;
+    }
   }
 }

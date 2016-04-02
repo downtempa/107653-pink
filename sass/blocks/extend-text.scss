@@ -1,0 +1,12 @@
+.extend-text {
+  &--fn-hidden {
+    display: none;
+    @media ($desktop-widths) {
+      display: inline;
+      color: #283645;
+    }
+  }
+  &--fn-star {
+    color: #d22856;
+  }
+}

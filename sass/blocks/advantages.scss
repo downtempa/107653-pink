@@ -3,7 +3,7 @@
   background-color: #f2f2f2;
   text-align: center;
   @media ($desktop-widths) {
-      min-height: 580px;
+    min-height: 580px;
   }
   &__wrapper {
     @include container;

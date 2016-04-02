@@ -23,7 +23,9 @@
   }
   // обертка img панорамы центрует (дектоп img если ширниа меньше)
   &__picture {
-    //   margin: 0 auto;
+    @media ($desktop-widths) {
+      margin: 0 auto;
+    }
   }
   &__img {
     margin: 0 auto;
@@ -43,7 +45,6 @@
       top: 54px;
     }
   }
-
   // автор поста
   &__author {
     width: 242px;

@@ -10,7 +10,7 @@
     padding-bottom: 100px;
   }
   @media ($desktop-widths) {
-    padding: 120px 120px;
+    padding: 120px;
   }
   &__slider {
     position: relative;
@@ -18,6 +18,5 @@
     // @media ($mobile-widths_only) {
     //   max-width: 320px;
     //   margin: 0 auto;
-
   }
 }

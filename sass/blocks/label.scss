@@ -19,39 +19,39 @@
       //   margin-right: 75px;
     }
     // &_crop {
-    //     background: url("../../img/icon-editor-crop.svg") no-repat 50% 50%;
+    //     background: url("../img/icon-editor-crop.svg") no-repat 50% 50%;
     // }
   }
   &--filter_crop {
-    background: url("../../img/icon-editor-crop.svg") no-repeat 50% 50%;
+    background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
   }
   &--filter_color {
-    background: url("../../img/icon-editor-fill.svg") no-repeat 50% 50%;
+    background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
   }
   &--filter_contrast {
-    background: url("../../img/icon-editor-contrast.svg") no-repeat 50% 50%;
+    background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
   }
   &--full-name {
     @include main-font(14px, 30px, 400);
     color: #d22856;
     text-transform: uppercase;
-    margin: 6px 0;
-    margin-left: 23px;
+    margin: 6px 0 6px 23px;
     @media ($tablet-widths) {
+      margin-left: 0;
       margin-right: 20px;
     }
   }
   &--events {
     width: 210px;
-
     @include main-font(18px, 30px, 400);
     color: #283645;
     margin-left: 47px;
     @media ($tablet-widths) {
-      width: 525px;
+      width: 400px;
     }
     @media ($desktop-widths) {
-      width: 260px;
+      width: 202px;
+      margin-right: 2px;
     }
   }
   &--app-edition {
@@ -61,20 +61,19 @@
     color: #283645;
     margin-left: 47px;
     @media ($tablet-widths) {
-      width: 525px;
+      //   width: 525px;
     }
     @media ($desktop-widths) {
-      width: 350px;
+      width: 230px;
     }
   }
   &--user-contacts {
     @include main-font(14px, 30px, 400);
     color: #d22856;
     text-transform: uppercase;
-    margin: 6px 0;
-    margin-left: 23px;
+    margin: 6px 0 6px 23px;
     @media ($tablet-widths) {
-      margin-left: 32px;
+      margin: 0 0 0 17px;
     }
     @media ($desktop-widths) {
       margin-left: 20px;

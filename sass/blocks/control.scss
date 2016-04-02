@@ -4,13 +4,16 @@
   padding-left: 1.5rem;
   color: #555;
   cursor: pointer;
+  @media ($desktop-widths) {
+    padding-left: 12px;
+  }
   & input {
     position: absolute;
     opacity: 0;
     z-index: -1;
     /* Put the input behind the label so it doesn't overlay text */
   }
-// общий
+  // общий
   &__indicator {
     position: absolute;
     top: -3px;
@@ -33,7 +36,7 @@
     -ms-user-select: none;
     user-select: none;
     &--radio {
-        border-radius: 50px;
+      border-radius: 50px;
     }
   }
 }

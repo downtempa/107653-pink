@@ -7,7 +7,7 @@
     padding-top: 65px;
     padding-bottom: 44px;
     text-align: left;
-    background: url("../../img/");
+    background: url("../img/");
   }
   @media ($desktop-widths) {
     background: #f2f2f2;
@@ -28,8 +28,8 @@
     color: #000000;
     margin-bottom: 10px;
     @media ($desktop-widths) {
-        width: 100%;
-        margin-bottom: 25px;
+      width: 100%;
+      margin-bottom: 25px;
     }
   }
   &__content {
@@ -37,15 +37,14 @@
     color: #283645;
     margin-top: 0;
     @media ($desktop-widths) {
-        width: 500px;
+      width: 500px;
       font-size: 18px;
       line-height: 35px;
     }
   }
   &__link {
-      @media ($desktop-widths) {
-          margin-top: 14px;
-      }
-
+    @media ($desktop-widths) {
+      margin-top: 14px;
+    }
   }
 }
