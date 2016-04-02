@@ -21,7 +21,7 @@
   }
   &__wrapper {
     @include container;
-    @include clearfix;
+    // @include clearfix;
   }
   &__logo {
     float: left;
