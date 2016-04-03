@@ -14,7 +14,7 @@
   @media ($desktop-widths) {
     min-height: 191px;
   }
-  &--hidden {
+  &--index {
     @media ($mobile-widths-only) {
       display: none;
     }

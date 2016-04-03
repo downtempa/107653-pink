@@ -16,7 +16,7 @@
   }
   &--inner-page {
     @include container;
-    padding: 18px 0 69px;
+    padding: 33px 0 54px;
     text-align: center;
     @media ($tablet-widths) {
       padding: 72px 0 138px;
@@ -66,6 +66,7 @@
       margin-left: 32px;
     }
     &--inner-page {
+        margin-bottom: 0;
       @include main-font(24px, 27px, 300);
       color: #ffffff;
       @media ($tablet-widths) {

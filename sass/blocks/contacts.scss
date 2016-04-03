@@ -30,6 +30,8 @@
   }
   &__item {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
     @include main-font(18px, 18px, 900);
     color: #283645;
     @media ($desktop-widths) {
@@ -40,16 +42,23 @@
         width: 290px;
       }
     }
-    & span {
-      font-size: 24px;
-      color: #d22856;
-      font-weight: 300;
-      line-height: 36px;
-    }
     &--link {
       @media ($desktop-widths) {
         order: 1;
       }
+    }
+  }
+  &__data {
+    font-size: 24px;
+    color: #d22856;
+    font-weight: 300;
+    line-height: 36px;
+
+    @media ($tablet-widths) {
+        margin-top: 3px;
+    }
+    @media ($desktop-widths) {
+        margin-top: 22px;
     }
   }
 }

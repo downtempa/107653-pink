@@ -3,7 +3,7 @@
 
   @media ($tablet-widths) {
     background: #283645 url("../img/bg-back-tablet.jpg") no-repeat center top;
-    
+
   }
   @media ($desktop-widths) {
     background: #283645 url("../img/bg-back-desktop.jpg") no-repeat center top;
@@ -27,6 +27,9 @@
     }
     @media ($desktop-widths) {
       margin-bottom: 40px;
+    }
+    &--inner-page {
+        margin-bottom: 0;
     }
   }
   &__wrapper {

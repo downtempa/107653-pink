@@ -133,44 +133,44 @@
           <tr>
             <td class="t-cell purchases__empty-cell"></td>
             <td class="t-cell t-cell--border-top_hidden purchases__kit purchases__kit--first">
-              <span class="purchases__title">База</span>
-              <br><span class="purchases__cost">1,99 USD</span>
+              <div class="purchases__title">База</div>
+              <div class="purchases__cost">1,99 USD</div>
             </td>
             <td class="t-cell t-cell--border-top_hidden purchases__kit purchases__kit--hit">
-              <span class="purchases__title">Стандарт</span>
-              <br><span class="purchases__cost">3,99 USD</span>
+              <div class="purchases__title">Стандарт</div>
+              <div class="purchases__cost">3,99 USD</div>
             </td>
             <td class="t-cell t-cell--border-top_hidden purchases__kit purchases__kit--last">
-              <span class="purchases__title">Анлим</span>
-              <br><span class="purchases__cost">9,99 USD</span>
+              <div class="purchases__title">Анлим</div>
+              <div class="purchases__cost">9,99 USD</div>
             </td>
           </tr>
           <tr>
             <td class="t-cell purchases__feature purchases__feature--mobile_hidden">Розовый фильтр</td>
             <td class="t-cell t-cell--border-top_hidden purchases__feature purchases__feature--bg-yes"><span>Розовый фильтр</span></td>
-            <!-- <td class="purchases__feature-access">+</td> -->
+
             <td class="t-cell t-cell--border-top_hidden purchases__feature purchases__feature--bg-yes"><span>Розовый фильтр</span></td>
-            <!-- <td class="purchases__feature-access">-</td> -->
+
             <td class="t-cell t-cell--border-top_hidden purchases__feature purchases__feature--bg-yes"><span>Розовый фильтр</span></td>
-            <!-- <td class="purchases__feature-access">-</td> -->
+
           </tr>
           <tr>
             <td class="t-cell purchases__feature purchases__feature--mobile_hidden">Смайлики</td>
             <td class="t-cell purchases__feature purchases__feature--bg-no"><span>Смайлики</span></td>
-            <!-- <td class="purchases__feature-access">+</td> -->
+
             <td class="t-cell purchases__feature purchases__feature--bg-yes"><span>Смайлики</span></td>
-            <!-- <td class="purchases__feature-access">+</td> -->
+
             <td class="t-cell purchases__feature purchases__feature--bg-yes"><span>Смайлики</span></td>
-            <!-- <td class="purchases__feature-access">-</td> -->
+
           </tr>
           <tr>
             <td class="t-cell purchases__feature purchases__feature--mobile_hidden">Комментарии</td>
             <td class="t-cell purchases__feature purchases__feature--bg-no"><span>Комментарии</span></td>
-            <!-- <td class="purchases__feature-access">+</td> -->
+
             <td class="t-cell purchases__feature purchases__feature--bg-no"><span>Комментарии</span></td>
-            <!-- <td class="purchases__feature-access">+</td> -->
+
             <td class="t-cell purchases__feature purchases__feature--bg-yes"><span>Комментарии</span></td>
-            <!-- <td class="purchases__feature-access">+</td> -->
+
           </tr>
         </table>
       </div>
@@ -183,17 +183,17 @@
   </div>
   <div class="contacts">
     <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
-    <div class="contacts__item">Звоните:
-      <br><span>+7 (812) 555-66-66</span></div>
-    <div class="contacts__item contacts__item--link ">Пишите:
-      <br><a class="link link--contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
-    <div class="contacts__item contacts__item--address ">Приезжайте в гости:
-      <br><span>ул. Большая Конюшенная, 19/8</span></div>
+    <div class="contacts__item"><b>Звоните:</b>
+      <b class="contacts__data">+7 (812) 555-66-66</b></div>
+    <div class="contacts__item contacts__item--link"><b>Пишите:</b>
+      <a class="contacts__data link link--contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
+    <div class="contacts__item contacts__item--address "><b>Приезжайте в гости:</b>
+      <b class="contacts__data">ул. Большая Конюшенная, 19/8</b></div>
   </div>
   <div class="map" id="map">
     <!-- <img class="img" src="http://placehold.it/1200x500" alt="картзьы та"> -->
   </div>
-  <footer class="main-footer main-footer--hidden">
+  <footer class="main-footer main-footer--index">
     <div class="main-footer__logo logo">Pink</div>
     <div class="main-footer__social social">
       <a class="social__item social__item--tw" href="#">Twitter</a>
@@ -204,7 +204,36 @@
       <a class="copyright__link link link--copyright" href="https://htmlacademy.ru/">HTML Academy</a>
     </div>
   </footer>
-  <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=euK2rw4aj_ZQVI4vAK6eoWmz4wApaaDR&id=map&lang=ru_RU&sourceType=constructor"></script>
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <!-- <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=euK2rw4aj_ZQVI4vAK6eoWmz4wApaaDR&id=map&lang=ru_RU&sourceType=constructor"></script> -->
+    <script>
+    ymaps.ready(function () {
+var myMap = new ymaps.Map('map', {
+        center: [59.936111, 30.32196],
+        zoom: 17,
+        controls: []
+    }, {
+        searchControlProvider: 'yandex#search'
+    }),
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Приезжай в гости!',
+            balloonContent: 'Где-то здесь творит великий Кекс'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/icon-map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [36, 36],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-3, -42]
+        });
+
+    myMap.geoObjects.add(myPlacemark);
+});
+    </script>
 </body>
 
 </html>
