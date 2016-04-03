@@ -3,6 +3,12 @@
   &--clearfix {
     @include clearfix;
   }
+  &--download {
+      @media ($tablet-widths) {
+          width: auto;
+          margin: 0;
+      }
+  }
   &--post-photo {
     width: 240px;
   }

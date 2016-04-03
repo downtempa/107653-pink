@@ -1,5 +1,6 @@
 .intro {
   @media ($tablet-widths) {
+    @include container;
     margin-top: 0;
     padding-top: 20px;
     padding-bottom: 106px;
@@ -10,8 +11,8 @@
     background: url("../img/bg-back-desktop-iphone-5.png") no-repeat center bottom;
   }
   @media ($desktop-widths) {
-    padding-top: 70px;
-    padding-bottom: 118px;
+    padding-top: 77px;
+    padding-bottom: 93px;
   }
   &--inner-page {
     @include container;
@@ -42,33 +43,29 @@
       background: url("../img/bg-back-mobile-iphone-5.png") no-repeat -7% 135%;
     }
   }
-  &__container {
-    @media ($mobile-widths-only) {
-      background: #1d2631;
-    }
-  }
-  &__wrapper {
-    @include container;
-  }
   &__title {
-    @media ($mobile-widths-only) {
-      display: none;
-    }
+    // @media ($mobile-widths-only) {
+    //   display: none;
+    // }
+    @include container;
+    text-align: center;
+    margin-bottom: 311px;
+    @include main-font(24px, 27px, 300);
+    color: #ffffff;
     @media ($tablet-widths) {
       @include main-font(40px, 49px, 300);
+      margin-bottom: 0;
       color: #ffffff;
       display: block;
       width: 240px;
-      text-align: center;
       margin: 0 0 0 29px;
     }
     @media ($desktop-widths) {
       font-size: 50px;
-      line-height: 58px;
+      line-height: 62px;
       margin-left: 32px;
     }
     &--inner-page {
-      display: block;
       @include main-font(24px, 27px, 300);
       color: #ffffff;
       @media ($tablet-widths) {
@@ -85,6 +82,17 @@
       @media ($desktop-widths) {
         width: 780px;
       }
+    }
+  }
+  &__download {
+    padding-top: 28px;
+    @media ($tablet-widths) {
+      padding-top: 30px;
+      padding-right: 325px;
+    }
+    @media ($desktop-widths) {
+      padding-right: 640px;
+      padding-top: 54px;
     }
   }
 }

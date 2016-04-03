@@ -1,15 +1,13 @@
 .main-header {
-  background: rgba(0, 0, 0, 0.3);
-  min-height: 70px;
-  // меня раздражает тянущаяся серая полоска хедера на всю ширину моего 22" экрана(
-  // max-width: 1200px;
-  // margin-right: auto;
-  // margin-left: auto;
+  background: #283645 url("../img/bg-back-mobile.jpg") no-repeat center top;
+
   @media ($tablet-widths) {
-    min-height: 110px;
-    margin-bottom: 72px;
+    background: #283645 url("../img/bg-back-tablet.jpg") no-repeat center top;
+    
   }
   @media ($desktop-widths) {
+    background: #283645 url("../img/bg-back-desktop.jpg") no-repeat center top;
+    background-size: cover;
     margin-bottom: 40px;
   }
   &--mobile-menu_visible {
@@ -18,6 +16,18 @@
   }
   &--tablet-menu_visible {
     background: #283645;
+  }
+  &__top-panel {
+    background: rgba(0, 0, 0, 0.3);
+    min-height: 70px;
+    margin-bottom: 27px;
+    @media ($tablet-widths) {
+      min-height: 110px;
+      margin-bottom: 72px;
+    }
+    @media ($desktop-widths) {
+      margin-bottom: 40px;
+    }
   }
   &__wrapper {
     @include container;

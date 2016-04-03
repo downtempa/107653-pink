@@ -2,7 +2,7 @@
   display: block;
   text-decoration: none;
   &--download-app {
-    @include main-font(18px, 18px, 900);
+    @include main-font(18px, 21px, 900);
     color: #ffffff;
     border: 3px solid #ffffff;
     padding: 15px;
