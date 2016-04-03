@@ -13,13 +13,21 @@
     background: #f2f2f2;
     padding-top: 70px;
   }
+  // &__watch {
+  //     border: 17px solid #d22856;
+  //     border-radius: 50px;
+  //     & span {
+  //         @include main-font(120px, 186.94px, 900);
+  //         color: #d22856;
+  //     }
+  // }
   &__container {
-    width: 308px;
-    float: right;
+      width: 50%;
+
     display: flex;
     flex-direction: column;
     @media ($desktop-widths) {
-      width: 570px;
+      width: 60%;
     }
   }
   &__title {

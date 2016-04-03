@@ -9,6 +9,10 @@
           margin: 0;
       }
   }
+  &--effect {
+      justify-content: space-between;
+    display: flex;
+  }
   &--post-photo {
     width: 240px;
   }

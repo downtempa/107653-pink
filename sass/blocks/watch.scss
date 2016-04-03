@@ -1,0 +1,34 @@
+.watch {
+    width: 38%;
+    @media ($desktop-widths) {
+        width: 32%;
+    }
+
+  &__content {
+      padding: 100px 0 62px;
+      text-align: center;
+      vertical-align: middle;
+      background: url("../../img/icon-timer.svg") no-repeat 50% 50%;
+      background-size: contain;
+    @media ($desktop-widths) {
+      padding: 141px 0 92px;
+      text-align: center;
+      vertical-align: middle;
+      background: url("../../img/icon-timer.svg") no-repeat 50% 50%;
+    }
+    & span {
+        @include main-font(96px, 120px, 900);
+        color: #d22856;
+        border: 14px solid #d22856;
+        border-radius: 50%;
+        padding: 22px 33px;
+      @media ($desktop-widths) {
+        @include main-font(120px, 120px, 900);
+        color: #d22856;
+        border: 17px solid #d22856;
+        border-radius: 50%;
+        padding: 29px 42px;
+      }
+    }
+  }
+}
