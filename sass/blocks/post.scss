@@ -4,13 +4,21 @@
   margin: 0;
   padding: 60px 0 30px;
   text-align: center;
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media ($tablet-widths) {
-      flex-direction: column-reverse;
-    }
+  align-items: center;
+  @media ($tablet-widths) {
+    flex-direction: column-reverse;
+  }
+  // &__wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //
+  // }
+  &--active {
+      display: flex;
+  }
+  &--hidden {
+      display: none;
   }
   &__author {
     @include main-font(18px, 30px, 900);
@@ -22,8 +30,10 @@
     @media ($desktop-widths) {
       font-size: 24px;
     }
+  & cite {
+      font-style: normal;
   }
-  &__author span {
+  & span {
     display: none;
     @media ($tablet-widths) {
       display: block;
@@ -31,6 +41,7 @@
       font-weight: 400;
       color: #283645;
     }
+}
   }
   &__text {
     @include main-font(14px, 30px, 400);
