@@ -38,7 +38,10 @@
     /* height: 36px; */
     padding: 6px 0;
     background: #d22856;
-    @include main-font(12px, 24px, 900);
+    font-family: $main-font;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 900;
     color: #ffffff;
     text-align: center;
     @media ($tablet-widths) {
@@ -49,7 +52,10 @@
   &__author {
     width: 242px;
     margin: 18px auto 0;
-    @include main-font(14px, 24px, 900);
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
     color: #283645;
     @media ($tablet-widths) {
       margin-top: 24px;
@@ -73,7 +79,10 @@
   &__description {
     width: 242px;
     margin: 0 auto;
-    @include main-font(14px, 24px, 400);
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
     color: #283645;
     &--panorama {
       @media ($tablet-widths) {
@@ -86,18 +95,3 @@
     }
   }
 }
-// баннер ПАНОРАМА ДНЯ
-// .post-photo--panorama::before {
-//     display: block;
-//   position: absolute;
-//   content: "Панорама дня";
-//   top: 0;
-//   right: 10%;
-//   width: 141px;
-//   /* height: 36px; */
-//   padding: 6px 0;
-//   background: #d22856;
-//   @include main-font(12px, 24px, 900);
-//   color: #ffffff;
-//   text-align: center;
-// }

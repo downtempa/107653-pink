@@ -2,7 +2,10 @@
   display: block;
   text-decoration: none;
   &--download-app {
-    @include main-font(18px, 21px, 900);
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 900;
     color: #ffffff;
     border: 3px solid #ffffff;
     padding: 15px;
@@ -23,7 +26,10 @@
   }
   &--filter {
     width: 280px;
-    @include main-font(18px, 18px, 900);
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
     color: #d22856;
     border: 3px solid #d22856;
     padding: 15px;
@@ -44,7 +50,10 @@
   }
   &--submit {
     width: 280px;
-    @include main-font(18px, 33px, 900);
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 900;
     color: #ffffff;
     padding: 15px;
     background: #2aab6d;
@@ -58,7 +67,10 @@
   }
   &--popup {
     width: 250px;
-    @include main-font(18px, 33px, 900);
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 900;
     color: #ffffff;
     padding: 15px;
     background: #2aab6d;

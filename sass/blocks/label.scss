@@ -32,7 +32,10 @@
     background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
   }
   &--full-name {
-    @include main-font(14px, 30px, 400);
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
     color: #d22856;
     text-transform: uppercase;
     margin: 6px 0 6px 23px;
@@ -43,7 +46,10 @@
   }
   &--events {
     width: 210px;
-    @include main-font(18px, 30px, 400);
+    font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
     color: #283645;
     margin-left: 47px;
     @media ($tablet-widths) {
@@ -57,7 +63,10 @@
   &--app-edition {
     width: 210px;
     // margin: 6px 0;
-    @include main-font(18px, 30px, 400);
+    font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
     color: #283645;
     margin-left: 47px;
     @media ($tablet-widths) {
@@ -68,7 +77,10 @@
     }
   }
   &--user-contacts {
-    @include main-font(14px, 30px, 400);
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
     color: #d22856;
     text-transform: uppercase;
     margin: 6px 0 6px 23px;
@@ -98,24 +110,36 @@
     background: #ffffff;
   }
   // &--full-name {
-  //     @include main-font(14px, 30px, 400);
+  //     font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
   //     color: #d22856;
   //     text-transform: uppercase;
   //     margin-left: 23px;
   // }
   // &--user-contacts {
-  //     @include main-font(14px, 30px, 400);
+  //     font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
   //     color: #d22856;
   //     text-transform: uppercase;
   //     margin-left: 23px;
   // }
   // &--events {
-  //     @include main-font(18px, 30px, 400);
+  //     font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
   //     color: #283645;
   //     margin-left: 47px;
   // }
   // &--app-edition {
-  //     @include main-font(18px, 30px, 400);
+  //     font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
   //     color: #283645;
   //     margin-left: 47px;
   // }

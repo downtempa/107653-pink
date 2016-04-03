@@ -13,14 +13,7 @@
     background: #f2f2f2;
     padding-top: 70px;
   }
-  // &__watch {
-  //     border: 17px solid #d22856;
-  //     border-radius: 50px;
-  //     & span {
-  //         @include main-font(120px, 186.94px, 900);
-  //         color: #d22856;
-  //     }
-  // }
+
   &__container {
       width: 50%;
 
@@ -32,7 +25,10 @@
   }
   &__title {
     width: 180px;
-    @include main-font(30px, 36px, 900);
+    font-family: $main-font;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 900;
     color: #000000;
     margin-bottom: 10px;
     @media ($desktop-widths) {
@@ -41,7 +37,10 @@
     }
   }
   &__content {
-    @include main-font(14px, 24px, 400);
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
     color: #283645;
     margin-top: 0;
     @media ($desktop-widths) {

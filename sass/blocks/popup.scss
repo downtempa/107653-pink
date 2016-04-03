@@ -51,7 +51,10 @@
     }
   }
   &__title {
-    @include main-font(18px, 24px, 900);
+    font-family: $main-font;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
     color: #283645;
     @media ($tablet-widths) {
       width: 215px;
@@ -67,7 +70,10 @@
   &__text {
     width: 264px;
     margin: 0 auto 30px;
-    @include main-font(14px, 24px, 400);
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
     color: #283645;
     @media ($tablet-widths) {
       width: 310px;

@@ -1,7 +1,10 @@
 .legend {
   text-align: center;
   width: 250px;
-  @include main-font(14px, 19px, 400);
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
   color: #d22856;
   text-transform: uppercase;
   @media ($tablet-widths) {
@@ -29,6 +32,7 @@
       position: static;
     }
     @media ($desktop-widths) {
+        max-width: none;
       width: 119%;
       white-space: nowrap;
       padding: 0;

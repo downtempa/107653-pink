@@ -1,7 +1,10 @@
 .textarea {
   margin: 0;
   padding: 13px 20px;
-  @include main-font(18px, 30px, 400);
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
   color: #283645;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
@@ -15,15 +18,24 @@
     width: 772px;
   }
   &::-webkit-input-placeholder {
-    @include main-font(18px, 30px, 400);
+    font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
     color: #283645;
   }
   &:-moz-placeholder {
-    @include main-font(18px, 30px, 400);
+    font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
     color: #283645;
   }
   &:-ms-input-placeholder {
-    @include main-font(18px, 30px, 400);
+    font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
     color: #283645;
   }
 }

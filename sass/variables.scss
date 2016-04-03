@@ -1,3 +1,7 @@
 $mobile-widths-only: ("max-width: 699px");
 $tablet-widths: ("min-width: 700px");
 $desktop-widths: ("min-width: 1200px");
+
+$first-font: "Open Sans";
+$font-sans-serif-fallback: Arial, Helvetica, sans-serif;
+$main-font: $first-font, $font-sans-serif-fallback;

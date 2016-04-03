@@ -12,7 +12,11 @@
     &__title {
       margin: 0;
       margin-bottom: 12px;
-      @include main-font(18px, 24px, 900) color: #000000;
+      font-family: $main-font;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+      color: #000000;
       @media ($desktop-widths) {
           padding: 0 40px;
         font-size: 30px;
@@ -22,7 +26,10 @@
     }
     &__description {
         margin: 0;
-        @include main-font(14px, 24px, 400);
+        font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
         color: #283645;
         @media ($desktop-widths) {
             padding: 0 33px;

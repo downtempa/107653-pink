@@ -1,7 +1,6 @@
 .app-edition {
   margin-bottom: 56px;
   @media ($tablet-widths) {
-    //   @include container;
     order: -2;
     padding: 20px;
   }

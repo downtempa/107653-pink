@@ -21,7 +21,10 @@
       display: none;
   }
   &__author {
-    @include main-font(18px, 30px, 900);
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 900;
     color: #000000;
     font-style: normal;
     @media ($tablet-widths) {
@@ -44,7 +47,10 @@
 }
   }
   &__text {
-    @include main-font(14px, 30px, 400);
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
     color: #283645;
     @media ($tablet-widths) {
       font-size: 18px;

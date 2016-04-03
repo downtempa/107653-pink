@@ -17,13 +17,19 @@
       background: url("../../img/icon-timer.svg") no-repeat 50% 50%;
     }
     & span {
-        @include main-font(96px, 120px, 900);
+        font-family: $main-font;
+        font-size: 96px;
+        line-height: 120px;
+        font-weight: 900;
         color: #d22856;
         border: 14px solid #d22856;
         border-radius: 50%;
         padding: 22px 33px;
       @media ($desktop-widths) {
-        @include main-font(120px, 120px, 900);
+        font-family: $main-font;
+        font-size: 120px;
+        line-height: 120px;
+        font-weight: 900;
         color: #d22856;
         border: 17px solid #d22856;
         border-radius: 50%;

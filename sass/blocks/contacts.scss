@@ -15,7 +15,10 @@
     justify-content: space-between;
   }
   &__title {
-    @include main-font(24px, 24px, 300);
+    font-family: $main-font;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
     color: #283645;
     margin-bottom: 20px;
     @media ($tablet-widths) {
@@ -32,7 +35,10 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    @include main-font(18px, 18px, 900);
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
     color: #283645;
     @media ($desktop-widths) {
       width: 270px;

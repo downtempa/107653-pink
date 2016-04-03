@@ -10,7 +10,10 @@
     @include container;
     text-align: center;
     padding: 45px 0 27px;
-    @include main-font(14px, 30px, 400);
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
     color: #283645;
     @media ($tablet-widths) {
       width: 560px;

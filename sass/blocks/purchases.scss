@@ -39,7 +39,10 @@
   }
   // прячем текст в ячейках на таблетке
   &__feature span {
-    @include main-font(14px, 30px, 400);
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
     color: #283645;
     text-transform: uppercase;
     @media ($tablet-widths) {
@@ -52,7 +55,10 @@
       display: none;
       @media ($tablet-widths) {
         display: table-cell;
-        @include main-font(14px, 30px, 400);
+        font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
         color: #283645;
         padding-left: 15px;
       }
@@ -86,7 +92,10 @@
   }
   // заголовок ячейки в шапке
   &__title {
-    @include main-font(18px, 30px, 900);
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 900;
     color: #ffffff;
     text-transform: uppercase;
     @media ($tablet-widths) {
@@ -98,7 +107,10 @@
   }
   // цена в шапке
   &__cost {
-    @include main-font(24px, 30px, 400);
+    font-family: $main-font;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
     color: #ffffff;
     @media ($tablet-widths) {
       font-size: 18px;
@@ -119,7 +131,10 @@
   display: block;
   width: 105px;
   height: 30px;
-  @include main-font(14px, 14px, 400);
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
   background: url("../img/bg-hit.svg") no-repeat;
