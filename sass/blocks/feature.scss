@@ -1,0 +1,33 @@
+.feature {
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 31px;
+    @media ($tablet-widths) {
+        text-align: left;
+        margin-bottom: 35px;
+    }
+    @media ($desktop-widths) {
+        text-align: center;
+    }
+    &__title {
+      margin: 0;
+      margin-bottom: 12px;
+      @include main-font(18px, 24px, 900) color: #000000;
+      @media ($desktop-widths) {
+          padding: 0 40px;
+        font-size: 30px;
+        line-height: 27px;
+        margin-bottom: 26px;
+      }
+    }
+    &__description {
+        margin: 0;
+        @include main-font(14px, 24px, 400);
+        color: #283645;
+        @media ($desktop-widths) {
+            padding: 0 33px;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+}
