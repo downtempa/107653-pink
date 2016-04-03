@@ -1,21 +1,21 @@
 .main-header {
-  background: #283645 url("../img/bg-back-mobile.jpg") no-repeat center top;
+  background: $navi-blue url("../img/bg-back-mobile.jpg") no-repeat center top;
 
   @media ($tablet-widths) {
-    background: #283645 url("../img/bg-back-tablet.jpg") no-repeat center top;
+    background: $navi-blue url("../img/bg-back-tablet.jpg") no-repeat center top;
 
   }
   @media ($desktop-widths) {
-    background: #283645 url("../img/bg-back-desktop.jpg") no-repeat center top;
+    background: $navi-blue url("../img/bg-back-desktop.jpg") no-repeat center top;
     background-size: cover;
     margin-bottom: 40px;
   }
   &--mobile-menu_visible {
-    background: #283645;
+    background: $navi-blue;
     border-bottom: 1px solid #030303;
   }
   &--tablet-menu_visible {
-    background: #283645;
+    background: $navi-blue;
   }
   &__top-panel {
     background: rgba(0, 0, 0, 0.3);

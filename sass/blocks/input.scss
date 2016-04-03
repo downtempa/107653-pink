@@ -5,8 +5,8 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: #283645;
-  border: 2px solid #e5e5e5;
+  color: $navi-blue;
+  border: 2px solid $grey-border;
   border-radius: 2px;
   outline: none;
   @media ($tablet-widths) {
@@ -17,21 +17,21 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-    color: #283645;
+    color: $navi-blue;
   }
   &:-moz-placeholder {
     font-family: $main-font;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-    color: #283645;
+    color: $navi-blue;
   }
   &:-ms-input-placeholder {
     font-family: $main-font;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-    color: #283645;
+    color: $navi-blue;
   }
   &--full-name {
     flex-grow: 1;

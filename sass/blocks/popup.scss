@@ -55,7 +55,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
-    color: #283645;
+    color: $navi-blue;
     @media ($tablet-widths) {
       width: 215px;
       margin: 0 auto;
@@ -74,7 +74,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-    color: #283645;
+    color: $navi-blue;
     @media ($tablet-widths) {
       width: 310px;
       font-size: 18px;
@@ -86,7 +86,7 @@
     }
   }
   &__footer {
-    background: #f2f2f2;
+    background: $grey-bg;
     padding-top: 48px;
     padding-bottom: 51px;
   }

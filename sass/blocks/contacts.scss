@@ -19,7 +19,7 @@
     font-size: 24px;
     line-height: 24px;
     font-weight: 300;
-    color: #283645;
+    color: $navi-blue;
     margin-bottom: 20px;
     @media ($tablet-widths) {
       font-size: 40px;
@@ -39,7 +39,7 @@
     font-size: 18px;
     line-height: 18px;
     font-weight: 900;
-    color: #283645;
+    color: $navi-blue;
     @media ($desktop-widths) {
       width: 270px;
     }
@@ -56,7 +56,7 @@
   }
   &__data {
     font-size: 24px;
-    color: #d22856;
+    color: $pink;
     font-weight: 300;
     line-height: 36px;
 
