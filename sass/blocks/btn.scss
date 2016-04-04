@@ -1,9 +1,10 @@
 .btn {
   display: block;
   text-decoration: none;
+  font-family: $main-font;
+  font-size: 18px;
+  outline: none;
   &--download-app {
-    font-family: $main-font;
-    font-size: 18px;
     line-height: 21px;
     font-weight: 900;
     color: #ffffff;
@@ -26,8 +27,6 @@
   }
   &--filter {
     width: 280px;
-    font-family: $main-font;
-    font-size: 18px;
     line-height: 18px;
     font-weight: 900;
     color: $pink;
@@ -40,7 +39,6 @@
     }
     @media ($desktop-widths) {
       width: 183px;
-      //   font-size: 21px;
     }
   }
   &--filter_disabled {
@@ -50,8 +48,6 @@
   }
   &--submit {
     width: 280px;
-    font-family: $main-font;
-    font-size: 18px;
     line-height: 33px;
     font-weight: 900;
     color: #ffffff;
@@ -59,7 +55,6 @@
     background: $green-btn;
     border: none;
     border-radius: 2px;
-    outline: none;
     text-transform: uppercase;
     @media ($tablet-widths) {
       width: 300px;
@@ -67,8 +62,6 @@
   }
   &--popup {
     width: 250px;
-    font-family: $main-font;
-    font-size: 18px;
     line-height: 33px;
     font-weight: 900;
     color: #ffffff;
@@ -76,7 +69,7 @@
     background: $green-btn;
     border: none;
     border-radius: 2px;
-    outline: none;
+
     text-transform: uppercase;
     margin: 0 auto;
     @media ($tablet-widths) {
