@@ -18,7 +18,7 @@
   }
   @media ($desktop-widths) {
     background: $navi-blue url("../img/bg-back-desktop.jpg") no-repeat center top;
-    background-size: cover;
+    // background-size: cover;
     margin-bottom: 40px;
   }
   &--mobile-menu_visible {
@@ -34,10 +34,10 @@
     margin-bottom: 27px;
     @media ($tablet-widths) {
       min-height: 110px;
-      margin-bottom: 72px;
+      margin-bottom: 58px;
     }
     @media ($desktop-widths) {
-      margin-bottom: 40px;
+      margin-bottom: 31px;
     }
     &--inner-page {
         margin-bottom: 0;
@@ -49,7 +49,7 @@
   }
   &__logo {
     float: left;
-    margin-top: 21px;
+    margin-top: 24px;
     @media ($tablet-widths) {
       margin-top: 27px;
     }

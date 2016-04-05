@@ -1,5 +1,5 @@
 .contacts {
-  padding: 25px 0;
+  padding: 21px 0 17px;
   @include container;
   display: flex;
   flex-direction: column;
@@ -9,22 +9,25 @@
     flex-direction: row;
     justify-content: space-around;
     min-height: 423px;
-    // padding: 130px 0;
+    padding-top: 5px;
+    margin-bottom: -46px;
   }
   @media ($desktop-widths) {
     justify-content: space-between;
   }
+
   &__title {
     font-family: $main-font;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 28px;
     font-weight: 300;
     color: $navi-blue;
-    margin-bottom: 20px;
+    margin-bottom: 38px;
     @media ($tablet-widths) {
       font-size: 40px;
       line-height: 49px;
       width: 480px;
+      margin-bottom: 17px;
     }
     @media ($desktop-widths) {
       width: 700px;
@@ -40,8 +43,16 @@
     line-height: 18px;
     font-weight: 900;
     color: $navi-blue;
+    @media ($tablet-widths) {
+        margin-bottom: 23px;
+    }
     @media ($desktop-widths) {
       width: 270px;
+    }
+    &--tel {
+        @media ($tablet-widths) {
+            padding-left: 17px;
+        }
     }
     &--address {
       @media ($tablet-widths) {
@@ -49,6 +60,10 @@
       }
     }
     &--link {
+        margin-bottom: 23px;
+        @media ($tablet-widths) {
+            padding-left: 35px;
+        }
       @media ($desktop-widths) {
         order: 1;
       }
@@ -58,13 +73,17 @@
     font-size: 24px;
     color: $pink;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 37px;
 
     @media ($tablet-widths) {
         margin-top: 3px;
     }
     @media ($desktop-widths) {
         margin-top: 22px;
+    }
+    &--street {
+        line-height: 30px;
+    margin-top: 6px;
     }
   }
 }

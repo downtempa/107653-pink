@@ -9,7 +9,7 @@
   // );
   @media ($tablet-widths) {
     min-height: 216px;
-    padding: 8px 0;
+    padding: 8px 0 14px;
   }
   @media ($desktop-widths) {
     padding: 20px 0;
@@ -38,7 +38,7 @@
     &--tight {
       @media ($tablet-widths) {
         width: 400px;
-        margin: 3px auto 0;
+        margin: 0 auto;
       }
       @media ($tablet-widths) {
         width: 450px;

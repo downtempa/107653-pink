@@ -1,30 +1,18 @@
 .advantages {
   background: $grey-bg;
-  // &__title {
-  //   // margin-bottom: 12px;
-  //   // font-family: $main-font;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 900;
-  //   font-family: $main-font;
-  //   font-size: 18px;
-  //   line-height: 24px;
-  //   font-weight: 900;
-  //    color: #000000;
-  //   @media ($desktop-widths) {
-  //     font-size: 30px;
-  //   }
-  // }
-  // &__description {
-  // //     margin: 0;
-  //     font-family: $main-font;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  //     color: $navi-blue;
-  //     @media ($desktop-widths) {
-  //       font-size: 18px;
-  //       line-height: 30px;
-  //     }
-  //   }
+  margin-top: -68px;
+  @media ($tablet-widths) {
+      margin-top: 0;
+  }
+  &::before {
+    display: block;
+    width: 100%;
+    height: 91px;
+    content: "";
+    background: url("../img/bg-triangle-white.svg") no-repeat;
+    background-size: 100% auto;
+    @media ($tablet-widths) {
+        position: absolute;
+    }
+  }
 }
