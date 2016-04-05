@@ -9,27 +9,27 @@
 </head>
 
 <body class="page">
-    <header class="main-header main-header-mobile-menu_visible">
-      <div class="main-header__top-panel main-header__top-panel--inner-page">
-        <div class="wrapper">
-          <a class="main-header__logo logo">Pink</a>
-          <nav class="main-nav">
-            <a class="main-nav__toggle main-nav__toggle-cross" href="#">Меню</a>
-            <ul class="main-nav__list main-nav__list-visible">
-                <li class="main-nav__item"><a  href="index.html" class="main-nav__link">Главная</a></li>
-                <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
-                <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
-                <li class="main-nav__item"><a href="https://htmlacademy.ru/"  class="main-nav__link" target="_blank">HTML Academy</a></li>
-            </ul>
-          </nav>
-        </div>
+  <header class="main-header main-header-mobile-menu_visible">
+    <div class="main-header__top-panel main-header__top-panel--inner-page">
+      <div class="wrapper">
+        <a class="main-header__logo logo">Pink</a>
+        <nav class="main-nav">
+          <a class="main-nav__toggle main-nav__toggle-cross" href="#">Меню</a>
+          <ul class="main-nav__list main-nav__list-visible">
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__link" target="_blank">HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="intro intro--inner-page">
-        <div class="wrapper">
-          <h1 class="intro__title intro__title--inner-page">Фотографии пользователей</h1>
-        </div>
+    </div>
+    <div class="intro intro--inner-page">
+      <div class="wrapper">
+        <h1 class="intro__title intro__title--inner-page">Фотографии пользователей</h1>
       </div>
-    </header>
+    </div>
+  </header>
 
   <div class="photo">
     <div class="photo__intro">
@@ -43,7 +43,11 @@
         <div class="wrapper wrapper--panorama-banner">
           <div class="post-photo__banner">Панорама дня</div>
         </div>
-        <img class="post-photo__img img" src="http://placehold.it/1200x506" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 700px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="post-photo__img img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="">
+        </picture>
       </div>
     </div>
     <div class="post-photo post-photo--panorama-container wrapper">
@@ -59,8 +63,13 @@
     </div>
     <div class="wrapper">
       <div class="photo__items">
+
         <div class="photo__item post-photo">
-          <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="post-photo__img img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg" alt="">
+          </picture>
           <div class="post-photo__author">Левон
             <time class="post-photo__time" datetime="2016-03-22">(5 часов назад)</time>
           </div>
@@ -70,8 +79,13 @@
             <a class="like__btn btn btn--like" href="#">like</a>
           </div>
         </div>
+
         <div class="photo__item post-photo">
-          <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="post-photo__img img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" alt="">
+            </picture>
           <div class="post-photo__author">Антон
             <time class="post-photo__time" datetime="2016-03-22">(12 часов назад)</time>
           </div>
@@ -81,8 +95,13 @@
             <a class="like__btn btn btn--like" href="#">like</a>
           </div>
         </div>
+
         <div class="photo__item post-photo">
-          <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="post-photo__img img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" alt="">
+            </picture>
           <div class="post-photo__author">Борис
             <time class="post-photo__time" datetime="2016-03-22">(20 часов назад)</time>
           </div>
@@ -92,8 +111,13 @@
             <a class="like__btn btn btn--like" href="#">like</a>
           </div>
         </div>
+
         <div class="photo__item post-photo">
-          <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="post-photo__img img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg" alt="">
+            </picture>
           <div class="post-photo__author">Сергей
             <time class="post-photo__time" datetime="2016-03-22">(25 часов назад)</time>
           </div>
@@ -103,8 +127,13 @@
             <a class="like__btn btn btn--like" href="#">like</a>
           </div>
         </div>
+
         <div class="photo__item post-photo">
-          <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img class="post-photo__img img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg" alt="">
+            </picture>
           <div class="post-photo__author">Максим
             <time class="post-photo__time" datetime="2016-03-22">(40 часов назад)</time>
           </div>
@@ -114,8 +143,13 @@
             <a class="like__btn btn btn--like" href="#">like</a>
           </div>
         </div>
+
         <div class="photo__item post-photo">
-          <img class="post-photo__img img" src="http://placehold.it/300x400" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img class="post-photo__img img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg" alt="">
+            </picture>
           <div class="post-photo__author">Надежда
             <time class="post-photo__time" datetime="2016-03-22">(45 часов назад)</time>
           </div>
@@ -130,42 +164,46 @@
     <div class="photo__intro photo__intro--outro">
       <div class="photo__slogan">
         <p>Затмите их всех!</p>
-         <p>Выкладывайте все, что накопилось в телефоне!</p>
+        <p>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
     </div>
   </div>
   <div class="upload">
 
-      <form class="filter" action="post">
-        <div class="filter__photo">
-          <img class="filter__photo-img img" src="http://placehold.it/280x375" alt="photo">
-        </div>
-        <div class="filter__features">
+    <form class="filter" action="post">
+      <div class="filter__photo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+            <img class="post-photo__img img" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg" alt="">
+          </picture>
+      </div>
+      <div class="filter__features">
 
-          <input class="filter__radio radio radio--filter" type="radio" name="filter__features" id="filter__crop">
-          <label class="filter__crop label label--filter label--filter_crop" for="filter__crop">&#8973;&#8974;
-          </label>
-          <input class="filter__range filter__range--sub range range--filter" type="range">
-
-
-          <input class="filter__radio radio radio--filter" type="radio" name="filter__features" id="filter__color">
-          <label class="filter__color label label--filter label--filter_color" for="filter__color">&#11027;
-          </label>
-          <input class="filter__range filter__range--sub range range--filter" type="range">
+        <input class="filter__radio radio radio--filter" type="radio" name="filter__features" id="filter__crop">
+        <label class="filter__crop label label--filter label--filter_crop" for="filter__crop">&#8973;&#8974;
+        </label>
+        <input class="filter__range filter__range--sub range range--filter" type="range">
 
 
-          <input class="filter__radio radio radio--filter" type="radio" name="filter__features" id="filter__contrast">
-          <label class="filter__contrast label label--filter label--filter_contrast" for="filter__contrast">&#9680;
-          </label>
-          <input class="filter__range filter__range--sub range range--filter" type="range">
+        <input class="filter__radio radio radio--filter" type="radio" name="filter__features" id="filter__color">
+        <label class="filter__color label label--filter label--filter_color" for="filter__color">&#11027;
+        </label>
+        <input class="filter__range filter__range--sub range range--filter" type="range">
 
-          <input class="filter__range filter__range--main range range--filter" type="range">
-        </div>
-        <div class="filter__buttons">
-          <input class="filter__btn filter__btn--upload btn btn--filter" type="submit" name="filter-upload" value="Запостить">
-          <input class="filter__btn filter__btn--reset btn btn--filter btn--filter_disabled" type="reset" name="filter-reset" value="Отмена" disabled>
-        </div>
-      </form>
+
+        <input class="filter__radio radio radio--filter" type="radio" name="filter__features" id="filter__contrast">
+        <label class="filter__contrast label label--filter label--filter_contrast" for="filter__contrast">&#9680;
+        </label>
+        <input class="filter__range filter__range--sub range range--filter" type="range">
+
+        <input class="filter__range filter__range--main range range--filter" type="range">
+      </div>
+      <div class="filter__buttons">
+        <input class="filter__btn filter__btn--upload btn btn--filter" type="submit" name="filter-upload" value="Запостить">
+        <input class="filter__btn filter__btn--reset btn btn--filter btn--filter_disabled" type="reset" name="filter-reset" value="Отмена" disabled>
+      </div>
+    </form>
 
   </div>
   <footer class="main-footer main-footer--inner-page">

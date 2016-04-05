@@ -1,14 +1,30 @@
 .intro {
+    background: url("../img/iphone-hand-mobile.png") no-repeat center 23%;
+    @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+        background: url("../img/iphone-hand-mobile@2x.png") no-repeat center 23%;
+        background-size: 258px auto;
+    }
   @media ($tablet-widths) {
     @include container;
     margin-top: 0;
     padding-top: 20px;
     padding-bottom: 106px;
     background: none;
-    background: url("../img/bg-back-tablet-iphone-5.png") no-repeat center bottom;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom;
+    @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+        background: url("../img/iphone-hand-tablet@2x.png") no-repeat center bottom;
+        background-size: 700px auto;
+    }
   }
   @media ($desktop-widths) {
-    background: url("../img/bg-back-desktop-iphone-5.png") no-repeat center bottom;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat center bottom;
+    @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+        background: url("../img/iphone-hand-desktop@2x.png") no-repeat center bottom;
+        background-size: 1050px auto;
+    }
   }
   @media ($desktop-widths) {
     padding-top: 77px;
@@ -40,7 +56,7 @@
       width: 320px;
       margin: 0 auto;
       height: 391px;
-      background: url("../img/bg-back-mobile-iphone-5.png") no-repeat -7% 135%;
+    //   background: url("../img/bg-back-mobile-iphone-5.png") no-repeat -7% 135%;
     }
   }
   &__title {

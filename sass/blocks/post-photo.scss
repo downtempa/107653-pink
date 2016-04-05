@@ -23,13 +23,11 @@
   }
   // обертка img панорамы центрует (дектоп img если ширниа меньше)
   &__picture {
-    @media ($desktop-widths) {
       margin: 0 auto;
     }
-  }
-  &__img {
-    margin: 0 auto;
-  }
+  // &__img {
+  //   margin: 0 auto;
+  // }
   &__banner {
     position: absolute;
     right: 0;

@@ -1,8 +1,19 @@
 .main-header {
   background: $navi-blue url("../img/bg-back-mobile.jpg") no-repeat center top;
 
+  @media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+      background: $navi-blue url("../img/bg-back-mobile@2x.jpg") no-repeat center top;
+      background-size: 700px auto;
+  }
+
   @media ($tablet-widths) {
-    background: $navi-blue url("../img/bg-back-tablet.jpg") no-repeat center top;
+    background: $navi-blue url("../img/bg-back-tablet@1x.jpg") no-repeat center top;
+    @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+        background: $navi-blue url("../img/bg-back-tablet@2x.jpg") no-repeat center top;
+        background-size: 1200px auto;
+    }
 
   }
   @media ($desktop-widths) {

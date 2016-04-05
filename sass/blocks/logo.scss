@@ -34,5 +34,13 @@
               display: block;
           }
       }
+
   }
+  &:hover .logo-svg {
+      fill:$pink;
+  }
+  &:active .logo-svg {
+      opacity: 0.3;
+  }
+
 }
