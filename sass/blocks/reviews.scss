@@ -1,6 +1,6 @@
 .reviews {
   padding-bottom: 30px;
-}
-.reviews__wrapper {
-  @include container;
+  @media ($tablet-widths) {
+      padding-bottom: 7px;
+  }
 }

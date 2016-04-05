@@ -3,31 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
 
 <body class="page page--form">
-  <header class="main-header main-header-mobile-menu_visible">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="index.html">Pink</a>
-      <nav class="main-nav">
-        <a class="main-nav__toggle" href="#">Меню</a>
-        <ul class="main-nav__list main-nav__list-visible">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Возможности</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Стоимость</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <div class="intro intro--form-page intro--inner-page">
-    <div class="wrapper">
-      <h1 class="intro__title intro__title--inner-page intro__title--form-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
-  </div>
+    <header class="main-header main-header-mobile-menu_visible">
+      <div class="main-header__top-panel main-header__top-panel--inner-page">
+        <div class="wrapper">
+          <a class="main-header__logo logo">Pink</a>
+          <nav class="main-nav">
+            <a class="main-nav__toggle main-nav__toggle-cross" href="#">Меню</a>
+            <ul class="main-nav__list main-nav__list-visible">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+                <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+                <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
+                <li class="main-nav__item"><a href="https://htmlacademy.ru/"  class="main-nav__link" target="_blank">HTML Academy</a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="intro intro--form-page intro--inner-page">
+        <div class="wrapper">
+          <h1 class="intro__title intro__title--inner-page intro__title--form-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </div>
+    </header>
   <div class="promo">
 
     <div class="promo__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</div>
@@ -86,7 +89,7 @@
           <div class="user-contacts__input-container">
             <label class="user-contacts__label  label  label--user-contacts" for="user-tel">Номерок телефончика</label>
             <!-- чет паттерн тел хромает -->
-            <input class="user-contacts__input  input  input--user-contacts" type="tel" name="user-tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" pattern="+7\s[0-9]{3}\s[0-9]{3}-[0-9]{2}-[0-9]{2}" id="user-tel">
+            <input class="user-contacts__input  input  input--user-contacts" type="tel" name="user-tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ"  id="user-tel">
           </div>
           <div class="user-contacts__input-container">
             <label class="user-contacts__label  label  label--user-contacts" for="user-email">адресок почты</label>

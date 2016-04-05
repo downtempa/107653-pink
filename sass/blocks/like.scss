@@ -29,8 +29,11 @@
   }
   // количество лайков
   &__output {
-    @include main-font(12px, 24px, 400);
-    color: #d22856;
+    font-family: $main-font;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $pink;
     text-transform: uppercase;
   }
 }

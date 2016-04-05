@@ -32,8 +32,11 @@
     background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
   }
   &--full-name {
-    @include main-font(14px, 30px, 400);
-    color: #d22856;
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+    color: $pink;
     text-transform: uppercase;
     margin: 6px 0 6px 23px;
     @media ($tablet-widths) {
@@ -43,8 +46,11 @@
   }
   &--events {
     width: 210px;
-    @include main-font(18px, 30px, 400);
-    color: #283645;
+    font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+    color: $navi-blue;
     margin-left: 47px;
     @media ($tablet-widths) {
       width: 400px;
@@ -57,8 +63,11 @@
   &--app-edition {
     width: 210px;
     // margin: 6px 0;
-    @include main-font(18px, 30px, 400);
-    color: #283645;
+    font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+    color: $navi-blue;
     margin-left: 47px;
     @media ($tablet-widths) {
       //   width: 525px;
@@ -68,8 +77,11 @@
     }
   }
   &--user-contacts {
-    @include main-font(14px, 30px, 400);
-    color: #d22856;
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+    color: $pink;
     text-transform: uppercase;
     margin: 6px 0 6px 23px;
     @media ($tablet-widths) {
@@ -91,32 +103,44 @@
     cursor: pointer;
   }
   &--table {
-    border: 3px solid #f2f2f2;
+    border: 3px solid $grey-bg;
   }
   &--pseudo-active {
-    border: 3px solid #283645;
+    border: 3px solid $navi-blue;
     background: #ffffff;
   }
   // &--full-name {
-  //     @include main-font(14px, 30px, 400);
-  //     color: #d22856;
+  //     font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  //     color: $pink;
   //     text-transform: uppercase;
   //     margin-left: 23px;
   // }
   // &--user-contacts {
-  //     @include main-font(14px, 30px, 400);
-  //     color: #d22856;
+  //     font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  //     color: $pink;
   //     text-transform: uppercase;
   //     margin-left: 23px;
   // }
   // &--events {
-  //     @include main-font(18px, 30px, 400);
-  //     color: #283645;
+  //     font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  //     color: $navi-blue;
   //     margin-left: 47px;
   // }
   // &--app-edition {
-  //     @include main-font(18px, 30px, 400);
-  //     color: #283645;
+  //     font-family: $main-font;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  //     color: $navi-blue;
   //     margin-left: 47px;
   // }
 }

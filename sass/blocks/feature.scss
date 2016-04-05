@@ -1,0 +1,40 @@
+.feature {
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 31px;
+    @media ($tablet-widths) {
+        text-align: left;
+        margin-bottom: 35px;
+    }
+    @media ($desktop-widths) {
+        text-align: center;
+    }
+    &__title {
+      margin: 0;
+      margin-bottom: 12px;
+      font-family: $main-font;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+      color: #000000;
+      @media ($desktop-widths) {
+          padding: 0 40px;
+        font-size: 30px;
+        line-height: 27px;
+        margin-bottom: 26px;
+      }
+    }
+    &__description {
+        margin: 0;
+        font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+        color: $navi-blue;
+        @media ($desktop-widths) {
+            padding: 0 33px;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+}

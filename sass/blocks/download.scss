@@ -1,17 +1,20 @@
 .download {
-  padding-top: 28px;
+
   min-height: 240px;
   text-align: center;
+  background: #1d2631;
   @media ($tablet-widths) {
-    padding-top: 30px;
-    padding-right: 325px;
+
+    background: none;
   }
   @media ($desktop-widths) {
-    padding-right: 640px;
-    padding-top: 58px;
+
   }
   &__description {
-    @include main-font(14px, 24px, 300);
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
     color: #ffffff;
     @media ($tablet-widths) {
       font-size: 18px;

@@ -1,22 +1,32 @@
 .price {
-  background: #f2f2f2;
-  padding-top: 70px;
+  background: $grey-bg;
+  padding-bottom: 72px;
   @media ($mobile-widths-only) {
     min-height: 400px;
     width: 100%;
     overflow: hidden;
   }
   @media ($tablet-widths) {
-    padding-bottom: 100px;
+    padding-bottom: 68px;
   }
   @media ($desktop-widths) {
-    padding: 120px;
+    // padding: 120px;
+  }
+  &::before {
+      display: block;
+
+    width: 100%;
+    height: 94px;
+    content: "";
+    background: url("../img/bg-triangle-white.svg") no-repeat;
+    background-size: 100% auto;
+    @media ($tablet-widths) {
+        height: 90px;
+    }
   }
   &__slider {
     position: relative;
     @include container;
-    // @media ($mobile-widths_only) {
-    //   max-width: 320px;
-    //   margin: 0 auto;
+
   }
 }

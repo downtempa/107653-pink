@@ -24,11 +24,14 @@
     }
   }
   &__footnote {
-    @include main-font(17px, 30px, 400);
-    color: #283645;
+    font-family: $main-font;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $navi-blue;
     text-transform: uppercase;
     //   & span {
-    //       color: #d22856;
+    //       color: $pink;
     //   }
   }
 }

@@ -1,8 +1,11 @@
 .link {
-  @include main-font(14px, 24px, 400);
-  color: #d22856;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $pink;
   &--effect {
-    @media ($tablet-widths) {
+    @media ($desktop-widths) {
       font-size: 18px;
       line-height: 30px;
     }
@@ -14,12 +17,12 @@
     line-height: 36px;
   }
   &--copyright {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    width: 59px;
-    height: 78px;
-    background: url("../img/htmlacademy.svg") no-repeat 100% 100%;
+    // text-indent: 100%;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // display: block;
+    // width: 59px;
+    // height: 78px;
+    // background: url("../img/htmlacademy.svg") no-repeat 100% 100%;
   }
 }

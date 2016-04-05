@@ -36,14 +36,17 @@
       }
       //  почему не могу переопределить??
       @media ($desktop-widths) {
-        padding: 21px 0 50px;
+        padding: 26px 0 70px;
       }
     }
   }
   &__slogan {
     text-align: center;
-    @include main-font(14px, 30px,400);
-    color: #283645;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $navi-blue;
     width: 250px;
     margin: 0 auto;
     @media ($tablet-widths) {
@@ -52,7 +55,8 @@
     }
     & p {
       @media ($desktop-widths) {
-        margin-top: 3px;
+          margin: 0;
+        margin-top: 2px;
       }
     }
   }

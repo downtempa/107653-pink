@@ -3,6 +3,16 @@
   &--clearfix {
     @include clearfix;
   }
+  &--download {
+      @media ($tablet-widths) {
+          width: auto;
+          margin: 0;
+      }
+  }
+  &--effect {
+      justify-content: space-between;
+    display: flex;
+  }
   &--post-photo {
     width: 240px;
   }
@@ -11,5 +21,8 @@
   }
   &--panorama-banner {
     position: relative;
+  }
+  &--advantages {
+      position: relative;
   }
 }

@@ -3,7 +3,7 @@
   //   margin: 0;
   border: none;
   @media ($tablet-widths) {
-    border: 2px solid #e5e5e5;
+    border: 2px solid $grey-border;
   }
   &--full-name {
     border: none;
@@ -16,7 +16,7 @@
   &--app-edition {
     padding-top: 70px;
     padding-bottom: 24px;
-    background: #f2f2f2;
+    background: $grey-bg;
     @media ($tablet-widths) {
       background: none;
       padding: 30px 60px;
@@ -36,7 +36,7 @@
   &--events {
     padding-top: 76px;
     padding-bottom: 22px;
-    background: #f2f2f2;
+    background: $grey-bg;
     @media ($tablet-widths) {
       margin: 0;
       padding-top: 27px;

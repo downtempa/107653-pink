@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background: #f2f2f2;
+  background: $grey-bg;
   // блок с КАРТИНКОЙ панорама
   &--panorama {
     margin: 0;
@@ -23,13 +23,11 @@
   }
   // обертка img панорамы центрует (дектоп img если ширниа меньше)
   &__picture {
-    @media ($desktop-widths) {
       margin: 0 auto;
     }
-  }
-  &__img {
-    margin: 0 auto;
-  }
+  // &__img {
+  //   margin: 0 auto;
+  // }
   &__banner {
     position: absolute;
     right: 0;
@@ -37,8 +35,11 @@
     width: 141px;
     /* height: 36px; */
     padding: 6px 0;
-    background: #d22856;
-    @include main-font(12px, 24px, 900);
+    background: $pink;
+    font-family: $main-font;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 900;
     color: #ffffff;
     text-align: center;
     @media ($tablet-widths) {
@@ -49,8 +50,11 @@
   &__author {
     width: 242px;
     margin: 18px auto 0;
-    @include main-font(14px, 24px, 900);
-    color: #283645;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
+    color: $navi-blue;
     @media ($tablet-widths) {
       margin-top: 24px;
     }
@@ -73,8 +77,11 @@
   &__description {
     width: 242px;
     margin: 0 auto;
-    @include main-font(14px, 24px, 400);
-    color: #283645;
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+    color: $navi-blue;
     &--panorama {
       @media ($tablet-widths) {
         width: 560px;
@@ -86,18 +93,3 @@
     }
   }
 }
-// баннер ПАНОРАМА ДНЯ
-// .post-photo--panorama::before {
-//     display: block;
-//   position: absolute;
-//   content: "Панорама дня";
-//   top: 0;
-//   right: 10%;
-//   width: 141px;
-//   /* height: 36px; */
-//   padding: 6px 0;
-//   background: #d22856;
-//   @include main-font(12px, 24px, 900);
-//   color: #ffffff;
-//   text-align: center;
-// }

@@ -2,43 +2,63 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 60px 0 30px;
+  padding: 24px 0 30px;
   text-align: center;
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media ($tablet-widths) {
-      flex-direction: column-reverse;
-    }
+  align-items: center;
+  @media ($tablet-widths) {
+    flex-direction: column-reverse;
+  }
+  // &__wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //
+  // }
+  &--active {
+      display: flex;
+  }
+  &--hidden {
+      display: none;
   }
   &__author {
-    @include main-font(18px, 30px, 900);
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 900;
     color: #000000;
     font-style: normal;
+    margin-bottom: 0;
     @media ($tablet-widths) {
       font-size: 20px;
+      margin-bottom: 19px;
     }
     @media ($desktop-widths) {
       font-size: 24px;
     }
+  & cite {
+      font-style: normal;
   }
-  &__author span {
+  & span {
     display: none;
     @media ($tablet-widths) {
       display: block;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 400;
-      color: #283645;
+      line-height: 32px;
+      color: $navi-blue;
     }
+}
   }
   &__text {
-    @include main-font(14px, 30px, 400);
-    color: #283645;
+    font-family: $main-font;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+    color: $navi-blue;
     @media ($tablet-widths) {
       font-size: 18px;
       line-height: 30px;
-      margin-bottom: 35px;
+      margin-bottom: 15px;
     }
     @media ($desktop-widths) {
       width: 680px;
