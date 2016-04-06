@@ -28,12 +28,14 @@ gulp.task("style", function() {
           "last 2 Edge versions"
         ]
       }),
-      mqpacker({
-        sort: true
-      })
+    //   mqpacker({
+    //     sort: true
+    //   })
     ]))
     .pipe(gulp.dest("build/css"))
-    .pipe(minify())
+    .pipe(minify({
+     restructure: false
+   }))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.reload({
@@ -115,8 +117,8 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
-  gulp.watch("../saas/**/*.scss", ["style"]);
-  gulp.watch("../.html", ["copy-html"]);
+  gulp.watch("saas/**/*.scss", ["style"]);
+  gulp.watch(".html", ["copy-html"]);
 });
 
 gulp.task("build", ["clean", "fonts", "img", "js", "style", "html", "images"]);

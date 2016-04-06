@@ -11,14 +11,20 @@
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    &--tw {
-      background: url("../img/icon-twitter.svg") no-repeat center center;
+    // &--tw {
+    //   background: url("../img/icon-twitter.svg") no-repeat center center;
+    // }
+    // &--fb {
+    //   background: url("../img/icon-facebook.svg") no-repeat center center;
+    // }
+    // &--ytb {
+    //   background: url("../img/icon-youtube.svg") no-repeat center center;
+    // }
+    & svg path {
+        fill: $pink;
     }
-    &--fb {
-      background: url("../img/icon-facebook.svg") no-repeat center center;
-    }
-    &--ytb {
-      background: url("../img/icon-youtube.svg") no-repeat center center;
+    &:hover svg path {
+        fill: red;
     }
   }
 }
