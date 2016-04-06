@@ -10,8 +10,8 @@ var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var copy = require('gulp-contrib-copy');
-var clean = require('gulp-contrib-clean');
+// var copy = require("gulp-contrib-copy");
+var clean = require("gulp-contrib-clean");
 
 
 gulp.task("style", function() {
@@ -53,30 +53,58 @@ gulp.task("images", function() {
 
 
 gulp.task("clean", function() {
-  gulp.src('build')
+  gulp.src("build")
     .pipe(clean());
 });
 
 
-gulp.task("copy", function() {
-  gulp.src(["fonts/**/*.{woff,woff2}", "img/**", "js/**", "*.html"], {
-      base: "."
-    })
-    .pipe(copy())
+// gulp.task("copy", function() {
+//   gulp.src(["fonts/**/*.{woff,woff2}", "img/**", "js/**", "*.html"], {
+//       base: "."
+//     })
+//     .pipe(copy())
+//     .pipe(gulp.dest("build"));
+// });
+gulp.task("fonts", function() {
+  gulp.src("fonts/**/*.{woff,woff2}")
+    .pipe(gulp.dest("build/fonts"));
+});
+
+gulp.task("img", function() {
+  gulp.src("img/**")
+    .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("js", function() {
+  gulp.src("*.html")
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("html", function() {
+  gulp.src("js/**")
+    .pipe(gulp.dest("build/js"));
+});
 
 gulp.task("copy-html", function() {
-  gulp.src(["*.html"], {
-      base: "."
-    })
-    .pipe(copy())
+  gulp.src(".html")
     .pipe(gulp.dest("build"))
     .pipe(server.reload({
       stream: true
     }));
 });
+
+
+
+// gulp.task("copy-html", function() {
+//   gulp.src(["*.html"], {
+//       base: "."
+//     })
+//     .pipe(copy())
+//     .pipe(gulp.dest("build"))
+//     .pipe(server.reload({
+//       stream: true
+//     }));
+// });
 
 
 gulp.task("serve", ["style"], function() {
@@ -87,8 +115,8 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
-  gulp.watch("saas/**/*.scss", ["style"]);
-  gulp.watch("*.html", ["copy-html"]);
+  gulp.watch("../saas/**/*.scss", ["style"]);
+  gulp.watch("../.html", ["copy-html"]);
 });
 
-gulp.task("build", ["clean", "copy", "style", "images"]);
+gulp.task("build", ["clean", "fonts", "img", "js", "style", "html", "images"]);

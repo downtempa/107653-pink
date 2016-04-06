@@ -7,6 +7,7 @@
   }
   @media ($tablet-widths) {
     @include container;
+    width: 620px;
     margin-top: 0;
     padding-top: 33px;
     padding-bottom: 106px;
@@ -89,6 +90,7 @@
       line-height: 62px;
       margin-left: 29px;
       line-height: 61px;
+      width: 241px;
     }
     &--inner-page {
       margin-bottom: 0;
