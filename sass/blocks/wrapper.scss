@@ -3,6 +3,12 @@
   &--clearfix {
     @include clearfix;
   }
+  // &--top-panel {
+  //     padding-bottom: 20px;
+  // }
+  // &--menu-visible {
+  //         border-bottom: 1px solid #030303;
+  // }
   &--download {
       @media ($tablet-widths) {
           width: auto;

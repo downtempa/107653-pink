@@ -22,6 +22,9 @@
     @media ($tablet-widths) {
       height: 90px;
     }
+    @media ($desktop-widths) {
+        height: 185px;
+    }
   }
   &__slider {
     position: relative;
