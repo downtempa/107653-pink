@@ -15,6 +15,14 @@
     text-decoration: none;
     font-weight: 300;
     line-height: 36px;
+    &:hover {
+        color: $navi-blue;
+        text-decoration: underline;
+    }
+    &:active {
+        opacity: 0.3;
+        text-decoration: none;
+    }
   }
   &--copyright {
     // text-indent: 100%;

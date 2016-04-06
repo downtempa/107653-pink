@@ -56,8 +56,15 @@
       border: none;
       outline: none;
       background: #ffffff;
-      border-left: 2px solid #bec2c7;
-      border-top: 2px solid #bec2c7;
+      border-left: 2px solid $navi-blue;
+      border-top: 2px solid $navi-blue;
+      opacity: 0.3;
+      &:hover {
+          opacity: 0.6;
+      }
+      &:active {
+          opacity: 0.1;
+      }
     }
     &--left {
       transform: rotate(-45deg);
