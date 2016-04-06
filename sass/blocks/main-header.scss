@@ -18,15 +18,54 @@
   }
   @media ($desktop-widths) {
     background: $navi-blue url("../img/bg-back-desktop.jpg") no-repeat center top;
-    // background-size: cover;
-    margin-bottom: 40px;
   }
-  &--mobile-menu_visible {
-    background: $navi-blue;
-    border-bottom: 1px solid #030303;
+  // &--mobile-menu_visible {
+  //   background: $navi-blue;
+  //   border-bottom: 1px solid #030303;
+  // }
+  // &--tablet-menu_visible {
+  //   background: $navi-blue;
+  // }
+
+  &__wrapper {
+      @media ($desktop-widths) {
+          width: 940px;
+margin: 0 auto;
+display: flex;
+      }
   }
-  &--tablet-menu_visible {
-    background: $navi-blue;
+  &__container {
+      @media ($desktop-widths) {
+          width: 20%;
+      }
+      &--menu-visible {
+          background: $navi-blue;
+          padding-bottom: 20px;
+           border-bottom: 1px solid #030303;
+           @media ($tablet-widths) {
+               padding-bottom: 41px;
+           }
+      }
+  }
+  &__toggle {
+    float: right;
+    display: block;
+    width: 49px;
+    height: 24px;
+    margin-top: 25px;
+    background: url("../img/icon-menu-burger.svg") no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    @media ($tablet-widths) {
+      margin-top: 43px;
+    }
+    @media ($desktop-widths) {
+      display: none;
+    }
+    &--menu-visible {
+      background: url("../img/icon-menu-cross.svg") no-repeat 95%;
+    }
   }
   &__top-panel {
     background: rgba(0, 0, 0, 0.3);
@@ -42,10 +81,9 @@
     &--inner-page {
         margin-bottom: 0;
     }
-  }
-  &__wrapper {
-    @include container;
-    // @include clearfix;
+    // &--menu-visible {
+    //     background: $navi-blue;
+    // }
   }
   &__logo {
     float: left;

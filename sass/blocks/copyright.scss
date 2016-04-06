@@ -9,6 +9,9 @@
   color: $navi-blue;
   display: flex;
   align-items: center;
+  @media ($desktop-widths) {
+      font-size: 18px;
+  }
   &__link {
       margin-left: 15px;
   align-self: flex-start;

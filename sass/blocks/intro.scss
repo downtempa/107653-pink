@@ -19,12 +19,12 @@
     }
   }
   @media ($desktop-widths) {
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat center bottom;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat -15% bottom;
     padding-top: 67px;
     padding-bottom: 118px;
     @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-      background: url("../img/iphone-hand-desktop@2x.png") no-repeat center bottom;
+      background: url("../img/iphone-hand-desktop@2x.png") no-repeat -15% bottom;
       background-size: 1050px auto;
     }
   }

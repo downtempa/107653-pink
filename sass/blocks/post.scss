@@ -47,6 +47,9 @@
       line-height: 32px;
       color: $navi-blue;
     }
+    @media ($desktop-widths) {
+            font-size: 18px;
+    }
 }
   }
   &__text {
@@ -61,7 +64,8 @@
       margin-bottom: 15px;
     }
     @media ($desktop-widths) {
-      width: 680px;
+        width: 675px;
+      margin-bottom: 11px;
     }
   }
 }

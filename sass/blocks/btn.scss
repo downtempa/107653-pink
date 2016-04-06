@@ -17,6 +17,13 @@
     @media ($desktop-widths) {
       font-size: 21px;
     }
+    &:hover {
+        background: #ffffff;
+        color: $pink;
+    }
+    &:active {
+        color: rgba(210, 40, 86, 0.3);
+    }
   }
   &--like {
     text-indent: 100%;
@@ -40,11 +47,30 @@
     @media ($desktop-widths) {
       width: 183px;
     }
+    &:hover {
+        background: $pink;
+        color: #ffffff;
+    }
+    &:active {
+        color: #e08195;
+    }
   }
   &--filter_disabled {
     opacity: 0.1;
-    border-color: #000000;
-    color: #000000;
+    border-color: $navi-blue;
+    color: $navi-blue;
+  }
+  &--filter-reset {
+      color: $navi-blue;
+      border-color: $navi-blue;
+      &:hover {
+          background: #ffffff;
+          color: $navi-blue;
+      }
+      &:active {
+          background: $navi-blue;
+          color: #ffffff;
+      }
   }
   &--submit {
     width: 280px;
@@ -59,7 +85,14 @@
     @media ($tablet-widths) {
       width: 300px;
     }
+    &:hover {
+        background: #1c9b5e;
+    }
+    &:active {
+        color: #7dbd99;
+    }
   }
+
   &--popup {
     width: 250px;
     line-height: 33px;

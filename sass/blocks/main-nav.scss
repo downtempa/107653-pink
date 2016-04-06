@@ -4,49 +4,30 @@
     float: right;
     width: 80%;
   }
-  &__toggle {
-    float: right;
-    display: block;
-    width: 49px;
-    height: 24px;
-    margin-top: 25px;
-    background: url("../img/icon-menu-burger.svg") no-repeat;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    @media ($tablet-widths) {
-      margin-top: 43px;
-    }
-    @media ($desktop-widths) {
-      display: none;
-    }
-    &--cross {
-      background: url("../img/icon-menu-cross.svg") no-repeat 95%;
-    }
-  }
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: none;
-    position: absolute;
-    top: 71px;
-    left: 50%;
-    margin-left: -160px;
-    width: 320px;
+    // position: absolute;
+    // top: 71px;
+    // left: 50%;
+    // margin-left: -160px;
+    // width: 320px;
     background: $navi-blue;
     @media ($tablet-widths) {
-      width: 700px;
-      margin-left: -350px;
+      //   width: 700px;
+      //   margin-left: -350px;
     }
     @media ($desktop-widths) {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       position: static;
+      flex-wrap: wrap;
       min-height: auto;
       background: none;
-      margin-left: 119px;
+      margin-left: 130px;
       width: 657px;
       margin-top: 31px;
     }
@@ -62,17 +43,18 @@
     border-bottom: 1px solid #030303;
     @media ($desktop-widths) {
       display: inline-block;
-      margin-right: 60px;
+      margin-right: 80px;
       border-top: none;
       border-bottom: none;
     }
     &:last-child {
-        margin-right: 0;
+      margin-right: 0;
     }
   }
   &__link {
     display: block;
-    padding: 15px 10px;
+    position: relative;
+    padding: 15px 0;
     font-family: $main-font;
     font-size: 18px;
     line-height: 32px;
@@ -80,10 +62,35 @@
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    @media ($tablet-widths) {
+    &:hover {
+        color: $pink;
+
+    }
+    &:active {
+        opacity: 0.3;
+    }
+    @media ($desktop-widths) {
       line-height: 18px;
       font-weight: 400;
       text-transform: capitalize;
+    }
+    &:hover::after {
+      @media ($desktop-widths) {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        /* left: 21px; */
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: #ffffff;
+      }
+    }
+    &:active {
+      opacity: 0.3;
+    }
+    &:active::after {
+      display: none;
     }
   }
 }
