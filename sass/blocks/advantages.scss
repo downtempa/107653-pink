@@ -15,4 +15,11 @@
         position: absolute;
     }
   }
+  &__img {
+      &--main {
+          @media ($mobile-widths-only) {
+              margin-bottom: -46px;
+          }
+      }
+  }
 }

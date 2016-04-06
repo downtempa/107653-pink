@@ -11,16 +11,17 @@
   }
   @media ($desktop-widths) {
     background: $grey-bg;
-    padding-top: 70px;
+    padding-top: 17px;
+    padding-bottom: 66px;
+            margin-bottom: 74px;
   }
-
   &__container {
-      width: 50%;
-
+    width: 50%;
     display: flex;
     flex-direction: column;
     @media ($desktop-widths) {
-      width: 60%;
+      margin-top: 57px;
+      width: 61%;
     }
   }
   &__title {
@@ -33,20 +34,20 @@
     margin-bottom: 10px;
     @media ($desktop-widths) {
       width: 100%;
-      margin-bottom: 25px;
+      margin-bottom: 23px;
     }
   }
   &__content {
     font-family: $main-font;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
     color: $navi-blue;
     margin-top: 0;
     @media ($desktop-widths) {
       width: 500px;
       font-size: 18px;
-      line-height: 35px;
+      line-height: 29px;
     }
   }
   &__link {

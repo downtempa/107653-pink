@@ -14,8 +14,8 @@
   }
   @media ($desktop-widths) {
     justify-content: space-between;
+    margin-bottom: -79px;
   }
-
   &__title {
     font-family: $main-font;
     font-size: 24px;
@@ -30,8 +30,12 @@
       margin-bottom: 17px;
     }
     @media ($desktop-widths) {
+      margin-top: 59px;
+      font-size: 50px;
+      line-height: 60px;
       width: 700px;
       padding: 0 200px;
+      //   margin-bottom: -18px;
     }
   }
   &__item {
@@ -44,27 +48,32 @@
     font-weight: 900;
     color: $navi-blue;
     @media ($tablet-widths) {
-        margin-bottom: 23px;
+      margin-bottom: 23px;
     }
     @media ($desktop-widths) {
       width: 270px;
+      margin-bottom: 41px;
     }
     &--tel {
-        @media ($tablet-widths) {
-            padding-left: 17px;
-        }
+      @media ($tablet-widths) {
+        padding-left: 17px;
+      }
     }
     &--address {
       @media ($tablet-widths) {
         width: 290px;
       }
+      @media ($desktop-widths) {
+        margin-left: 28px;
+      }
     }
     &--link {
-        margin-bottom: 23px;
-        @media ($tablet-widths) {
-            padding-left: 35px;
-        }
+      margin-bottom: 23px;
+      @media ($tablet-widths) {
+        padding-left: 35px;
+      }
       @media ($desktop-widths) {
+        margin-right: 15px;
         order: 1;
       }
     }
@@ -74,16 +83,18 @@
     color: $pink;
     font-weight: 300;
     line-height: 37px;
-
     @media ($tablet-widths) {
-        margin-top: 3px;
+      margin-top: 3px;
     }
     @media ($desktop-widths) {
-        margin-top: 22px;
+      margin-top: 22px;
     }
     &--street {
-        line-height: 30px;
-    margin-top: 6px;
+      line-height: 30px;
+      margin-top: 6px;
+      @media ($desktop-widths) {
+        margin-top: 23px;
+      }
     }
   }
 }

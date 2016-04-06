@@ -18,8 +18,6 @@
   }
   @media ($desktop-widths) {
     background: $navi-blue url("../img/bg-back-desktop.jpg") no-repeat center top;
-    // background-size: cover;
-    margin-bottom: 40px;
   }
   &--mobile-menu_visible {
     background: $navi-blue;
@@ -42,10 +40,6 @@
     &--inner-page {
         margin-bottom: 0;
     }
-  }
-  &__wrapper {
-    @include container;
-    // @include clearfix;
   }
   &__logo {
     float: left;

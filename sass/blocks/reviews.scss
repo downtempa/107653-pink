@@ -1,6 +1,11 @@
 .reviews {
   padding-bottom: 30px;
   @media ($tablet-widths) {
-      padding-bottom: 7px;
+    padding-bottom: 7px;
+  }
+  @media ($desktop-widths) {
+    padding-top: 69px;
+    background: url("../img/icon-quotes.svg") no-repeat center 0;
+    margin-bottom: -28px;
   }
 }
