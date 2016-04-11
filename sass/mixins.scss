@@ -1,22 +1,21 @@
-
 @mixin container {
-  width: 280px;
-  margin: 0 auto;
-  @media ($tablet-widths) {
-    width: 620px;
-  }
-  @media ($desktop-widths) {
-    width: 940px;
-  }
+    width: 280px;
+    margin: 0 auto;
+    @media ($tablet-widths) {
+        width: 620px;
+    }
+    @media ($desktop-widths) {
+        width: 940px;
+    }
 }
 @mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
+    &:after {
+        display: table;
+        clear: both;
 
+        content: "";
+    }
+}
 // @mixin main-font ($font-size, $line-height, $font-weight) {
 //     font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
 //     font-size: $font-size;

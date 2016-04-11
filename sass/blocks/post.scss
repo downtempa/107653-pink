@@ -1,71 +1,81 @@
 .post {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 24px 0 30px;
-  text-align: center;
-  align-items: center;
-  @media ($tablet-widths) {
-    flex-direction: column-reverse;
-  }
-  // &__wrapper {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //
-  // }
-  &--active {
-      display: flex;
-  }
-  &--hidden {
-      display: none;
-  }
-  &__author {
-    font-family: $main-font;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 900;
-    color: #000000;
-    font-style: normal;
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 24px 0 30px;
+
+    text-align: center;
+
+    align-items: center;
     @media ($tablet-widths) {
-      font-size: 20px;
-      margin-bottom: 19px;
+        flex-direction: column-reverse;
     }
-    @media ($desktop-widths) {
-      font-size: 24px;
+    // &__wrapper {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //
+    // }
+    &--active {
+        display: flex;
     }
-  & cite {
-      font-style: normal;
-  }
-  & span {
-    display: none;
-    @media ($tablet-widths) {
-      display: block;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 32px;
-      color: $navi-blue;
+    &--hidden {
+        display: none;
     }
-    @media ($desktop-widths) {
+    &__author {
+        margin-bottom: 0;
+
+        color: #000000;
+
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: 900;
+        font-style: normal;
+        line-height: 30px;
+        @media ($tablet-widths) {
+            margin-bottom: 19px;
+
+            font-size: 20px;
+        }
+        @media ($desktop-widths) {
+            font-size: 24px;
+        }
+        & cite {
+            font-style: normal;
+        }
+        & span {
+            display: none;
+            @media ($tablet-widths) {
+                display: block;
+
+                color: $navi-blue;
+
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+            @media ($desktop-widths) {
+                font-size: 18px;
+            }
+        }
+    }
+    &__text {
+        color: $navi-blue;
+
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        @media ($tablet-widths) {
+            margin-bottom: 15px;
+
             font-size: 18px;
+            line-height: 30px;
+        }
+        @media ($desktop-widths) {
+            width: 675px;
+            margin-bottom: 11px;
+        }
     }
-}
-  }
-  &__text {
-    font-family: $main-font;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-    color: $navi-blue;
-    @media ($tablet-widths) {
-      font-size: 18px;
-      line-height: 30px;
-      margin-bottom: 15px;
-    }
-    @media ($desktop-widths) {
-        width: 675px;
-      margin-bottom: 11px;
-    }
-  }
 }

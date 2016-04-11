@@ -1,58 +1,68 @@
 .effect {
-  @media ($mobile-widths-only) {
-    display: none;
-  }
-  @media ($tablet-widths) {
-    display: block;
-    padding-top: 50px;
-    padding-bottom: 54px;
-    text-align: left;
-    background: url("../img/");
-  }
-  @media ($desktop-widths) {
-    background: $grey-bg;
-    padding-top: 17px;
-    padding-bottom: 66px;
-            margin-bottom: 74px;
-  }
-  &__container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    @media ($desktop-widths) {
-      margin-top: 57px;
-      width: 61%;
+    @media ($mobile-widths-only) {
+        display: none;
     }
-  }
-  &__title {
-    width: 180px;
-    font-family: $main-font;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 900;
-    color: #000000;
-    margin-bottom: 10px;
-    @media ($desktop-widths) {
-      width: 100%;
-      margin-bottom: 23px;
+    @media ($tablet-widths) {
+        display: block;
+
+        padding-top: 50px;
+        padding-bottom: 54px;
+
+        text-align: left;
+
+        background: url("../img/");
     }
-  }
-  &__content {
-    font-family: $main-font;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    color: $navi-blue;
-    margin-top: 0;
     @media ($desktop-widths) {
-      width: 500px;
-      font-size: 18px;
-      line-height: 29px;
+        margin-bottom: 74px;
+        padding-top: 17px;
+        padding-bottom: 66px;
+
+        background: $grey-bg;
     }
-  }
-  &__link {
-    @media ($desktop-widths) {
-      margin-top: 14px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+        @media ($desktop-widths) {
+            width: 61%;
+            margin-top: 57px;
+        }
     }
-  }
+    &__title {
+        width: 180px;
+        margin-bottom: 10px;
+
+        color: #000000;
+
+        font-family: $main-font;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 36px;
+        @media ($desktop-widths) {
+            width: 100%;
+            margin-bottom: 23px;
+        }
+    }
+    &__content {
+        margin-top: 0;
+
+        color: $navi-blue;
+
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        @media ($desktop-widths) {
+            width: 500px;
+
+            font-size: 18px;
+            line-height: 29px;
+        }
+    }
+    &__link {
+        @media ($desktop-widths) {
+            margin-top: 14px;
+        }
+    }
 }

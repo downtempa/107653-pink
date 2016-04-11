@@ -1,37 +1,39 @@
 .form {
-  display: flex;
-  flex-direction: column;
-  @media ($tablet-widths) {
-    @include container;
-  }
-  @media ($desktop-widths) {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  &__ctrl {
-    text-align: center;
-    @media ($mobile-widths-only) {
-      @include container;
-    }
+    display: flex;
+    flex-direction: column;
     @media ($tablet-widths) {
-      display: flex;
-      justify-content: space-between;
-      @include container;
+         @include container;
     }
     @media ($desktop-widths) {
-      width: 100%;
+        flex-direction: row;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-  }
-  &__footnote {
-    font-family: $main-font;
-    font-size: 17px;
-    line-height: 30px;
-    font-weight: 400;
-    color: $navi-blue;
-    text-transform: uppercase;
-    //   & span {
-    //       color: $pink;
-    //   }
-  }
+    &__ctrl {
+        text-align: center;
+        @media ($mobile-widths-only) {
+             @include container;
+        }
+        @media ($tablet-widths) {
+            display: flex;
+
+            justify-content: space-between;
+            @include container;
+        }
+        @media ($desktop-widths) {
+            width: 100%;
+        }
+    }
+    &__footnote {
+        text-transform: uppercase;
+
+        color: $navi-blue;
+
+        font-family: $main-font;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+    
+    }
 }

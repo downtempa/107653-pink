@@ -1,63 +1,69 @@
 .photo {
-  &__items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    @media ($tablet-widths) {
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
+    &__items {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-around;
+        @media ($tablet-widths) {
+            flex-direction: row;
+
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
-  }
-  &__item {
-    // все посты с фотками кроме панорамы
-    margin-bottom: 20px;
-    @media ($tablet-widths) {
-      width: 300px;
+    &__item {
+        // все посты с фотками кроме панорамы
+        margin-bottom: 20px;
+        @media ($tablet-widths) {
+            width: 300px;
+        }
+        @media ($desktop-widths) {
+            margin-bottom: 55px;
+        }
     }
-    @media ($desktop-widths) {
-      margin-bottom: 55px;
+    // блок с текстом (&__slogan) над блоком с панорамой
+    &__intro {
+        padding: 47px 0;
+
+        background: #ffffff;
+        @media ($tablet-widths) {
+            padding: 93px 0 74px;
+        }
+        @media ($desktop-widths) {
+            padding-bottom: 88px;
+        }
+        &--outro {
+            padding: 6px 0 28px;
+            @media ($tablet-widths) {
+                padding: 27px 0 50px;
+            }
+            //  почему не могу переопределить??
+            @media ($desktop-widths) {
+                padding: 26px 0 70px;
+            }
+        }
     }
-  }
-  // блок с текстом (&__slogan) над блоком с панорамой
-  &__intro {
-    background: #ffffff;
-    padding: 47px 0;
-    @media ($tablet-widths) {
-      padding: 93px 0 74px;
+    &__slogan {
+        width: 250px;
+        margin: 0 auto;
+
+        text-align: center;
+
+        color: $navi-blue;
+
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        @media ($tablet-widths) {
+            width: 450px;
+
+            font-size: 18px;
+        }
+        & p {
+            @media ($desktop-widths) {
+                margin: 2px 0 0;
+            }
+        }
     }
-    @media ($desktop-widths) {
-      padding-bottom: 88px;
-    }
-    &--outro {
-      padding: 6px 0 28px;
-      @media ($tablet-widths) {
-        padding: 27px 0 50px;
-      }
-      //  почему не могу переопределить??
-      @media ($desktop-widths) {
-        padding: 26px 0 70px;
-      }
-    }
-  }
-  &__slogan {
-    text-align: center;
-    font-family: $main-font;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    color: $navi-blue;
-    width: 250px;
-    margin: 0 auto;
-    @media ($tablet-widths) {
-      width: 450px;
-      font-size: 18px;
-    }
-    & p {
-      @media ($desktop-widths) {
-          margin: 0;
-        margin-top: 2px;
-      }
-    }
-  }
 }

@@ -1,52 +1,59 @@
 .user-contacts {
-  padding: 23px 0;
-  @media ($mobile-widths-only) {
-    @include container;
-  }
-  @media ($tablet-widths) {
-    margin-bottom: 56px;
-    padding: 18px 60px;
-    order: -1;
-  }
-  @media ($desktop-widths) {
-    margin: 0;
-    width: 100%;
-    padding-top: 14px;
-    padding-bottom: 5px;
-    margin-bottom: 56px;
-  }
-  &__wrapper {
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
-    @include container;
+    padding: 23px 0;
+    @media ($mobile-widths-only) {
+         @include container;
+    }
     @media ($tablet-widths) {
-      width: 100%;
-      margin: 0;
+        margin-bottom: 56px;
+        padding: 18px 60px;
+
+        order: -1;
     }
     @media ($desktop-widths) {
-      min-height: 0;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 56px;
+        padding-top: 14px;
+        padding-bottom: 5px;
     }
-  }
-  &__input {
-    margin-bottom: 10px;
-    @media ($desktop-widths) {
-      margin-bottom: 11px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 200px;
+
+        justify-content: space-around;
+        align-items: stretch;
+        @include container;
+        @media ($tablet-widths) {
+            width: 100%;
+            margin: 0;
+        }
+        @media ($desktop-widths) {
+            flex-direction: row;
+
+            min-height: 0;
+
+            align-items: center;
+            justify-content: space-between;
+        }
     }
-  }
-  &__input-container {
-    display: flex;
-    flex-direction: column;
-    @media ($tablet-widths) {
-      flex-direction: column-reverse;
-      flex-wrap: wrap;
-      margin-bottom: 7px;
-      align-items: flex-start;
+    &__input {
+        margin-bottom: 10px;
+        @media ($desktop-widths) {
+            margin-bottom: 11px;
+        }
     }
-  }
+    &__input-container {
+        display: flex;
+        flex-direction: column;
+        @media ($tablet-widths) {
+            flex-direction: column-reverse;
+
+            margin-bottom: 7px;
+
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+    }
 }

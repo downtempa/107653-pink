@@ -1,28 +1,32 @@
 .advantages {
-  background: $grey-bg;
-  margin-top: -68px;
-  @media ($tablet-widths) {
-      margin-top: 0;
-  }
-  &::before {
-    display: block;
-    width: 100%;
-    height: 91px;
-    content: "";
-    background: url("../img/bg-triangle-white.svg") no-repeat;
-    background-size: 100% auto;
+    margin-top: -68px;
+
+    background: $grey-bg;
     @media ($tablet-widths) {
-        position: absolute;
+        margin-top: 0;
     }
-    @media ($desktop-widths) {
-        height: 185px;
+    &::before {
+        display: block;
+
+        width: 100%;
+        height: 91px;
+
+        content: "";
+
+        background: url("../img/bg-triangle-white.svg") no-repeat;
+        background-size: 100% auto;
+        @media ($tablet-widths) {
+            position: absolute;
+        }
+        @media ($desktop-widths) {
+            height: 185px;
+        }
     }
-  }
-  &__img {
-      &--main {
-          @media ($mobile-widths-only) {
-              margin-bottom: -46px;
-          }
-      }
-  }
+    &__img {
+        &--main {
+            @media ($mobile-widths-only) {
+                margin-bottom: -46px;
+            }
+        }
+    }
 }

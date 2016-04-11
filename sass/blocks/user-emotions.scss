@@ -1,17 +1,17 @@
 .user-emotions {
-  @media ($mobile-widths-only) {
-    @include container;
-  }
-  @media ($tablet-widths) {
-    padding: 24px 60px 46px;
-    margin-bottom: 65px;
-  }
-  @media ($desktop-widths) {
-    margin: 0 0 65px;
-    width: 100%;
-    padding: 21px 60px 38px;
-  }
-  &__title {
-    margin-bottom: 13px;
-  }
+    @media ($mobile-widths-only) {
+         @include container;
+    }
+    @media ($tablet-widths) {
+        margin-bottom: 65px;
+        padding: 24px 60px 46px;
+    }
+    @media ($desktop-widths) {
+        width: 100%;
+        margin: 0 0 65px;
+        padding: 21px 60px 38px;
+    }
+    &__title {
+        margin-bottom: 13px;
+    }
 }

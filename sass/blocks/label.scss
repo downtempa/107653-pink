@@ -1,159 +1,136 @@
 .label {
-  display: block;
-  // margin: 0;
-  // padding: 0;
-  &--filter {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    margin-top: 30px;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    @media ($tablet-widths) {
-      margin-top: 0;
-      margin-right: 30px;
-      height: 48px;
+    display: block;
+    
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    &--filter {
+        position: relative;
+
+        overflow: hidden;
+
+        width: 60px;
+        height: 60px;
+        margin-top: 30px;
+
+        white-space: nowrap;
+        text-indent: 100%;
+        @media ($tablet-widths) {
+            height: 48px;
+            margin-top: 0;
+            margin-right: 30px;
+        }
+        @media ($desktop-widths) {}
     }
-    @media ($desktop-widths) {
-      //   margin-right: 75px;
+    &--filter_crop {
+        background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
     }
-    // &_crop {
-    //     background: url("../img/icon-editor-crop.svg") no-repat 50% 50%;
-    // }
-  }
-  &--filter_crop {
-    background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
-  }
-  &--filter_color {
-    background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
-  }
-  &--filter_contrast {
-    background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
-  }
-  &--full-name {
-    font-family: $main-font;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-    color: $pink;
-    text-transform: uppercase;
-    margin: 6px 0 6px 23px;
-    @media ($tablet-widths) {
-      margin-left: 0;
-      margin-right: 20px;
+    &--filter_color {
+        background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
     }
-  }
-  &--events {
-    width: 210px;
-    font-family: $main-font;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-    color: $navi-blue;
-    margin-left: 47px;
-    @media ($tablet-widths) {
-      width: 400px;
+    &--filter_contrast {
+        background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
     }
-    @media ($desktop-widths) {
-      width: 202px;
-      margin-right: 2px;
+    &--full-name {
+        margin: 6px 0 6px 23px;
+
+        text-transform: uppercase;
+
+        color: $pink;
+
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        @media ($tablet-widths) {
+            margin-right: 20px;
+            margin-left: 0;
+        }
     }
-  }
-  &--app-edition {
-    width: 210px;
-    // margin: 6px 0;
-    font-family: $main-font;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-    color: $navi-blue;
-    margin-left: 47px;
-    @media ($tablet-widths) {
-      //   width: 525px;
+    &--events {
+        width: 210px;
+        margin-left: 47px;
+
+        color: $navi-blue;
+
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        @media ($tablet-widths) {
+            width: 400px;
+        }
+        @media ($desktop-widths) {
+            width: 202px;
+            margin-right: 2px;
+        }
     }
-    @media ($desktop-widths) {
-      width: 230px;
+    &--app-edition {
+        width: 210px;
+        margin-left: 47px;
+
+        color: $navi-blue;
+
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        @media ($tablet-widths) {}
+        @media ($desktop-widths) {
+            width: 230px;
+        }
     }
-  }
-  &--user-contacts {
-    font-family: $main-font;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-    color: $pink;
-    text-transform: uppercase;
-    margin: 6px 0 6px 23px;
-    @media ($tablet-widths) {
-      margin: 0 0 0 17px;
+    &--user-contacts {
+        margin: 6px 0 6px 23px;
+
+        text-transform: uppercase;
+
+        color: $pink;
+
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        @media ($tablet-widths) {
+            margin: 0 0 0 17px;
+        }
+        @media ($desktop-widths) {
+            margin-left: 20px;
+        }
     }
-    @media ($desktop-widths) {
-      margin-left: 20px;
-    }
-  }
-  &--pseudo {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin: 0 5px;
-    background-color: $navi-blue;
-    opacity: 0.3;
-    border: 3px solid #ffffff;
-    vertical-align: top;
-    border-radius: 50%;
-    cursor: pointer;
-    &:hover {
-        opacity: 0.6;
-    }
-    &:active {
-        opacity: 0.1;
-    }
-  }
-  &--table {
-    border: 3px solid $grey-bg;
-  }
-  &--pseudo-active {
-    border: 3px solid $navi-blue;
-    background: #ffffff;
-    &:hover {
+    &--pseudo {
+        display: inline-block;
+
+        width: 6px;
+        height: 6px;
+        margin: 0 5px;
+
+        cursor: pointer;
+        vertical-align: top;
+
         opacity: 0.3;
+        border: 3px solid #ffffff;
+        border-radius: 50%;
+        background-color: $navi-blue;
+        &:hover {
+            opacity: 0.6;
+        }
+        &:active {
+            opacity: 0.1;
+        }
     }
-    &:active {
-        opacity: 0.3;
+    &--table {
+        border: 3px solid $grey-bg;
     }
-  }
-  // &--full-name {
-  //     font-family: $main-font;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  //     color: $pink;
-  //     text-transform: uppercase;
-  //     margin-left: 23px;
-  // }
-  // &--user-contacts {
-  //     font-family: $main-font;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  //     color: $pink;
-  //     text-transform: uppercase;
-  //     margin-left: 23px;
-  // }
-  // &--events {
-  //     font-family: $main-font;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  //     color: $navi-blue;
-  //     margin-left: 47px;
-  // }
-  // &--app-edition {
-  //     font-family: $main-font;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  //     color: $navi-blue;
-  //     margin-left: 47px;
-  // }
+    &--pseudo-active {
+        border: 3px solid $navi-blue;
+        background: #ffffff;
+        &:hover {
+            opacity: 0.3;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+    }
 }

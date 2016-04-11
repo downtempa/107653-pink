@@ -1,20 +1,24 @@
 .copyright {
-  @media ($mobile-widths-only) {
-    margin-left: 22px;
-  }
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: $navi-blue;
-  display: flex;
-  align-items: center;
-  @media ($desktop-widths) {
-      font-size: 18px;
-  }
-  &__link {
-      margin-left: 15px;
-  align-self: flex-start;
-  margin-top: 15px;
-  }
+    display: flex;
+
+    color: $navi-blue;
+
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+    align-items: center;
+    @media ($mobile-widths-only) {
+        margin-left: 22px;
+    }
+    @media ($desktop-widths) {
+        font-size: 18px;
+    }
+    &__link {
+        margin-top: 15px;
+        margin-left: 15px;
+
+        align-self: flex-start;
+    }
 }

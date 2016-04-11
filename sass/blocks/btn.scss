@@ -1,115 +1,129 @@
 .btn {
-  display: block;
-  text-decoration: none;
-  font-family: $main-font;
-  font-size: 18px;
-  outline: none;
-  &--download-app {
-    line-height: 21px;
-    font-weight: 900;
-    color: #ffffff;
-    border: 3px solid #ffffff;
-    padding: 15px;
-    border-radius: 30px;
-    @media ($tablet-widths) {
-      width: 260px;
-    }
-    @media ($desktop-widths) {
-      font-size: 21px;
-    }
-    &:hover {
-        background: #ffffff;
-        color: $pink;
-    }
-    &:active {
-        color: rgba(210, 40, 86, 0.3);
-    }
-  }
-  &--like {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 13px;
-    background: url("../img/icon-heart.svg") no-repeat 50% 50%;
-  }
-  &--filter {
-    width: 280px;
-    line-height: 18px;
-    font-weight: 900;
-    color: $pink;
-    border: 3px solid $pink;
-    padding: 15px;
-    border-radius: 30px;
-    background: $grey-bg;
-    @media ($tablet-widths) {
-      width: 260px;
-    }
-    @media ($desktop-widths) {
-      width: 183px;
-    }
-    &:hover {
-        background: $pink;
+    display: block;
+
+    text-decoration: none;
+
+    outline: none;
+
+    font-family: $main-font;
+    font-size: 18px;
+    &--download-app {
+        padding: 15px;
+
         color: #ffffff;
-    }
-    &:active {
-        color: #e08195;
-    }
-  }
-  &--filter_disabled {
-    opacity: 0.1;
-    border-color: $navi-blue;
-    color: $navi-blue;
-  }
-  &--filter-reset {
-      color: $navi-blue;
-      border-color: $navi-blue;
-      &:hover {
-          background: #ffffff;
-          color: $navi-blue;
-      }
-      &:active {
-          background: $navi-blue;
-          color: #ffffff;
-      }
-  }
-  &--submit {
-    width: 280px;
-    line-height: 33px;
-    font-weight: 900;
-    color: #ffffff;
-    padding: 15px;
-    background: $green-btn;
-    border: none;
-    border-radius: 2px;
-    text-transform: uppercase;
-    @media ($tablet-widths) {
-      width: 300px;
-    }
-    &:hover {
-        background: #1c9b5e;
-    }
-    &:active {
-        color: #7dbd99;
-    }
-  }
+        border: 3px solid #ffffff;
+        border-radius: 30px;
 
-  &--popup {
-    width: 250px;
-    line-height: 33px;
-    font-weight: 900;
-    color: #ffffff;
-    padding: 15px;
-    background: $green-btn;
-    border: none;
-    border-radius: 2px;
+        font-weight: 900;
+        line-height: 21px;
+        @media ($tablet-widths) {
+            width: 260px;
+        }
+        @media ($desktop-widths) {
+            font-size: 21px;
+        }
+        &:hover {
+            color: $pink;
+            background: #ffffff;
+        }
+        &:active {
+            color: rgba(210, 40, 86, 0.3);
+        }
+    }
+    &--like {
+        overflow: hidden;
 
-    text-transform: uppercase;
-    margin: 0 auto;
-    @media ($tablet-widths) {
-      width: 270px;
+        width: 13px;
+
+        white-space: nowrap;
+        text-indent: 100%;
+
+        background: url("../img/icon-heart.svg") no-repeat 50% 50%;
     }
-    @media ($desktop-widths) {
-      width: 430px;
+    &--filter {
+        width: 280px;
+        padding: 15px;
+
+        color: $pink;
+        border: 3px solid $pink;
+        border-radius: 30px;
+        background: $grey-bg;
+
+        font-weight: 900;
+        line-height: 18px;
+        @media ($tablet-widths) {
+            width: 260px;
+        }
+        @media ($desktop-widths) {
+            width: 183px;
+        }
+        &:hover {
+            color: #ffffff;
+            background: $pink;
+        }
+        &:active {
+            color: #e08195;
+        }
     }
-  }
+    &--filter_disabled {
+        opacity: 0.1;
+        color: $navi-blue;
+        border-color: $navi-blue;
+    }
+    &--filter-reset {
+        color: $navi-blue;
+        border-color: $navi-blue;
+        &:hover {
+            color: $navi-blue;
+            background: #ffffff;
+        }
+        &:active {
+            color: #ffffff;
+            background: $navi-blue;
+        }
+    }
+    &--submit {
+        width: 280px;
+        padding: 15px;
+
+        text-transform: uppercase;
+
+        color: #ffffff;
+        border: none;
+        border-radius: 2px;
+        background: $green-btn;
+
+        font-weight: 900;
+        line-height: 33px;
+        @media ($tablet-widths) {
+            width: 300px;
+        }
+        &:hover {
+            background: #1c9b5e;
+        }
+        &:active {
+            color: #7dbd99;
+        }
+    }
+    &--popup {
+        width: 250px;
+        margin: 0 auto;
+        padding: 15px;
+
+        text-transform: uppercase;
+
+        color: #ffffff;
+        border: none;
+        border-radius: 2px;
+        background: $green-btn;
+
+        font-weight: 900;
+        line-height: 33px;
+        @media ($tablet-widths) {
+            width: 270px;
+        }
+        @media ($desktop-widths) {
+            width: 430px;
+        }
+    }
 }

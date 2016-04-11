@@ -1,50 +1,44 @@
 .form-box {
-  //   padding: 0;
-  //   margin: 0;
-  border: none;
-  @media ($tablet-widths) {
-    border: 2px solid $grey-border;
-  }
-  &--full-name {
+    //   padding: 0;
+    //   margin: 0;
     border: none;
     @media ($tablet-widths) {
-      padding: 0;
-      margin-left: 0;
-      margin-right: 0;
+        border: 2px solid $grey-border;
     }
-  }
-  &--app-edition {
-    padding-top: 70px;
-    padding-bottom: 24px;
-    background: $grey-bg;
-    @media ($tablet-widths) {
-      background: none;
-      padding: 30px 60px;
+    &--full-name {
+        border: none;
+        @media ($tablet-widths) {
+            margin-right: 0;
+            margin-left: 0;
+            padding: 0;
+        }
     }
-    @media ($desktop-widths) {
-      background: none;
-      padding: 30px 57px;
+    &--app-edition {
+        padding-top: 70px;
+        padding-bottom: 24px;
+
+        background: $grey-bg;
+        @media ($tablet-widths) {
+            padding: 30px 60px;
+
+            background: none;
+        }
+        @media ($desktop-widths) {
+            padding: 30px 57px;
+
+            background: none;
+        }
     }
-    // // узнать где косяк с модификатором
-    // &--filter {
-    //   padding-bottom: 50px;
-    //   @media ($tablet-widths) {
-    //       padding-top: 15px;
-    //   }
-    // }
-  }
-  &--events {
-    padding-top: 76px;
-    padding-bottom: 22px;
-    background: $grey-bg;
-    @media ($tablet-widths) {
-      margin: 0;
-      padding-top: 27px;
-      margin-bottom: 56px;
-      background: none;
+    &--events {
+        padding-top: 76px;
+        padding-bottom: 22px;
+
+        background: $grey-bg;
+        @media ($tablet-widths) {
+            margin: 0 0 56px;
+            padding-top: 27px;
+
+            background: none;
+        }
     }
-  }
-  // @media ($tablet-widths) {
-  //   background: none;
-  // }
 }

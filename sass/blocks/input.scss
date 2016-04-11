@@ -1,48 +1,53 @@
 .input {
-  // margin: 0;
-  padding: 13px 20px;
-  font-family: $main-font;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $navi-blue;
-  border: 2px solid $grey-border;
-  border-radius: 2px;
-  outline: none;
-  @media ($tablet-widths) {
-    padding: 15px 20px;
-  }
-  &::-webkit-input-placeholder {
-    font-family: $main-font;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
+    // margin: 0;
+    padding: 13px 20px;
+
     color: $navi-blue;
-  }
-  &:-moz-placeholder {
+    border: 2px solid $grey-border;
+    border-radius: 2px;
+    outline: none;
+
     font-family: $main-font;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-    color: $navi-blue;
-  }
-  &:-ms-input-placeholder {
-    font-family: $main-font;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-    color: $navi-blue;
-  }
-  &--full-name {
-    flex-grow: 1;
-  }
-  &--user-contacts {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
     @media ($tablet-widths) {
-      width: 447px;
-      margin: 20px auto;
+        padding: 15px 20px;
     }
-    @media ($desktop-widths) {
-      width: 331px;
+    &::-webkit-input-placeholder {
+        color: $navi-blue;
+
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
     }
-  }
+    &:-moz-placeholder {
+        color: $navi-blue;
+
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    &:-ms-input-placeholder {
+        color: $navi-blue;
+
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    &--full-name {
+        flex-grow: 1;
+    }
+    &--user-contacts {
+        @media ($tablet-widths) {
+            width: 447px;
+            margin: 20px auto;
+        }
+        @media ($desktop-widths) {
+            width: 331px;
+        }
+    }
 }

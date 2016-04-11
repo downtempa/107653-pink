@@ -1,162 +1,188 @@
 .purchases {
-  border-collapse: collapse;
-  // таблицу перемещаем по Х-оси
-  width: 834px;
-  transform: translateX(-278px);
-  @media ($tablet-widths) {
-    width: 620px;
-    transform: translateX(0px);
-  }
-  @media ($desktop-widths) {
-        width: 937px;
-  }
-  // ячейки шапки
-  &__kit {
-    position: relative;
-    background: $navi-blue;
-    text-align: center;
-    padding: 16px 20px 21px;
-    border-bottom: none;
+    // таблицу перемещаем по Х-оси
+    width: 834px;
+
+    transform: translateX(-278px);
+
+    border-collapse: collapse;
     @media ($tablet-widths) {
-      width: 114px;
-      padding: 10px 20px;
-      border-right-color: $grey-bg;
+        width: 620px;
+
+        transform: translateX(0px);
     }
     @media ($desktop-widths) {
-      padding: 15px 20px 22px;
-      width: 193px;
+        width: 937px;
     }
-    &--first {
-      border-left: none;
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
+    // ячейки шапки
+    &__kit {
+        position: relative;
+
+        padding: 16px 20px 21px;
+
+        text-align: center;
+
+        border-bottom: none;
+        background: $navi-blue;
+        @media ($tablet-widths) {
+            width: 114px;
+            padding: 10px 20px;
+
+            border-right-color: $grey-bg;
+        }
+        @media ($desktop-widths) {
+            width: 193px;
+            padding: 15px 20px 22px;
+        }
+        &--first {
+            border-left: none;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+        }
+        &--last {
+            border-right: none;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
     }
-    &--last {
-      border-right: none;
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
-    }
-  }
-  // прячем текст в ячейках на таблетке
-  &__feature span {
-    font-family: $main-font;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    color: $navi-blue;
-    text-transform: uppercase;
-    @media ($tablet-widths) {
-      display: none;
-    }
-  }
-  &__feature {
-    //   столбец появляется - таблетка
-    &--mobile_hidden {
-      display: none;
-      @media ($tablet-widths) {
-        display: table-cell;
+    // прячем текст в ячейках на таблетке
+    &__feature span {
+        text-transform: uppercase;
+
+        color: $navi-blue;
+
         font-family: $main-font;
         font-size: 14px;
-        line-height: 30px;
         font-weight: 400;
-        color: $navi-blue;
-        padding-left: 15px;
-      }
-      @media ($desktop-widths) {
+        line-height: 30px;
+        @media ($tablet-widths) {
+            display: none;
+        }
+    }
+    &__feature {
+        //   столбец появляется - таблетка
+        &--mobile_hidden {
+            display: none;
+            @media ($tablet-widths) {
+                display: table-cell;
+
+                padding-left: 15px;
+
+                color: $navi-blue;
+
+                font-family: $main-font;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+            @media ($desktop-widths) {
+                padding-left: 23px;
+
+                font-size: 18px;
+            }
+        }
+        // фон ячеек галочки, крест
+        &--bg-yes {
+            background: #ffffff url("../img/icon-yes.svg") no-repeat 94% center;
+            @media ($tablet-widths) {
+                background-position: center center;
+            }
+        }
+        &--bg-no {
+            background: #ffffff url("../img/icon-no.svg") no-repeat 93% center;
+            @media ($tablet-widths) {
+                background-position: center center;
+            }
+        }
+    }
+    // исчезающая ячейка
+    &__empty-cell {
+        display: none;
+        @media ($tablet-widths) {
+            display: table-cell;
+
+            border: none;
+            background: transparent;
+        }
+    }
+    // заголовок ячейки в шапке
+    &__title {
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        font-family: $main-font;
         font-size: 18px;
-        padding-left: 23px;
-      }
+        font-weight: 900;
+        line-height: 30px;
+        @media ($tablet-widths) {
+            font-size: 16px;
+        }
+        @media ($desktop-widths) {
+            font-size: 18px;
+        }
     }
-    // фон ячеек галочки, крест
-    &--bg-yes {
-      background: #ffffff url("../img/icon-yes.svg") no-repeat 94% center;
-      @media ($tablet-widths) {
-        background-position: center center;
-      }
+    // цена в шапке
+    &__cost {
+        color: #ffffff;
+
+        font-family: $main-font;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        @media ($tablet-widths) {
+            font-size: 18px;
+            font-weight: 300;
+        }
+        @media ($desktop-widths) {
+            font-size: 24px;
+            font-weight: 300;
+        }
     }
-    &--bg-no {
-      background: #ffffff url("../img/icon-no.svg") no-repeat 93% center;
-      @media ($tablet-widths) {
-        background-position: center center;
-      }
-    }
-  }
-  // исчезающая ячейка
-  &__empty-cell {
-    display: none;
-    @media ($tablet-widths) {
-      display: table-cell;
-      background: transparent;
-      border: none;
-    }
-  }
-  // заголовок ячейки в шапке
-  &__title {
-    font-family: $main-font;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 900;
-    color: #ffffff;
-    text-transform: uppercase;
-    @media ($tablet-widths) {
-      font-size: 16px;
-    }
-    @media ($desktop-widths) {
-      font-size: 18px;
-    }
-  }
-  // цена в шапке
-  &__cost {
-    font-family: $main-font;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #ffffff;
-    @media ($tablet-widths) {
-      font-size: 18px;
-      font-weight: 300;
-    }
-    @media ($desktop-widths) {
-      font-size: 24px;
-      font-weight: 300;
-    }
-  }
 }
 // псевдоэлемент флаг ХИТ
 .purchases__kit--hit::before {
-  position: absolute;
-  content: "хит";
-  top: 12px;
-  left: -25px;
-  display: block;
-  width: 105px;
-  height: 30px;
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  color: #ffffff;
-  text-transform: uppercase;
-  // background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABJCAMAAACtmkDtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABpFBMVEUAAADSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFYAAAAFTzxhAAAAinRSTlMAATKp9v7NVggdu+ZJG5r04mcMxNE/AqBjNrT9ykoSsfBRJ53z1w0qwNhCCfsFN75B+FkwpPXPWwogvEYWmOdoM8LOBKJhNa/5y1AXtetNItxlL8HVQAOeZkStLNNdJb3dQxGZ7cMGpl6s91S56ZvhZFNi2wfjRQs9YE/a1lfg6mnMX1JL3tLJ1PpSKofHAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAixJREFUWMOt2HtT00AUBfBATYsgLYWSVrYIalvAVgSUh4JQWqnGB+ADjQg+EbUKVsEnoojvfGpnmOGPztB7ztLcD/Cbs5vc3ZsYhlQ1tb4DLlOmP1AnSsbBegpy3YZDMmQ0BkOc1BRulqXaFjJTpBVksqKk5MYAdLhNUY6Kt1sydaSDjNR5FKzu2PEEJyVjKVnq6iYz9ZwAmdLBDCeFwidlqfcUmSnehzL5SKl/AEinzwxy0tDwiCydPUdmahoFmcbOc2eBOz4BMmUnyUw51Hf5C6RkTsmQVbh4iYKUfRm8T1eukpmuTYPVzQTJvpu9Dvruxk0y0605kOn2HVLKOPL5ZPXWk48ufhdkSs2TmQYDQLoXJXd8YRHcLfcfkJkePgKZHj/p56QlJy1LhadkJj/qu+VnpGQ+lyEr+6JIQcr/EkwYja/ITCvtYHXGKjlhvA6nEEVmWkA7zlMlLFGUskdrPKISbwiIopJv4Y6T1BrqO5pKTKx7RNno9KWpzDAtyZQ5NDDiEfXuPQ/JVIPzwSMq91EHEqlPelJFStnTeY+opc+aUEVqo8T1Haa+9GlDFaiio7tPlag4exZAqri5L2kPKrKo9Y4L1FetvpOob1saZ4FIfSfuO45S2/uXyihl/1j2iFr5WQVURv1y9Ptub+o3f7cAyixVKe1S6g/65qQpcsIgqL9TzR5R9IQBqU56wkCUxoQBqH8aE4ZYZm4zXb2yU+Po3yFf6N8hX/8BI352Z6q/2McAAAAASUVORK5CYII=");
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  //   background-size: contain;
-  transform: rotate(-45deg);
-  z-index: 100;
+    position: absolute;
+    z-index: 100;
+    top: 12px;
+    left: -25px;
+
+    display: block;
+
+    width: 105px;
+    height: 30px;
+
+    content: "хит";
+    // background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABJCAMAAACtmkDtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABpFBMVEUAAADSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFYAAAAFTzxhAAAAinRSTlMAATKp9v7NVggdu+ZJG5r04mcMxNE/AqBjNrT9ykoSsfBRJ53z1w0qwNhCCfsFN75B+FkwpPXPWwogvEYWmOdoM8LOBKJhNa/5y1AXtetNItxlL8HVQAOeZkStLNNdJb3dQxGZ7cMGpl6s91S56ZvhZFNi2wfjRQs9YE/a1lfg6mnMX1JL3tLJ1PpSKofHAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAixJREFUWMOt2HtT00AUBfBATYsgLYWSVrYIalvAVgSUh4JQWqnGB+ADjQg+EbUKVsEnoojvfGpnmOGPztB7ztLcD/Cbs5vc3ZsYhlQ1tb4DLlOmP1AnSsbBegpy3YZDMmQ0BkOc1BRulqXaFjJTpBVksqKk5MYAdLhNUY6Kt1sydaSDjNR5FKzu2PEEJyVjKVnq6iYz9ZwAmdLBDCeFwidlqfcUmSnehzL5SKl/AEinzwxy0tDwiCydPUdmahoFmcbOc2eBOz4BMmUnyUw51Hf5C6RkTsmQVbh4iYKUfRm8T1eukpmuTYPVzQTJvpu9Dvruxk0y0605kOn2HVLKOPL5ZPXWk48ufhdkSs2TmQYDQLoXJXd8YRHcLfcfkJkePgKZHj/p56QlJy1LhadkJj/qu+VnpGQ+lyEr+6JIQcr/EkwYja/ITCvtYHXGKjlhvA6nEEVmWkA7zlMlLFGUskdrPKISbwiIopJv4Y6T1BrqO5pKTKx7RNno9KWpzDAtyZQ5NDDiEfXuPQ/JVIPzwSMq91EHEqlPelJFStnTeY+opc+aUEVqo8T1Haa+9GlDFaiio7tPlag4exZAqri5L2kPKrKo9Y4L1FetvpOob1saZ4FIfSfuO45S2/uXyihl/1j2iFr5WQVURv1y9Ptub+o3f7cAyixVKe1S6g/65qQpcsIgqL9TzR5R9IQBqU56wkCUxoQBqH8aE4ZYZm4zXb2yU+Po3yFf6N8hX/8BI352Z6q/2McAAAAASUVORK5CYII=");
+    //   background-repeat: no-repeat;
+    //   background-position: center center;
+    //   background-size: contain;
+    transform: rotate(-45deg);
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
 }
 .purchases__kit--hit::after {
-  position: absolute;
-  content: "";
-  width: 64px;
-  height: 73px;
-  top: -6px;
-  left: 0;
-  display: block;
-  background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABJCAMAAACtmkDtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABpFBMVEUAAADSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFYAAAAFTzxhAAAAinRSTlMAATKp9v7NVggdu+ZJG5r04mcMxNE/AqBjNrT9ykoSsfBRJ53z1w0qwNhCCfsFN75B+FkwpPXPWwogvEYWmOdoM8LOBKJhNa/5y1AXtetNItxlL8HVQAOeZkStLNNdJb3dQxGZ7cMGpl6s91S56ZvhZFNi2wfjRQs9YE/a1lfg6mnMX1JL3tLJ1PpSKofHAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAixJREFUWMOt2HtT00AUBfBATYsgLYWSVrYIalvAVgSUh4JQWqnGB+ADjQg+EbUKVsEnoojvfGpnmOGPztB7ztLcD/Cbs5vc3ZsYhlQ1tb4DLlOmP1AnSsbBegpy3YZDMmQ0BkOc1BRulqXaFjJTpBVksqKk5MYAdLhNUY6Kt1sydaSDjNR5FKzu2PEEJyVjKVnq6iYz9ZwAmdLBDCeFwidlqfcUmSnehzL5SKl/AEinzwxy0tDwiCydPUdmahoFmcbOc2eBOz4BMmUnyUw51Hf5C6RkTsmQVbh4iYKUfRm8T1eukpmuTYPVzQTJvpu9Dvruxk0y0605kOn2HVLKOPL5ZPXWk48ufhdkSs2TmQYDQLoXJXd8YRHcLfcfkJkePgKZHj/p56QlJy1LhadkJj/qu+VnpGQ+lyEr+6JIQcr/EkwYja/ITCvtYHXGKjlhvA6nEEVmWkA7zlMlLFGUskdrPKISbwiIopJv4Y6T1BrqO5pKTKx7RNno9KWpzDAtyZQ5NDDiEfXuPQ/JVIPzwSMq91EHEqlPelJFStnTeY+opc+aUEVqo8T1Haa+9GlDFaiio7tPlag4exZAqri5L2kPKrKo9Y4L1FetvpOob1saZ4FIfSfuO45S2/uXyihl/1j2iFr5WQVURv1y9Ptub+o3f7cAyixVKe1S6g/65qQpcsIgqL9TzR5R9IQBqU56wkCUxoQBqH8aE4ZYZm4zXb2yU+Po3yFf6N8hX/8BI352Z6q/2McAAAAASUVORK5CYII=");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  @media ($desktop-widths) {
-    top: -5px;
-  }
+    position: absolute;
+    top: -6px;
+    left: 0;
+
+    display: block;
+
+    width: 64px;
+    height: 73px;
+
+    content: "";
+
+    background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABJCAMAAACtmkDtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABpFBMVEUAAADSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFYAAAAFTzxhAAAAinRSTlMAATKp9v7NVggdu+ZJG5r04mcMxNE/AqBjNrT9ykoSsfBRJ53z1w0qwNhCCfsFN75B+FkwpPXPWwogvEYWmOdoM8LOBKJhNa/5y1AXtetNItxlL8HVQAOeZkStLNNdJb3dQxGZ7cMGpl6s91S56ZvhZFNi2wfjRQs9YE/a1lfg6mnMX1JL3tLJ1PpSKofHAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAixJREFUWMOt2HtT00AUBfBATYsgLYWSVrYIalvAVgSUh4JQWqnGB+ADjQg+EbUKVsEnoojvfGpnmOGPztB7ztLcD/Cbs5vc3ZsYhlQ1tb4DLlOmP1AnSsbBegpy3YZDMmQ0BkOc1BRulqXaFjJTpBVksqKk5MYAdLhNUY6Kt1sydaSDjNR5FKzu2PEEJyVjKVnq6iYz9ZwAmdLBDCeFwidlqfcUmSnehzL5SKl/AEinzwxy0tDwiCydPUdmahoFmcbOc2eBOz4BMmUnyUw51Hf5C6RkTsmQVbh4iYKUfRm8T1eukpmuTYPVzQTJvpu9Dvruxk0y0605kOn2HVLKOPL5ZPXWk48ufhdkSs2TmQYDQLoXJXd8YRHcLfcfkJkePgKZHj/p56QlJy1LhadkJj/qu+VnpGQ+lyEr+6JIQcr/EkwYja/ITCvtYHXGKjlhvA6nEEVmWkA7zlMlLFGUskdrPKISbwiIopJv4Y6T1BrqO5pKTKx7RNno9KWpzDAtyZQ5NDDiEfXuPQ/JVIPzwSMq91EHEqlPelJFStnTeY+opc+aUEVqo8T1Haa+9GlDFaiio7tPlag4exZAqri5L2kPKrKo9Y4L1FetvpOob1saZ4FIfSfuO45S2/uXyihl/1j2iFr5WQVURv1y9Ptub+o3f7cAyixVKe1S6g/65qQpcsIgqL9TzR5R9IQBqU56wkCUxoQBqH8aE4ZYZm4zXb2yU+Po3yFf6N8hX/8BI352Z6q/2McAAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    @media ($desktop-widths) {
+        top: -5px;
+    }
 }

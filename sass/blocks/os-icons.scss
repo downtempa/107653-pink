@@ -1,19 +1,21 @@
 .os-icons {
-  margin-top: 32px;
-  margin-bottom: 18px;
-  width: 205px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  @media ($tablet-widths) {
-    margin-top: 47px;
-    margin-bottom: 28px;
-  }
-  @media ($desktop-widths) {
-    margin-left: 47px;
-    margin-top: 64px;
-    margin-bottom: 53px;
-  }
+    display: flex;
+
+    width: 205px;
+    margin-top: 32px;
+    margin-right: auto;
+    margin-bottom: 18px;
+    margin-left: auto;
+
+    align-items: flex-end;
+    justify-content: space-between;
+    @media ($tablet-widths) {
+        margin-top: 47px;
+        margin-bottom: 28px;
+    }
+    @media ($desktop-widths) {
+        margin-top: 64px;
+        margin-bottom: 53px;
+        margin-left: 47px;
+    }
 }

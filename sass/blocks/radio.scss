@@ -1,10 +1,10 @@
 .radio {
-  &--app-edition {
-    margin-right: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    &:checked ~ .control__indicator {
-      background-image: url("../img/icon-circle.svg");
+    &--app-edition {
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        &:checked ~ .control__indicator {
+            background-image: url("../img/icon-circle.svg");
+        }
     }
-  }
 }

@@ -1,46 +1,71 @@
 .logo {
-  width: 75px;
-  height: 24px;
-  display: block;
-  @media ($tablet-widths) {
-    width: 147px;
-    height: 40px;
-  }
-  &--inner-page {
-    @media ($mobile-widths-only) {
-      width: 147px;
-      height: 40px;
+    display: block;
+    width: 75px;
+    height: 24px;
+    
+    @media ($tablet-widths) {
+        position: static;
+        width: 147px;
+        height: 40px;
     }
-  }
-  &__svg {
-      &--mobile {
-          display: none;
-          @media ($mobile-widths-only) {
-              display: block;
-          }
-      }
-      &--tablet {
-          display: none;
-          @media ($tablet-widths) {
-              display: block;
-          }
-          @media ($desktop-widths) {
-              display: none;
-          }
-      }
-      &--desktop {
-          display: none;
-          @media ($desktop-widths) {
-              display: block;
-          }
-      }
-
-  }
-  &:hover .logo-svg {
-      fill:$pink;
-  }
-  &:active .logo-svg {
-      opacity: 0.3;
-  }
+    &--inner-page {
+        @media ($mobile-widths-only) {
+            width: 147px;
+            height: 40px;
+        }
+    }
+    &:hover path {
+        fill: $pink;
+    }
+    &:active path {
+        opacity: 0.3;
+    }
+    &__img {
+        & .mobile {
+            display: block;
+            @media ($tablet-widths) {
+                display: none;
+            }
+        }
+        & .tablet {
+            display: none;
+            @media ($tablet-widths) {
+                display: block;
+            }
+            @media ($desktop-widths) {
+                display: none;
+            }
+        }
+        & .desktop {
+            display: none;
+            @media ($desktop-widths) {
+                display: block;
+            }
+        }
+        &--header .word {
+            fill: #ffffff;
+        }
+        &--header .glasses {
+            fill: #ffffff;
+        }
+        &--header .stars {
+            fill: $pink;
+        }
+        &--header .point-i {
+            fill: $pink;
+        }
+        &--footer .word {
+            fill: $navi-blue;
+        }
+        &--footer .glasses {
+            fill: $pink;
+        }
+        &--footer .stars {
+            fill: $navi-blue;
+        }
+        &--footer .point-i {
+            fill: $pink;
+        }
+    }
 
 }

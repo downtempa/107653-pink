@@ -1,23 +1,22 @@
 .download {
+    min-height: 240px;
 
-  min-height: 240px;
-  text-align: center;
-  background: #1d2631;
-  @media ($tablet-widths) {
+    text-align: center;
 
-    background: none;
-  }
-  @media ($desktop-widths) {
-
-  }
-  &__description {
-    font-family: $main-font;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
-    color: #ffffff;
+    background: #1d2631;
     @media ($tablet-widths) {
-      font-size: 18px;
+        background: none;
     }
-  }
+    @media ($desktop-widths) {}
+    &__description {
+        color: #ffffff;
+
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        @media ($tablet-widths) {
+            font-size: 18px;
+        }
+    }
 }

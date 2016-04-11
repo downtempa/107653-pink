@@ -3,38 +3,45 @@
     @media ($desktop-widths) {
         width: 32%;
     }
+    &__content {
+        padding: 100px 0 62px;
 
-  &__content {
-      padding: 100px 0 62px;
-      text-align: center;
-      vertical-align: middle;
-      background: url("../../img/icon-timer.svg") no-repeat 50% 50%;
-      background-size: contain;
-    @media ($desktop-widths) {
-      padding: 141px 0 92px;
-      text-align: center;
-      vertical-align: middle;
-      background: url("../../img/icon-timer.svg") no-repeat 50% 50%;
+        text-align: center;
+        vertical-align: middle;
+
+        background: url("../../img/icon-timer.svg") no-repeat 50% 50%;
+        background-size: contain;
+        @media ($desktop-widths) {
+            padding: 141px 0 92px;
+
+            text-align: center;
+            vertical-align: middle;
+
+            background: url("../../img/icon-timer.svg") no-repeat 50% 50%;
+        }
+        & span {
+            padding: 22px 33px;
+
+            color: $pink;
+            border: 14px solid $pink;
+            border-radius: 50%;
+
+            font-family: $main-font;
+            font-size: 96px;
+            font-weight: 900;
+            line-height: 120px;
+            @media ($desktop-widths) {
+                padding: 29px 42px;
+
+                color: $pink;
+                border: 17px solid $pink;
+                border-radius: 50%;
+
+                font-family: $main-font;
+                font-size: 120px;
+                font-weight: 900;
+                line-height: 120px;
+            }
+        }
     }
-    & span {
-        font-family: $main-font;
-        font-size: 96px;
-        line-height: 120px;
-        font-weight: 900;
-        color: $pink;
-        border: 14px solid $pink;
-        border-radius: 50%;
-        padding: 22px 33px;
-      @media ($desktop-widths) {
-        font-family: $main-font;
-        font-size: 120px;
-        line-height: 120px;
-        font-weight: 900;
-        color: $pink;
-        border: 17px solid $pink;
-        border-radius: 50%;
-        padding: 29px 42px;
-      }
-    }
-  }
 }

@@ -1,36 +1,40 @@
 .link {
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $pink;
-  &--effect {
-    @media ($desktop-widths) {
-      font-size: 18px;
-      line-height: 30px;
+    color: $pink;
+
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    &--effect {
+        @media ($desktop-widths) {
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
-  }
-  &--contacts {
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: 300;
-    line-height: 36px;
-    &:hover {
-        color: $navi-blue;
-        text-decoration: underline;
-    }
-    &:active {
-        opacity: 0.3;
+    &--contacts {
         text-decoration: none;
+
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 36px;
+        &:hover {
+            text-decoration: underline;
+
+            color: $navi-blue;
+        }
+        &:active {
+            text-decoration: none;
+
+            opacity: 0.3;
+        }
     }
-  }
-  &--copyright {
-    // text-indent: 100%;
-    // white-space: nowrap;
-    // overflow: hidden;
-    // display: block;
-    // width: 59px;
-    // height: 78px;
-    // background: url("../img/htmlacademy.svg") no-repeat 100% 100%;
-  }
+    &--copyright {
+        // text-indent: 100%;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // display: block;
+        // width: 59px;
+        // height: 78px;
+        // background: url("../img/htmlacademy.svg") no-repeat 100% 100%;
+    }
 }
