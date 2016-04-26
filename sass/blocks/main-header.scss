@@ -50,7 +50,7 @@
 
         width: 49px;
         height: 24px;
-        margin-top: 25px;
+        margin-top: 21px;
 
         white-space: nowrap;
         text-indent: 100%;
@@ -67,7 +67,7 @@
         }
     }
     &__top-panel {
-        min-height: 70px;
+        min-height: 66px;
         margin-bottom: 27px;
 
         background: rgba(0, 0, 0, 0.3);
@@ -89,7 +89,7 @@
         float: left;
         position: relative;
         left: -71px;
-        margin-top: 9px;
+        margin-top: 4px;
         @media ($tablet-widths) {
             position: static;
             margin-top: 27px;

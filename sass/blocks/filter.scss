@@ -65,6 +65,10 @@
     }
     &__radio {
         display: none;
+        &:checked + .label--filter svg {
+            fill: $pink;
+            opacity: 1;
+        }
     }
     &__range {
         &--sub {

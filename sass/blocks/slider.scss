@@ -24,6 +24,9 @@
             left: 50%;
 
             margin-left: -40px;
+            @media ($desktop-widths) {
+                display: none;
+            }
         }
         &--table {
             z-index: 5;

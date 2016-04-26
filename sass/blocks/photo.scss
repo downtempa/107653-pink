@@ -23,7 +23,7 @@
     }
     // блок с текстом (&__slogan) над блоком с панорамой
     &__intro {
-        padding: 47px 0;
+        padding: 46px 0 47px;
 
         background: #ffffff;
         @media ($tablet-widths) {
@@ -33,7 +33,7 @@
             padding-bottom: 88px;
         }
         &--outro {
-            padding: 6px 0 28px;
+            padding: 23px 0 42px;
             @media ($tablet-widths) {
                 padding: 27px 0 50px;
             }
@@ -41,6 +41,7 @@
             @media ($desktop-widths) {
                 padding: 26px 0 70px;
             }
+
         }
     }
     &__slogan {
@@ -60,6 +61,9 @@
 
             font-size: 18px;
         }
+        &--outro p {
+            margin: 0;
+       }
         & p {
             @media ($desktop-widths) {
                 margin: 2px 0 0;

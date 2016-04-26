@@ -3,7 +3,7 @@
     flex-direction: row-reverse;
 
     width: 240px;
-    margin: 11px auto 20px;
+    margin: 10px auto 20px;
 
     justify-content: flex-end;
     align-items: center;
@@ -27,7 +27,8 @@
         }
     }
     &__btn {
-        margin-right: 20px;
+        margin-right: 18px;
+    margin-left: -3px;
         @media ($tablet-widths) {
             margin-right: 0;
         }

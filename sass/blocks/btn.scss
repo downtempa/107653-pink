@@ -17,9 +17,10 @@
         font-weight: 900;
         line-height: 21px;
         @media ($tablet-widths) {
-            width: 260px;
+            width: 265px;
         }
         @media ($desktop-widths) {
+
             font-size: 21px;
         }
         &:hover {
@@ -33,12 +34,13 @@
     &--like {
         overflow: hidden;
 
-        width: 13px;
+        width: 14px;
 
         white-space: nowrap;
         text-indent: 100%;
 
         background: url("../img/icon-heart.svg") no-repeat 50% 50%;
+        background-size: contain;
     }
     &--filter {
         width: 280px;

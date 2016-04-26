@@ -1,6 +1,6 @@
 .label {
     display: block;
-    
+
 
     font-size: 14px;
     font-weight: 400;
@@ -8,30 +8,34 @@
     &--filter {
         position: relative;
 
-        overflow: hidden;
 
         width: 60px;
         height: 60px;
         margin-top: 30px;
 
-        white-space: nowrap;
-        text-indent: 100%;
         @media ($tablet-widths) {
             height: 48px;
             margin-top: 0;
             margin-right: 30px;
         }
         @media ($desktop-widths) {}
+        & svg {
+            fill: $navi-blue;
+            opacity: 0.3
+        }
+        &:hover svg {
+            opacity: 0.5;
+        }
     }
-    &--filter_crop {
-        background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
-    }
-    &--filter_color {
-        background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
-    }
-    &--filter_contrast {
-        background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
-    }
+    // &--filter_crop {
+    //     background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
+    // }
+    // &--filter_color {
+    //     background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
+    // }
+    // &--filter_contrast {
+    //     background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
+    // }
     &--full-name {
         margin: 6px 0 6px 23px;
 

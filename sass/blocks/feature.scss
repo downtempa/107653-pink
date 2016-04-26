@@ -12,6 +12,13 @@
     @media ($desktop-widths) {
         text-align: center;
     }
+    &:nth-child(2) {
+        @media ($desktop-widths) {
+            box-sizing: border-box;
+            width: 36%;
+            padding: 0 9px;
+        }
+    }
     &__title {
         margin: 0 0 12px;
 

@@ -13,7 +13,7 @@
         background: none;
         background: url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom;
 
-         @include container;
+        @include container;
         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
             background: url("../img/iphone-hand-tablet@2x.png") no-repeat center bottom;
             background-size: 700px auto;
@@ -34,9 +34,11 @@
         padding-bottom: 117px;
     }
     &--inner-page {
-        padding: 33px 0 54px;
+            padding: 4px 0 86px;
 
         text-align: center;
+
+        background: none;
 
         @include container;
         @media ($tablet-widths) {
@@ -66,7 +68,6 @@
         }
     }
     &__title {
-        @include container;
         margin-bottom: 311px;
 
         text-align: center;
@@ -77,17 +78,16 @@
         font-size: 24px;
         font-weight: 300;
         line-height: 27px;
+
+        @include container;
         // @media ($mobile-widths-only) {
         //   display: none;
         // }
-
-
         @media ($tablet-widths) {
             display: block;
 
             width: 240px;
             margin: 0 0 0 29px;
-            margin-bottom: 0;
 
             color: #ffffff;
 

@@ -17,8 +17,20 @@
     }
     &__link {
         margin-top: 15px;
-        margin-left: 15px;
+        margin-left: 13px;
 
         align-self: flex-start;
+        @media ($desktop-widths) {
+            margin-left: 12px;
+        }
+        &:hover svg {
+            fill: $navi-blue;
+        }
+        &:active  {
+            opacity: 0.3;
+        }
+    }
+    &__svg {
+        fill: $pink;
     }
 }

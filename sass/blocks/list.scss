@@ -26,6 +26,11 @@
             @media ($desktop-widths) {
                 display: inline-flex;
             }
+            &:first-child {
+                @media ($desktop-widths) {
+                    width: 32%;
+                }
+            }
         }
         &--main {
             @media ($mobile-widths-only) {
@@ -36,6 +41,7 @@
             }
             @media ($desktop-widths) {
                 margin-top: 0;
+                width: 31%;
             }
         }
     }

@@ -39,10 +39,10 @@
         right: 0;
 
         width: 141px;
-        /* height: 36px; */
         padding: 6px 0;
 
         text-align: center;
+        text-transform: uppercase;
 
         color: #ffffff;
         background: $pink;
@@ -58,7 +58,7 @@
     // автор поста
     &__author {
         width: 242px;
-        margin: 18px auto 0;
+        margin: 13px auto 0;
 
         color: $navi-blue;
 
@@ -70,6 +70,7 @@
             margin-top: 24px;
         }
         &--panorama {
+            margin-top: 18px;
             @media ($tablet-widths) {
                 width: 152px;
                 margin-top: 25px;

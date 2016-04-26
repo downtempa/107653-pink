@@ -6,30 +6,28 @@
     justify-content: space-between;
     &__item {
         display: block;
-        overflow: hidden;
 
         width: 48px;
         height: 48px;
 
-        white-space: nowrap;
-        text-indent: 100%;
+        text-align: center;
 
         border: 2px solid #e9ebec;
         border-radius: 50%;
-        // &--tw {
-        //   background: url("../img/icon-twitter.svg") no-repeat center center;
-        // }
-        // &--fb {
-        //   background: url("../img/icon-facebook.svg") no-repeat center center;
-        // }
-        // &--ytb {
-        //   background: url("../img/icon-youtube.svg") no-repeat center center;
-        // }
-        & svg path {
-            fill: $pink;
+
+        line-height: 52px;
+        &:hover {
+            border: 2px solid $navi-blue;
         }
-        &:hover svg path {
-            fill: red;
+        &:active {
+            opacity: 0.3;
         }
+        &--ytb svg {
+            margin-left: 4px;
+        }
+
+    }
+    &__svg {
+        fill: $pink;
     }
 }
