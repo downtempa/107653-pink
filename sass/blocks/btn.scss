@@ -8,7 +8,7 @@
     font-family: $main-font;
     font-size: 18px;
     &--download-app {
-        padding: 15px;
+        padding: 14px;
 
         color: #ffffff;
         border: 3px solid #ffffff;
@@ -26,9 +26,11 @@
         &:hover {
             color: $pink;
             background: #ffffff;
+            transition: 0.3s;
         }
         &:active {
             color: rgba(210, 40, 86, 0.3);
+            transition: 0.3s
         }
     }
     &--like {
@@ -41,6 +43,7 @@
 
         background: url("../img/icon-heart.svg") no-repeat 50% 50%;
         background-size: contain;
+
     }
     &--filter {
         width: 280px;
@@ -62,9 +65,11 @@
         &:hover {
             color: #ffffff;
             background: $pink;
+            transition: 0.3s;
         }
         &:active {
             color: #e08195;
+            transition: 0.3s;
         }
     }
     &--filter_disabled {
@@ -78,10 +83,12 @@
         &:hover {
             color: $navi-blue;
             background: #ffffff;
+            transition: 0.3s;
         }
         &:active {
             color: #ffffff;
             background: $navi-blue;
+            transition: 0.3s;
         }
     }
     &--submit {
@@ -102,9 +109,11 @@
         }
         &:hover {
             background: #1c9b5e;
+            transition: 0.3s;
         }
         &:active {
             color: #7dbd99;
+            transition: 0.3s;
         }
     }
     &--popup {

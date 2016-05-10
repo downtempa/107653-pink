@@ -1,4 +1,5 @@
 .range {
+    background-color: transparent;
     position: relative;
     // margin: 18px 0;
     width: 240px;
@@ -93,6 +94,7 @@
     }
     &:active::-webkit-slider-thumb {
         background: $pink;
+        transition: 0.3s;
 
     }
     &:active::-webkit-slider-runnable-track {
@@ -101,25 +103,26 @@
     &:active::-moz-range-thumb {
         background: $pink;
         outline: none;
+        transition: 0.3s;
     }
 
 
 
 
 }
-.range--filter::before {
-    @media ($tablet-widths) {
-        position: absolute;
-        bottom: -37px;
-        left: -56px;
-        display: block;
-        width: 275px;
-        height: 1px;
-        content: "";
-        background: #dddfe0;
-    }
-    @media ($desktop-widths) {
-        left: -97px;
-        width: 411px;
-    }
-}
+// .range--filter::before {
+//     @media ($tablet-widths) {
+//         position: absolute;
+//         bottom: -37px;
+//         left: -56px;
+//         display: block;
+//         width: 275px;
+//         height: 1px;
+//         content: "";
+//         background: #dddfe0;
+//     }
+//     @media ($desktop-widths) {
+//         left: -97px;
+//         width: 411px;
+//     }
+// }

@@ -41,11 +41,11 @@
         }
         &--tight {
             @media ($tablet-widths) {
-                width: 400px;
+                width: 450px;
                 margin: 0 auto;
             }
-            @media ($tablet-widths) {
-                width: 450px;
+            @media ($desktop-widths) {
+                margin-top: 5px;
             }
         }
     }

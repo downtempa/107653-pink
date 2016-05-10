@@ -1,26 +1,24 @@
 .main-header {
-    background: $navi-blue url("../img/bg-back-mobile.jpg") no-repeat center top;
+    background: $navi-blue url("../img/bg-back-mobile.jpg") no-repeat center center;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background: $navi-blue url("../img/bg-back-mobile@2x.jpg") no-repeat center top;
+        background: $navi-blue url("../img/bg-back-mobile@2x.jpg") no-repeat center center;
         background-size: 700px auto;
     }
     @media ($tablet-widths) {
-        background: $navi-blue url("../img/bg-back-tablet@1x.jpg") no-repeat center top;
+        background: $navi-blue url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-            background: $navi-blue url("../img/bg-back-tablet@2x.jpg") no-repeat center top;
+            background: $navi-blue url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
             background-size: 1200px auto;
         }
     }
     @media ($desktop-widths) {
         background: $navi-blue url("../img/bg-back-desktop.jpg") no-repeat center top;
     }
-    // &--mobile-menu_visible {
-    //   background: $navi-blue;
-    //   border-bottom: 1px solid #030303;
-    // }
-    // &--tablet-menu_visible {
-    //   background: $navi-blue;
-    // }
+
+    .js & {
+        background-position: center top;
+    }
+
     &__wrapper {
         @media ($desktop-widths) {
             display: flex;
@@ -30,11 +28,26 @@
         }
     }
     &__container {
+        padding-bottom: 16px;
+
+        border-bottom: 1px solid #030303;
+        background: $navi-blue;
+        @media ($tablet-widths) {
+            padding-bottom: 41px;
+        }
         @media ($desktop-widths) {
             width: 20%;
+            padding: 0;
+            border: none;
+            background: none;
         }
-        &--menu-visible {
-            padding-bottom: 20px;
+        .js & {
+            padding: 0;
+            border: none;
+            background: none;
+        }
+        .js &--menu-visible {
+            padding-bottom: 16px;
 
             border-bottom: 1px solid #030303;
             background: $navi-blue;
@@ -43,8 +56,22 @@
             }
         }
     }
+    // &__container {
+    //     @media ($desktop-widths) {
+    //         width: 20%;
+    //     }
+    //     &--menu-visible {
+    //         padding-bottom: 16px;
+    //
+    //         border-bottom: 1px solid #030303;
+    //         background: $navi-blue;
+    //         @media ($tablet-widths) {
+    //             padding-bottom: 41px;
+    //         }
+    //     }
+    // }
     &__toggle {
-        display: block;
+        display: none;
         float: right;
         overflow: hidden;
 
@@ -62,7 +89,13 @@
         @media ($desktop-widths) {
             display: none;
         }
-        &--menu-visible {
+        .js & {
+            display: block;
+            @media ($desktop-widths) {
+                display: none;
+            }
+        }
+        .js &--menu-visible {
             background: url("../img/icon-menu-cross.svg") no-repeat 95%;
         }
     }
@@ -79,25 +112,35 @@
             margin-bottom: 31px;
         }
         &--inner-page {
-            margin-bottom: 0;
+            @media ($tablet-widths) {
+                margin-bottom: 0;
+            }
         }
         // &--menu-visible {
         //     background: $navi-blue;
         // }
     }
     &__logo {
-        float: left;
         position: relative;
         left: -71px;
+
+        float: left;
+
         margin-top: 4px;
         @media ($tablet-widths) {
             position: static;
+
             margin-top: 27px;
         }
     }
     &--inner-page {
         @media ($tablet-widths) {
             margin-bottom: 0;
+        }
+    }
+    &--form-page {
+        @media ($tablet-widths) {
+            margin-bottom: 47px;
         }
     }
 }

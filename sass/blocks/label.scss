@@ -1,140 +1,176 @@
 .label {
-    display: block;
+	display: block;
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	&--filter {
+		text-align: center;
+
+		@media ($tablet-widths) {
+			height: 48px;
+		}
+		@media ($desktop-widths) {
+		}
+		& svg {
+			opacity: 0.3;
+
+			fill: $navi-blue;
+		}
+		&:hover svg {
+			transition: 0.3s;
+
+			opacity: 0.5;
+		}
+	}
+	&--filter_crop svg {
+		@media ($tablet-widths) {
+			width: 26px;
+		}
+		@media ($desktop-widths) {
+			width: 48px;
+		}
+	}
+	&--filter_color {
+		@media ($tablet-widths) {
+			line-height: 95px;
+		}
+
+		& svg {
+			@media ($tablet-widths) {
+				width: 26px;
+			}
+			@media ($desktop-widths) {
+				width: 48px;
+			}
+		}
+	}
+	&--filter_contrast {
+		@media ($tablet-widths) {
+			line-height: 73px;
+		}
 
 
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    &--filter {
-        position: relative;
+		& svg {
+			@media ($tablet-widths) {
+				width: 17px;
+			}
+			@media ($desktop-widths) {
+				width: 32px;
+			}
+		}
+	}
+	&--full-name {
+		margin: 7px 0 6px 23px;
 
+		text-transform: uppercase;
 
-        width: 60px;
-        height: 60px;
-        margin-top: 30px;
+		color: $pink;
 
-        @media ($tablet-widths) {
-            height: 48px;
-            margin-top: 0;
-            margin-right: 30px;
-        }
-        @media ($desktop-widths) {}
-        & svg {
-            fill: $navi-blue;
-            opacity: 0.3
-        }
-        &:hover svg {
-            opacity: 0.5;
-        }
-    }
-    // &--filter_crop {
-    //     background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
-    // }
-    // &--filter_color {
-    //     background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
-    // }
-    // &--filter_contrast {
-    //     background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
-    // }
-    &--full-name {
-        margin: 6px 0 6px 23px;
+		font-family: $main-font;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		@media ($tablet-widths) {
+			margin-top: 0;
+			margin-right: 20px;
+			margin-left: 0;
+		}
+	}
+	&--events {
+		width: 210px;
 
-        text-transform: uppercase;
+		color: $navi-blue;
 
-        color: $pink;
+		font-family: $main-font;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		@media ($tablet-widths) {
+			width: 400px;
+		}
+		@media ($desktop-widths) {
+			width: 31.1%;
+			margin-right: 0;
+		}
+		// имхо не самое лучшее место для игры со свойстовом order,
+		// принимая во внимание размере и положение на макете крайних правых чекбоксов на desktop-widths
+		&:nth-child(5),
+		&:last-child {
+			@media ($desktop-widths) {
+				width: 20%;
+				margin-left: 24px;
+			}
+		}
+	}
+	&--app-edition {
+		width: 210px;
 
-        font-family: $main-font;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 30px;
-        @media ($tablet-widths) {
-            margin-right: 20px;
-            margin-left: 0;
-        }
-    }
-    &--events {
-        width: 210px;
-        margin-left: 47px;
+		color: $navi-blue;
 
-        color: $navi-blue;
+		font-family: $main-font;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		@media ($tablet-widths) {
+		}
+		@media ($desktop-widths) {
+			width: 230px;
+		}
+	}
+	&--user-contacts {
+		margin: 6px 0 6px 23px;
 
-        font-family: $main-font;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30px;
-        @media ($tablet-widths) {
-            width: 400px;
-        }
-        @media ($desktop-widths) {
-            width: 202px;
-            margin-right: 2px;
-        }
-    }
-    &--app-edition {
-        width: 210px;
-        margin-left: 47px;
+		text-transform: uppercase;
 
-        color: $navi-blue;
+		color: $pink;
 
-        font-family: $main-font;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30px;
-        @media ($tablet-widths) {}
-        @media ($desktop-widths) {
-            width: 230px;
-        }
-    }
-    &--user-contacts {
-        margin: 6px 0 6px 23px;
+		font-family: $main-font;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		@media ($desktop-widths) {
+			margin-left: 20px;
+		}
+	}
+	&--pseudo {
+		display: inline-block;
 
-        text-transform: uppercase;
+		width: 6px;
+		height: 6px;
+		margin: 0 5px;
 
-        color: $pink;
+		cursor: pointer;
+		vertical-align: top;
 
-        font-family: $main-font;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 30px;
-        @media ($tablet-widths) {
-            margin: 0 0 0 17px;
-        }
-        @media ($desktop-widths) {
-            margin-left: 20px;
-        }
-    }
-    &--pseudo {
-        display: inline-block;
+		opacity: 0.3;
+		border: 3px solid #fff;
+		border-radius: 50%;
+		background-color: $navi-blue;
+		&:hover {
+			transition: 0.3s;
 
-        width: 6px;
-        height: 6px;
-        margin: 0 5px;
+			opacity: 0.6;
+		}
+		// &:active {
+		// 	opacity: 0.1;
+		// }
+	}
+	&--table {
+		border: 3px solid $grey-bg;
+	}
+	&--pseudo-active {
+		opacity: 1;
+		border: 3px solid $navi-blue;
+		background: #fff;
+		&:hover {
+			cursor: auto;
+			transition: 0.3s;
 
-        cursor: pointer;
-        vertical-align: top;
-
-        opacity: 0.3;
-        border: 3px solid #ffffff;
-        border-radius: 50%;
-        background-color: $navi-blue;
-        &:hover {
-            opacity: 0.6;
-        }
-        &:active {
-            opacity: 0.1;
-        }
-    }
-    &--table {
-        border: 3px solid $grey-bg;
-    }
-    &--pseudo-active {
-        border: 3px solid $navi-blue;
-        background: #ffffff;
-        &:hover {
-            opacity: 0.3;
-        }
-        &:active {
-            opacity: 0.3;
-        }
-    }
+			opacity: 1;
+		}
+		// &:active {
+		// 	opacity: 0.3;
+		// }
+	}
 }

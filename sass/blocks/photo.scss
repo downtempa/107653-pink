@@ -16,6 +16,7 @@
         margin-bottom: 20px;
         @media ($tablet-widths) {
             width: 300px;
+            margin-bottom: 20px;
         }
         @media ($desktop-widths) {
             margin-bottom: 55px;
@@ -30,7 +31,7 @@
             padding: 93px 0 74px;
         }
         @media ($desktop-widths) {
-            padding-bottom: 88px;
+            padding-bottom: 86px;
         }
         &--outro {
             padding: 23px 0 42px;
@@ -42,6 +43,15 @@
                 padding: 26px 0 70px;
             }
 
+
+        }
+        &--outro_photo-page {
+            @media ($tablet-widths) {
+                    padding: 48px 0 68px;
+            }
+            @media ($desktop-widths) {
+                    padding: 0 0 65px;
+            }
         }
     }
     &__slogan {
@@ -60,6 +70,9 @@
             width: 450px;
 
             font-size: 18px;
+        }
+        @media ($desktop-widths) {
+            width: 640px;
         }
         &--outro p {
             margin: 0;

@@ -21,11 +21,13 @@
             text-decoration: underline;
 
             color: $navi-blue;
+            transition: 0.3s;
         }
         &:active {
             text-decoration: none;
 
             opacity: 0.3;
+            transition: 0.3s;
         }
     }
     &--copyright {

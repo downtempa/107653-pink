@@ -2,6 +2,7 @@
     // @media ($mobile-widths-only) {
     //   @include container;
     // }
+    margin-bottom: 6px;
     @media ($tablet-widths) {
         margin-bottom: 4px;
 
@@ -25,6 +26,7 @@
     }
     &__input {
         margin-bottom: 10px;
+
     }
     &__input-container {
         display: flex;

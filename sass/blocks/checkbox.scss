@@ -1,13 +1,17 @@
 .checkbox {
-    &--events {
-        margin-top: 20px;
-        margin-right: 40px;
-        margin-bottom: 20px;
-        @media ($desktop-widths) {
-            margin-right: 30px;
-        }
-        &:checked ~ .control__indicator {
-            background-image: url("../img/icon-yes.svg");
-        }
-    }
+	&--events {
+		margin-top: 20px;
+		margin-right: 40px;
+		margin-bottom: 20px;
+		@media ($desktop-widths) {
+			margin-right: 30px;
+		}
+		&:checked ~ .control__indicator {
+			transition: 0.3s;
+
+			border-color: $pink;
+			background-image: url("../img/icon-yes--checkbox_pink.svg");
+            background-size: 65%;
+		}
+	}
 }

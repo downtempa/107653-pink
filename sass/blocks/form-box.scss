@@ -1,44 +1,50 @@
 .form-box {
-    //   padding: 0;
-    //   margin: 0;
-    border: none;
-    @media ($tablet-widths) {
-        border: 2px solid $grey-border;
-    }
-    &--full-name {
-        border: none;
-        @media ($tablet-widths) {
-            margin-right: 0;
-            margin-left: 0;
-            padding: 0;
-        }
-    }
-    &--app-edition {
-        padding-top: 70px;
-        padding-bottom: 24px;
+	//   padding: 0;
+	//   margin: 0;
+	border: none;
+	@media ($tablet-widths) {
+		border: 2px solid $grey-border;
+	}
+	&--full-name {
+		border: none;
+		@media ($tablet-widths) {
+			margin-right: 0;
+			margin-left: 0;
+			padding: 0;
+		}
+	}
+	&--app-edition {
+		padding-top: 70px;
+		padding-bottom: 22px;
 
-        background: $grey-bg;
-        @media ($tablet-widths) {
-            padding: 30px 60px;
+		background: $grey-bg;
+		@media ($tablet-widths) {
+			padding: 24px 60px 40px;
 
-            background: none;
-        }
-        @media ($desktop-widths) {
-            padding: 30px 57px;
+		background: none;
+		}
+		@media ($desktop-widths) {
+			padding-top: 28px;
+			padding-right: 17px;
+			padding-bottom: 36px;
 
-            background: none;
-        }
-    }
-    &--events {
-        padding-top: 76px;
-        padding-bottom: 22px;
+			background: none;
+		}
+	}
+	&--events {
+		padding-top: 76px;
+		padding-bottom: 22px;
 
-        background: $grey-bg;
-        @media ($tablet-widths) {
-            margin: 0 0 56px;
-            padding-top: 27px;
+		background: $grey-bg;
+		@media ($tablet-widths) {
+			margin: 0 0 56px;
+			padding-top: 28px;
+			padding-bottom: 22px;
 
-            background: none;
-        }
-    }
+			background: none;
+		}
+		@media ($desktop-widths) {
+			padding-bottom: 29px;
+		}
+	}
 }

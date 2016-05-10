@@ -1,6 +1,9 @@
 .input {
     // margin: 0;
-    padding: 13px 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
 
     color: $navi-blue;
     border: 2px solid $grey-border;
@@ -12,8 +15,13 @@
     font-weight: 400;
     line-height: 30px;
     @media ($tablet-widths) {
-        padding: 15px 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        padding-left: 20px;
+
     }
+
     &::-webkit-input-placeholder {
         color: $navi-blue;
 
@@ -40,14 +48,47 @@
     }
     &--full-name {
         flex-grow: 1;
+        &:hover {
+            border-color: $navi-blue;
+            transition: 0.3s;
+        }
+        &:focus {
+            border-color: $pink;
+            transition: 0.3s;
+        }
     }
     &--user-contacts {
+        &:hover {
+            border-color: $navi-blue;
+            transition: 0.3s;
+        }
+        &:focus {
+            border-color: $pink;
+            transition: 0.3s;
+        }
         @media ($tablet-widths) {
-            width: 447px;
+            width: 85%;
             margin: 20px auto;
+            padding-right: 49px;
         }
         @media ($desktop-widths) {
-            width: 331px;
+            width: 304px;
+        }
+    }
+    &--user-contacts_tel {
+        @media ($tablet-widths) {
+            background: url("../img/icon-phone.svg") no-repeat 95.4% 50%;
+        }
+        @media ($desktop-widths) {
+            background-position: 93.8% 50%;
+        }
+    }
+    &--user-contacts_mail {
+        @media ($tablet-widths) {
+            background: url("../img/icon-mail.svg") no-repeat 95.4% 50%;
+        }
+        @media ($desktop-widths) {
+            background-position: 93.4% 50%;
         }
     }
 }

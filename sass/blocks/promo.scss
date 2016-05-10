@@ -30,6 +30,21 @@
         @media ($desktop-widths) {
             width: 770px;
         }
+        &--form-page {
+            padding: 45px 0 22px;
+            @media ($tablet-widths) {
+                margin-bottom: 48px;
+            }
+        }
+        &--form-page span {
+            display: none;
+            @media ($tablet-widths) {
+                display: block;
+            }
+            @media ($desktop-widths) {
+                display: inline-block;
+            }
+        }
     }
     &__form {
         margin-bottom: 15px;

@@ -7,20 +7,22 @@
     &__item {
         display: block;
 
-        width: 48px;
-        height: 48px;
+        width: 47px;
+        height: 47px;
 
         text-align: center;
 
-        border: 2px solid #e9ebec;
+        border: 3px solid #e9ebec;
         border-radius: 50%;
 
         line-height: 52px;
         &:hover {
-            border: 2px solid $navi-blue;
+            border: 3px solid $navi-blue;
+            transition: 0.3s;
         }
         &:active {
             opacity: 0.3;
+            transition: 0.3s;
         }
         &--ytb svg {
             margin-left: 4px;

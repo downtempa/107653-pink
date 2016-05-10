@@ -4,7 +4,12 @@
         margin-right: 40px;
         margin-bottom: 20px;
         &:checked ~ .control__indicator {
-            background-image: url("../img/icon-circle.svg");
+            border-color: $pink;
+            transition: 0.3s;
+        }
+        &:checked ~ .control__indicator:after {
+            opacity: 1;
+            transition: 0.3s;
         }
     }
 }

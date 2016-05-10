@@ -1,32 +1,54 @@
 .events {
-    @media ($tablet-widths) {
-        padding: 60px;
-    }
-    @media ($desktop-widths) {
-        padding: 60px 2px 60px 57px;
-    }
-    &__wrapper {
-        display: flex;
-        flex-direction: row;
+	@media ($tablet-widths) {
+		padding: 60px;
+	}
+	@media ($desktop-widths) {
+		padding: 0;
+    padding-left: 71px;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
 
-        flex-wrap: wrap;
-        justify-content: space-between;
-        // @include container;
-        @media ($mobile-widths-only) {
-             @include container;
-        }
-    }
-    &__label {
-        margin-top: 20px;
-        margin-bottom: 32px;
-        &--tower {
-            order: -4;
-        }
-        &--chuck-norris {
-            order: -5;
-        }
-        &--shark {
-            order: -6;
-        }
-    }
+		flex-wrap: wrap;
+		justify-content: space-between;
+		// @include container;
+		@media ($mobile-widths-only) {
+			@include container;
+		}
+		@media ($desktop-widths) {
+
+    
+
+
+    justify-content: flex-start;
+		}
+	}
+	&__label {
+		margin-top: 20px;
+		margin-bottom: 32px;
+		margin-left: 46px;
+		@media ($tablet-widths) {
+			margin-left: 34px;
+		}
+		@media ($desktop-widths) {
+			margin-right: 2px;
+		}
+
+		&--tower {
+			@media ($desktop-widths) {
+				order: -4;
+			}
+		}
+		&--chuck-norris {
+			@media ($desktop-widths) {
+				order: -5;
+			}
+		}
+		&--shark {
+			@media ($desktop-widths) {
+				order: -6;
+			}
+		}
+	}
 }

@@ -9,9 +9,6 @@
     line-height: 18px;
 
     align-items: center;
-    @media ($mobile-widths-only) {
-        margin-left: 22px;
-    }
     @media ($desktop-widths) {
         font-size: 18px;
     }
@@ -25,9 +22,11 @@
         }
         &:hover svg {
             fill: $navi-blue;
+            transition: 0.3s;
         }
         &:active  {
             opacity: 0.3;
+            transition: 0.3s;
         }
     }
     &__svg {
