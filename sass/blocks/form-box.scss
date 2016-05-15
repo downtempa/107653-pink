@@ -1,6 +1,4 @@
 .form-box {
-	//   padding: 0;
-	//   margin: 0;
 	border: none;
 	position: relative;
 	@media ($tablet-widths) {
@@ -9,8 +7,6 @@
 	&--full-name {
 		border: none;
 		@media ($tablet-widths) {
-			margin-right: 0;
-			margin-left: 0;
 			padding: 0;
 		}
 	}
@@ -34,14 +30,16 @@
 		background: $grey-bg;
 		padding-top: 76px;
 		@media ($tablet-widths) {
-			margin: 0 0 64px;
+			padding: 60px;
 			padding-top: 35px;
 			padding-bottom: 22px;
 			background: none;
 		}
 		@media ($desktop-widths) {
+			padding: 0;
+		padding-left: 71px;
 			padding-bottom: 29px;
-			margin-bottom: 66px;
+			
 		}
 	}
 	&--user-emotions {

@@ -1,15 +1,14 @@
 .events {
 	@media ($tablet-widths) {
-		padding: 60px;
+		
+		margin: 0 0 64px;
 	}
 	@media ($desktop-widths) {
-		padding: 0;
-    padding-left: 71px;
+		margin-bottom: 66px;
 	}
 	&__wrapper {
 		display: flex;
 		flex-direction: row;
-
 		flex-wrap: wrap;
 		justify-content: space-between;
 		// @include container;
@@ -17,11 +16,7 @@
 			@include container;
 		}
 		@media ($desktop-widths) {
-
-    
-
-
-    justify-content: flex-start;
+			justify-content: flex-start;
 		}
 	}
 	&__label {
@@ -34,7 +29,6 @@
 		@media ($desktop-widths) {
 			margin-right: 2px;
 		}
-
 		&--tower {
 			@media ($desktop-widths) {
 				order: -4;

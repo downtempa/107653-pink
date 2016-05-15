@@ -4,6 +4,8 @@
 	// }
 	margin-bottom: 6px;
 	@media ($tablet-widths) {
+		margin-right: 0;
+			margin-left: 0;
 		margin-bottom: 12px;
 		order: -2;
 	}
