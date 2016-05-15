@@ -4,7 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+
 	<link rel="stylesheet" href="css/style.css">
+	<!--	<link rel="stylesheet" href="css/flickity.css">-->
 	<title>HTML Academy: Пинк</title>
 </head>
 
@@ -164,9 +166,9 @@
 	</div>
 	<div class="reviews">
 		<div class="wrapper">
-			<div class="reviews__posts slider">
+			<div class="reviews__posts slider carousel js-flickity">
 				<!-- слайды -->
-				<blockquote class="post post--active">
+				<blockquote class="post post--activee carousel-cell">
 
 					<p class="post__author">
 						<cite>Николай Петров</cite>
@@ -175,7 +177,7 @@
 					<p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
 
 				</blockquote>
-				<blockquote class="post post--hidden">
+				<blockquote class="post post--hiddenn carousel-cell">
 
 					<p class="post__author">
 						<cite>Петр Николаев
@@ -185,7 +187,7 @@
 					<p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
 
 				</blockquote>
-				<blockquote class="post post--hidden">
+				<blockquote class="post post--hiddenn carousel-cell">
 
 					<p class="post__author">
 						<cite>Иван Иванов
@@ -195,6 +197,7 @@
 					<p class="post__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
 
 				</blockquote>
+				<!--
 				<div class="slider__nav slider__nav--reviews">
 					<label class="slider__btn label label--pseudo label--pseudo-active"></label>
 					<label class="slider__btn label label--pseudo"></label>
@@ -203,6 +206,7 @@
 				</div>
 				<button class="slider__arrow slider__arrow--left"></button>
 				<button class="slider__arrow slider__arrow--right"></button>
+-->
 			</div>
 		</div>
 	</div>
@@ -443,6 +447,7 @@
 	
 -->
 	<script src="js/main.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
