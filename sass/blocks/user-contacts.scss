@@ -1,67 +1,53 @@
 .user-contacts {
-    padding: 23px 0;
-    @media ($mobile-widths-only) {
-         @include container;
-    }
-    @media ($tablet-widths) {
-        margin-bottom: 56px;
-            padding: 18px 54px;
-
-        order: -1;
-    }
-    @media ($desktop-widths) {
-        width: 100%;
-        margin: 0;
-        margin-bottom: 56px;
-        padding-top: 14px;
-        padding-bottom: 5px;
-        padding-left: 57px;
-    padding-right: 57px;
-    }
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-
-        min-height: 200px;
-
-        justify-content: space-around;
-        align-items: stretch;
-        @include container;
-        @media ($tablet-widths) {
-            width: 100%;
-            margin: 0;
-        }
-        @media ($desktop-widths) {
-            flex-direction: row;
-
-            min-height: 0;
-
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-    &__input {
-        margin-bottom: 10px;
-        @media ($desktop-widths) {
-            margin-bottom: 9px;
-        }
-    }
-    &__label {
-        @media ($tablet-widths) {
-            margin: 0;
-            margin-left: 20px;
-        }
-    }
-    &__input-container {
-        display: flex;
-        flex-direction: column;
-        @media ($tablet-widths) {
-            flex-direction: column-reverse;
-
-            margin-bottom: 7px;
-
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
-    }
+	@media ($mobile-widths-only) {
+		@include container;
+	}
+	@media ($tablet-widths) {
+		margin-bottom: 65px;
+		order: -1;
+	}
+	@media ($desktop-widths) {
+		margin: 0;
+		margin-bottom: 66px;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		min-height: 200px;
+		justify-content: space-around;
+		align-items: stretch;
+		@include container;
+		@media ($tablet-widths) {
+			width: 100%;
+			margin: 0;
+		}
+		@media ($desktop-widths) {
+			flex-direction: row;
+			min-height: 0;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	&__input {
+		margin-bottom: 10px;
+		@media ($desktop-widths) {
+			margin-bottom: 9px;
+		}
+	}
+	&__label {
+		@media ($tablet-widths) {
+			margin: 0;
+			margin-left: 20px;
+		}
+	}
+	&__input-container {
+		display: flex;
+		flex-direction: column;
+		@media ($tablet-widths) {
+			flex-direction: column-reverse;
+			margin-bottom: 7px;
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+	}
 }

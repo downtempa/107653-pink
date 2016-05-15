@@ -1,19 +1,15 @@
 .main-footer {
 	display: flex;
 	flex-direction: column;
-
 	min-height: 230px;
-
 	align-items: center;
 	@include container;
 	justify-content: space-around;
 	@media ($tablet-widths) {
 		flex-direction: row;
 		// padding: 20px 0;
-
 		min-height: 0;
 		padding: 28px 0;
-
 		align-items: flex-start;
 		justify-content: space-between;
 	}
@@ -28,12 +24,10 @@
 	&--inner-page {
 		min-height: 240px;
 		padding: 40px 0 17px;
-
 		justify-content: flex-start;
 		@media ($tablet-widths) {
 			min-height: 0;
 			padding: 27px 0 17px;
-
 			justify-content: space-between;
 		}
 		@media ($desktop-widths) {
@@ -66,7 +60,7 @@
 				margin-right: 18px;
 			}
 			@media ($desktop-widths) {
-				margin-top: 14px;
+				margin-top: 12px;
 				margin-right: 0;
 				margin-left: 14px;
 			}
