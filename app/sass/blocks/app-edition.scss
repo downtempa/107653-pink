@@ -1,0 +1,40 @@
+.app-edition {
+	margin-bottom: 56px;
+	@media ($tablet-widths) {
+		margin-bottom: 66px;
+		padding: 20px;
+
+		order: -2;
+	}
+	@media ($desktop-widths) {
+		width: 37.7%;
+		margin: 0 0 64px;
+		margin-top: 8px;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@media ($mobile-widths-only) {
+			@include container;
+		}
+		@media ($tablet-widths) {
+			flex-direction: column;
+		}
+	}
+	&__label {
+		margin-top: 23px;
+		margin-bottom: 23px;
+		margin-left: 47px;
+		@media ($tablet-widths) {
+			margin-top: 23px;
+			margin-bottom: 21px;
+			margin-left: 32px;
+		}
+		@media ($desktop-widths) {
+			margin-left: 61px;
+		}
+	}
+}
