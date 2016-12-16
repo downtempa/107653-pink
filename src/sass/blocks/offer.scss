@@ -1,0 +1,58 @@
+.offer {
+  min-height: 243px;
+  padding: 16px 0;
+
+  text-align: center;
+
+  @media ($tablet-widths) {
+    min-height: 216px;
+    padding: 8px 0 14px;
+  }
+
+  @media ($desktop-widths) {
+    min-height: 266px;
+    margin-bottom: 16px;
+    padding: 20px 0;
+  }
+
+
+  &__wrapper {
+    @include container;
+  }
+
+
+  &__title {
+    font-family: $main-font;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+
+    margin-bottom: 28px;
+
+    color: $navi-blue;
+
+    @media ($tablet-widths) {
+      font-size: 40px;
+      line-height: 49px;
+
+      margin-bottom: 0;
+    }
+
+    @media ($desktop-widths) {
+      font-size: 50px;
+      line-height: 57px;
+    }
+
+    &--tight {
+
+      @media ($tablet-widths) {
+        width: 450px;
+        margin: 0 auto;
+      }
+
+      @media ($desktop-widths) {
+        margin-top: 5px;
+      }
+    }
+  }
+}
